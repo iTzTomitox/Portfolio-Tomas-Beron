@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+.navegacion {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 24px;
+}
+
+.tomixlogo{
+    width: 80px;
+    height: 80px;
+}
+
+.tomas{
+    color: #000;
+    font-family: Sen;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.img-principal {
+    width: 432px;
+    height: 576px;
+    flex-shrink: 0;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 24px;
+    margin: 0px;
+
+}
+
+nav li {
+    margin: 0 24px ;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 0px 8px;
+    display: block;
+}
+
+.pic-camara {
+    width: 1181px;
+    height: 787px;
+    flex-shrink: 0;
+}
+
+footer {
+    background-color: #1F1F1F;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+footer .right {
+    text-align: right;
+} 
+
+footer .left {
+    text-align: left;
+}
+
+footer div h3 {
+    font-family: "Sen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.contacto img {
+    width: 432px;
+    height: 576px;
+}
+
+.logo-nav {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    align-items: flex-end;
+}
+
+
+.section-audio img {
+    width: 1040px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-web img {
+    width: 1040px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.section-ux img {
+    width: 1040px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.contacto section h2 {
+    flex-direction: row;
+    justify-content: center;
+}
