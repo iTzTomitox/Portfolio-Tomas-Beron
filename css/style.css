@@ -66,15 +66,15 @@ nav a {
 }
 
 .img-principal {
-    width: 432px;
-    height: 576px;
+    width: 100%;
+    height: auto;
     flex-shrink: 0;
 }
 
 
 .pic-camara {
-    width: 1181px;
-    height: 787px;
+    width: 100%;
+    height: auto;
     flex-shrink: 0;
 }
 
@@ -129,7 +129,8 @@ footer div h3 {
 }
 
 .section-ux img {
-    width: 1040px;
+    max-width: 100%;
+    height: auto;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
@@ -138,4 +139,24 @@ footer div h3 {
 .contacto section h2 {
     flex-direction: row;
     justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 24px;
+}
+
+.container-presentacion {
+    grid-column: span 4 / span 4;
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+.container-sobre-mi {
+    grid-column: span 10 / span 10;
+    grid-row: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 2;
 }
