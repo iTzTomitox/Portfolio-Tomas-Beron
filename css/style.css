@@ -41,7 +41,7 @@ nav ul {
 }
 
 nav li {
-    margin: 0 24px ;
+    margin: 0 24px;
 }
 
 nav a {
@@ -51,12 +51,12 @@ nav a {
     display: block;
 }
 
-.tomixlogo{
+.tomixlogo {
     width: 80px;
     height: auto;
 }
 
-.tomas{
+.tomas {
     color: #000;
     font-family: Sen;
     font-size: 56px;
@@ -88,7 +88,7 @@ footer {
 
 footer .right {
     text-align: right;
-} 
+}
 
 footer .left {
     text-align: left;
@@ -148,10 +148,31 @@ footer div h3 {
     gap: 24px;
 }
 
+.button-contactame {
+    color: black;
+    background-color: white;
+    padding: 16px 56px;
+    font-family: Sen;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+.button-contactame:hover {
+    background-color: #000;
+    color: white;
+}
+
 .container-presentacion {
     grid-column: span 4 / span 4;
     grid-row-start: 1;
     grid-column-start: 2;
+}
+
+
+.tomas {
+    grid-column: span 4 / span 4;
+    grid-row-start: 1;
+    grid-column-start: 3;
 }
 
 .container-sobre-mi {
@@ -159,4 +180,42 @@ footer div h3 {
     grid-row: span 4 / span 4;
     grid-column-start: 2;
     grid-row-start: 2;
+}
+
+.grid-container-contacto {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.grid-container-contacto-form {
+    grid-column: span 10 / span 10;
+    grid-row: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 2;
+
+}
+
+.contacto {
+    grid-column: span 10 / span 10;
+    grid-row: span 4 / span 4;
+    grid-column-start: 6;
+    grid-row-start: 1;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.button-work {
+    color: white;
+    background-color: black;
+    padding: 16px 56px;
+    font-family: Sen;
+    font-size: 24px;
+    border-radius: 8px;
 }
