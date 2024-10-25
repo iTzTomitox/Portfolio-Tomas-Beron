@@ -25,7 +25,7 @@
                     <li><a href="./contacto.html">Contacto</a></li>
                 </ul>
             </div>
-            
+
             <div class="navegacion-2">
                 <ul>
                     <li><a class="logo-nav" href="https://www.behance.net/tomasberon" target="_blank"><img
@@ -42,23 +42,33 @@
         <hr>
     </header>
 
-    <main class="contacto">
+    <main>
+
+<section class="contacto">
+    <h1>Contacto</h1>
+    <img src="../assent/pic.jpeg" alt="Imagen">
+</section>
+
         <section>
-            <img src="../assent/Pic.jpeg" alt="">
-            <h2>Contactame</h2>
+            <div class="form-container">
+                <form>
+                    <label for="form-input-name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="form-input-name" name="sender_name" required>
 
-            <form action="nombre">Nombre</form>
-            <input type="text">
+                    <label for="form-input-email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="form-input-email" name="sender_email" required>
+                    <!-- <div id="emailHelp" class="form-text">Nunca compartiré tu mail con alguien más, o quizá si...</div> -->
 
-            <form action="email">Email</form>
-            <input type="email">
+                    <textarea class="form-control" id="form-input-mensaje" placeholder="Leave a comment here"
+                        name="sender_message" required></textarea>
+                    <label for="form-input-mensaje">Mensaje</label>
 
-            <textarea name="mensaje" id="mensaje">Mensaje</textarea>
-
-            <input type="submit" name="Enviar" id="mensaje">
-
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
+
 
     <footer>
         <div class="left">
