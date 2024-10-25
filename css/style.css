@@ -155,6 +155,7 @@ footer div h3 {
     font-family: Sen;
     font-size: 24px;
     border-radius: 8px;
+    transition: background-color 0.3s;
 }
 
 .button-contactame:hover {
@@ -167,7 +168,6 @@ footer div h3 {
     grid-row-start: 1;
     grid-column-start: 2;
 }
-
 
 .tomas {
     grid-column: span 4 / span 4;
