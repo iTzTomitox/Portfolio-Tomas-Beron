@@ -23,7 +23,47 @@ nav {
 .navegacion {
     display: flex;
     align-items: center;
+    position: relative;
     gap: 24px;
+}
+
+.underline-sobre-mi::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background: black;
+    transition: width .2s;
+}
+
+.underline-sobre-mi:hover:after{
+    width: 18%;
+}
+
+.underline-proyectos::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background: black;
+    transition: width .2s;
+}
+
+.underline-proyectos:hover:after{
+    width: 20%;
+}
+
+.underline-contacto::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background: black;
+    transition: width .2s;
+}
+
+.underline-contacto:hover:after{
+    width: 19%;
 }
 
 .navegacion-2 {
@@ -218,8 +258,8 @@ footer div h3 {
 
 .pic-camara {
     display: grid;
-grid-column: 3/10;
-grid-row-start: 3;
+    grid-column: 3/10;
+    grid-row-start: 3;
 }
 
 .grid-container-contacto {
