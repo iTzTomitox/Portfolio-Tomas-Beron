@@ -36,7 +36,7 @@ nav {
     transition: width .2s;
 }
 
-.underline-sobre-mi:hover:after{
+.underline-sobre-mi:hover:after {
     width: 18%;
 }
 
@@ -49,7 +49,7 @@ nav {
     transition: width .2s;
 }
 
-.underline-proyectos:hover:after{
+.underline-proyectos:hover:after {
     width: 20%;
 }
 
@@ -62,7 +62,7 @@ nav {
     transition: width .2s;
 }
 
-.underline-contacto:hover:after{
+.underline-contacto:hover:after {
     width: 19%;
 }
 
@@ -209,13 +209,13 @@ footer div h3 {
 }
 
 .container-presentacion {
-    grid-column:  2 / 8;
+    grid-column: 2 / 8;
     grid-row-start: 1;
     grid-column-start: 2;
 }
 
 .tomas {
-    grid-column:  4 / 4;
+    grid-column: 4 / 4;
     grid-row-start: 1;
     grid-column-start: 3;
 }
@@ -227,31 +227,31 @@ footer div h3 {
 }
 
 .container-sobre-mi {
-    grid-column: 10 /  12;
+    grid-column: 10 / 12;
     grid-column-start: 2;
     grid-row-start: 2;
 }
 
 .container-ex-working {
-    grid-column:  2 / 12;
+    grid-column: 2 / 12;
     grid-row-start: 4;
     grid-column-start: 2;
 }
 
 .container-education {
-    grid-column:  2 / 12;
+    grid-column: 2 / 12;
     grid-row-start: 5;
     grid-column-start: 2;
 }
 
 .container-disciplinas {
-    grid-column:  2 / 12;
+    grid-column: 2 / 12;
     grid-row-start: 6;
     grid-column-start: 2;
 }
 
-.container-contacto-index{
-    grid-column:  2 / 12;
+.container-contacto-index {
+    grid-column: 2 / 12;
     grid-row-start: 7;
     grid-column-start: 2;
 }
@@ -306,7 +306,7 @@ footer div h3 {
     border-radius: 8px;
 }
 
-.section-audio{
+.section-audio {
     grid-column: 2/11;
     grid-column-start: 2;
     grid-row-start: 1;
@@ -318,7 +318,7 @@ footer div h3 {
     grid-row-start: 3;
 }
 
-.section-web{
+.section-web {
     grid-column: 2/11;
     grid-column-start: 2;
     grid-row-start: 4;
@@ -326,5 +326,13 @@ footer div h3 {
 
 /*body {
     scroll-behavior:smooth;
-}           No funciona          */
+}           No funciona  - Ver despues        */
 
+.container-sobre-mi p {
+    padding-top: 8px;
+}
+
+/* No funciona Ver despues
+.container-presentacion article{
+    padding-top: 24px;
+}
