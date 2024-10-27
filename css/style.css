@@ -25,12 +25,10 @@ nav {
     display: flex;
     align-items: center;
     position: relative;
-    gap: 24px;
 }
 
 .navegacion-2 {
     display: flex;
-    gap: 16px;
     align-items: center;
 }
 
@@ -43,13 +41,13 @@ nav ul {
 }
 
 nav li {
-    margin: 0 24px;
+    margin: 0 16px;
 }
 
 nav a {
     text-decoration: none;
     color: #000;
-    padding: 0px 8px;
+    padding: 0px 0px;
     display: block;
 }
 
@@ -115,6 +113,18 @@ footer div h3 {
     font-style: normal;
     font-size: 24px;
 }
+
+/* Estilo normal */
+.logo-nav:hover img {
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}
+
+/* Estilo solo para el icono de Pinterest */
+.pinterest-icon:hover svg path {
+    fill: red;
+}
+
+
 /* GLOBAL CSS CODE FIN */
 
 /* INDEX.HTML CSS CODE */
