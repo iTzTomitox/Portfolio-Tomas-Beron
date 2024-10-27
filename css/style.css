@@ -114,20 +114,31 @@ footer div h3 {
     font-size: 24px;
 }
 
-/* Estilo normal */
-.logo-nav:hover img {
-    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(200deg);
+
+.pinterest-icon:hover img {
+    filter: invert(27%) sepia(89%) saturate(7484%) hue-rotate(1deg) brightness(100%) contrast(104%) !important;
 }
 
-/* Estilo solo para el icono de Pinterest */
-.pinterest-icon:hover svg path {
-    fill: red;
+.logo-behance:hover img {
+    filter: invert(34%) sepia(100%) saturate(1205%) hue-rotate(210deg) brightness(99%) contrast(101%) !important; 
+}
+
+.logo-linkedin:hover img {
+    filter: invert(29%) sepia(92%) saturate(2239%) hue-rotate(196deg) brightness(100%) contrast(101%) !important; 
+}
+
+.logo-instagram:hover img {
+    filter: invert(49%) sepia(87%) saturate(553%) hue-rotate(347deg) brightness(99%) contrast(95%) !important; /* Ajustado para el color de Instagram */
 }
 
 
 /* GLOBAL CSS CODE FIN */
 
 /* INDEX.HTML CSS CODE */
+
+.scroll-link {
+    transition: color 0.3s ease; /* Cambia el color suavemente */
+}
 
 .tomixlogo {
     width: 80px;

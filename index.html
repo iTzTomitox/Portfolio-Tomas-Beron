@@ -19,7 +19,7 @@
                 <ul>
                     <li><a href="./index.html"><img class="tomixlogo" src="./assent/logo-tomix.png" alt="TomixLogo"></a>
                     </li>
-                    <li class="underline-sobre-mi"><a href="#sobre-mi">Sobre Mi</a></li>
+                    <li class="underline-sobre-mi"><a href="#sobre-mi" class="scroll-link">Sobre Mi</a></li>
                     <li class="underline-proyectos"><a href="./pages/proyectos.html">Proyectos</a></li>
                     <li class="underline-contacto"><a href="./pages/contacto.html">Contacto</a></li>
                 </ul>
@@ -27,13 +27,13 @@
 
             <div class="navegacion-2">
                 <ul>
-                    <li><a class="logo-nav" href="https://www.behance.net/tomasberon" target="_blank"><img
+                    <li><a class="logo-nav logo-behance" href="https://www.behance.net/tomasberon" target="_blank"><img
                                 src="./assent/behance.svg" alt=""></a></li>
                     <li><a class="logo-nav pinterest-icon" href="https://pin.it/3CI0PeYRZ" target="_blank"><img
                                 src="./assent/pinterest.svg" alt=""></a></li>
-                    <li><a class="logo-nav" href="https://www.linkedin.com/in/tomas-beron/" target="_blank"><img
+                    <li><a class="logo-nav logo-linkedin" href="https://www.linkedin.com/in/tomas-beron/" target="_blank"><img
                                 src="./assent/linkedin.svg" alt=""></a></li>
-                    <li><a class="logo-nav" href="https://www.instagram.com/tomix_visuals/" target="_blank"><img
+                    <li><a class="logo-nav logo-instagram" href="https://www.instagram.com/tomix_visuals/" target="_blank"><img
                                 src="./assent/instagram.svg" alt=""></a></li>
                 </ul>
             </div>
@@ -117,6 +117,22 @@
         </div>
     </footer>
 
+    <script>
+        document.querySelectorAll('.scroll-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+    
+                const targetId = this.getAttribute('href'); // Obtener el ID del objetivo
+                const targetElement = document.querySelector(targetId); // Seleccionar el elemento objetivo
+    
+                // Hacer scroll suave al elemento objetivo
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
 </body>
 
 </html>
