@@ -281,6 +281,7 @@ footer div h3 {
     grid-column: 2 / 12;
     grid-row-start: 7;
     grid-column-start: 2;
+    margin-bottom: 40px;
 }
 
 .pic-camara {
@@ -304,14 +305,15 @@ footer div h3 {
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
+    gap: 8px;
 }
 
 textarea {
-    width: 100%; /* Para que se ajuste al ancho de su contenedor */
-    max-width: 100%; /* Evita que se expanda más allá del contenedor */
-    height: 120px; /* Ajusta la altura a tu preferencia */
-    resize: none; /* Evita que el usuario cambie el tamaño del área de texto */
+    width: 100%; 
+    max-width: 100%; 
+    height: 120px; 
+    resize: none; 
 }
 
 .button-work {
