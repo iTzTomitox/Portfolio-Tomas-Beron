@@ -119,15 +119,16 @@ footer div h3 {
 }
 
 .logo-behance:hover img {
-    filter: invert(34%) sepia(100%) saturate(1205%) hue-rotate(210deg) brightness(99%) contrast(101%) !important; 
+    filter: invert(34%) sepia(100%) saturate(1205%) hue-rotate(210deg) brightness(99%) contrast(101%) !important;
 }
 
 .logo-linkedin:hover img {
-    filter: invert(29%) sepia(92%) saturate(2239%) hue-rotate(196deg) brightness(100%) contrast(101%) !important; 
+    filter: invert(29%) sepia(92%) saturate(2239%) hue-rotate(196deg) brightness(100%) contrast(101%) !important;
 }
 
 .logo-instagram:hover img {
-    filter: invert(49%) sepia(87%) saturate(553%) hue-rotate(347deg) brightness(99%) contrast(95%) !important; /* Ajustado para el color de Instagram */
+    filter: invert(49%) sepia(87%) saturate(553%) hue-rotate(347deg) brightness(99%) contrast(95%) !important;
+    /* Ajustado para el color de Instagram */
 }
 
 
@@ -136,7 +137,8 @@ footer div h3 {
 /* INDEX.HTML CSS CODE */
 
 .scroll-link {
-    transition: color 0.3s ease; /* Cambia el color suavemente */
+    transition: color 0.3s ease;
+    /* Cambia el color suavemente */
 }
 
 .tomixlogo {
@@ -311,10 +313,10 @@ footer div h3 {
 }
 
 textarea {
-    width: 100%; 
-    max-width: 100%; 
-    height: 120px; 
-    resize: none; 
+    width: 100%;
+    max-width: 100%;
+    height: 120px;
+    resize: none;
 }
 
 .button-work {
