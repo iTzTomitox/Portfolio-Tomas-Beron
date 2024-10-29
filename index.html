@@ -120,12 +120,11 @@
     <script>
         document.querySelectorAll('.scroll-link').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+                e.preventDefault();
     
-                const targetId = this.getAttribute('href'); // Obtener el ID del objetivo
-                const targetElement = document.querySelector(targetId); // Seleccionar el elemento objetivo
+                const targetId = this.getAttribute('href'); 
+                const targetElement = document.querySelector(targetId);
     
-                // Hacer scroll suave al elemento objetivo
                 targetElement.scrollIntoView({
                     behavior: 'smooth'
                 });
