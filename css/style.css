@@ -231,6 +231,7 @@ footer div h3 {
     font-size: 24px;
     border-radius: 8px;
     transition: background-color 0.3s;
+    margin-top: 24px;
 }
 
 .button-contactame:hover {
@@ -398,8 +399,8 @@ textarea {
     font-family: Sen;
     font-size: 24px;
     border-radius: 8px;
+    margin-top: 8px;
 }
-
 
 .grid-container {
     display: grid;
@@ -409,7 +410,7 @@ textarea {
 .section-audio, .section-ux, .section-web {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 24px;
     align-items: center;
 }
 
@@ -426,6 +427,14 @@ textarea {
     justify-content: center;
 }
 
+.texto-proyecto h2 {
+    font-size: 32px;
+}
+
 .imagen-proyecto img:hover {
     transform: scale(1.04);
+}
+
+.section-web {
+    margin-bottom: 24px;
 }
