@@ -379,11 +379,11 @@ textarea {
     grid-row-start: 1;
 }
 
-.section-ux {
+.section-ux{
     grid-column: 2/11;
     grid-column-start: 2;
-    grid-row-start: 3;
-}
+    grid-row-start: 2;
+} 
 
 .section-web {
     grid-column: 2/11;
@@ -398,4 +398,39 @@ textarea {
     font-family: Sen;
     font-size: 24px;
     border-radius: 8px;
+}
+
+/* Configuración general de la estructura de la cuadrícula */
+.grid-container {
+    display: grid;
+    gap: 20px;
+}
+
+/* Configuración para cada sección en Grid de dos columnas */
+.section-audio, .section-ux, .section-web {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px;
+    align-items: center;
+}
+
+/* Configura la imagen para que ocupe toda la columna */
+.imagen-proyecto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos de texto */
+.texto-proyecto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .section-audio, .section-ux, .section-web {
+        grid-template-columns: 1fr; /* Una sola columna en móviles */
+    }
 }
