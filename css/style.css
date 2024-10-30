@@ -337,25 +337,6 @@ textarea {
     border-radius: 8px;
 }
 
-.section-audio {
-    grid-column: 2/11;
-    grid-column-start: 2;
-    grid-row-start: 1;
-}
-
-.section-ux {
-    grid-column: 2/11;
-    grid-column-start: 2;
-    grid-row-start: 3;
-}
-
-.section-web {
-    grid-column: 2/11;
-    grid-column-start: 2;
-    grid-row-start: 4;
-}
-
-
 .container-sobre-mi p {
     padding-top: 8px;
 }
@@ -388,4 +369,33 @@ textarea {
     grid-column: 5 / 7;
     grid-column-start: 6;
     grid-row-start: 3;
+}
+
+/* CSS CODE PROYECTOS.HTML */
+
+.section-audio {
+    grid-column: 2/11;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.section-ux {
+    grid-column: 2/11;
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+
+.section-web {
+    grid-column: 2/11;
+    grid-column-start: 2;
+    grid-row-start: 4;
+}
+
+.section-audio button {
+    background-color: #1F1F1F;
+    color: white;
+    padding: 16px 56px;
+    font-family: Sen;
+    font-size: 24px;
+    border-radius: 8px;
 }
