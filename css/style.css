@@ -211,8 +211,8 @@ footer div h3 {
 }
 
 .contacto h1 {
-    font-size: 24px;
-    align-items: center;
+    font-size: 48px;
+    margin-bottom: 8px;
 }
 
 .grid-container {
@@ -294,13 +294,13 @@ footer div h3 {
 }
 
 .contacto {
-    grid-column: span 10 / span 10;
     grid-column-start: 6;
     grid-row-start: 1;
+    justify-content: center;
+    text-align: center;
 }
 
 .form-container {
-    grid-column: 6 / 9;
     grid-column-start: 6;
     grid-row-start: 2;
 }
@@ -358,4 +358,34 @@ textarea {
 
 .container-sobre-mi p {
     padding-top: 8px;
+}
+
+/* CSS CODE productoraudiovisual.html */
+
+.grid-productdesigner {
+    grid-column: 3/10;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.programas-utilizados {
+    grid-column: 3 / 5;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.programa-1 {
+    grid-column-start: 3;
+    grid-row-start: 3;
+}
+
+.programa-2 {
+    grid-column-start: 4;
+    grid-row-start: 3;
+}
+
+.programa-3 {
+    grid-column: 5 / 7;
+    grid-column-start: 6;
+    grid-row-start: 3;
 }
