@@ -391,7 +391,7 @@ textarea {
     grid-row-start: 4;
 }
 
-.section-audio button {
+.section-audio button, .section-ux button, .section-web button {
     background-color: #1F1F1F;
     color: white;
     padding: 16px 56px;
@@ -400,37 +400,29 @@ textarea {
     border-radius: 8px;
 }
 
-/* Configuración general de la estructura de la cuadrícula */
+
 .grid-container {
     display: grid;
     gap: 20px;
 }
 
-/* Configuración para cada sección en Grid de dos columnas */
 .section-audio, .section-ux, .section-web {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-items: center;
 }
 
-/* Configura la imagen para que ocupe toda la columna */
 .imagen-proyecto img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-/* Estilos de texto */
+
 .texto-proyecto {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-/* Ajustes para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .section-audio, .section-ux, .section-web {
-        grid-template-columns: 1fr; /* Una sola columna en móviles */
-    }
-}
