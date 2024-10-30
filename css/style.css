@@ -417,8 +417,8 @@ textarea {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    transition: transform 0.3s ease;
 }
-
 
 .texto-proyecto {
     display: flex;
@@ -426,3 +426,6 @@ textarea {
     justify-content: center;
 }
 
+.imagen-proyecto img:hover {
+    transform: scale(1.04);
+}
