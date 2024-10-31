@@ -370,6 +370,88 @@ textarea {
     grid-row-start: 3;
 }
 
+.programa-1 h3{
+    text-align: center;
+    justify-self: center;
+}
+
+.propiedad-nohover {
+    width: 100%;
+    position: relative;
+    border-radius: 79px;
+    background-color: #dfdfdf;
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 51px;
+    box-sizing: border-box;
+    transition: ease-out 0.3s;
+}
+
+.figma-icon {
+    width: 56px;
+    position: relative;
+    height: 56px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: ease-out 0.3s;
+}
+
+.propiedad-nohover:hover {
+    width: 100%;
+    position: relative;
+    border-radius: 79px;
+    background-color: #1f1f1f;
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 39px;
+    box-sizing: border-box;
+}
+
+.figma-icon:hover {
+    width: 80px;
+    position: relative;
+    height: 80px;
+    object-fit: cover;
+}
+
+/*
+.programa-1 img {
+    width: 100%;
+    position: relative;
+    border-radius: 79px;
+    background-color: #dfdfdf;
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 51px;
+    box-sizing: border-box;
+    transition: ease-out 0.3s;
+}
+
+.programa-1 img:hover {
+    display: flex;
+    width: 158px;
+    height: 158px;
+    padding: 51px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    border-radius: 79px;
+    background: #1E1E1E;
+    background-image: image-set();
+    
+} */
+
 .programa-2 {
     grid-column-start: 4;
     grid-row-start: 3;
