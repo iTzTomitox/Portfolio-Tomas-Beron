@@ -389,11 +389,11 @@ textarea {
     grid-row-start: 1;
 }
 
-.section-ux{
+.section-ux {
     grid-column: 2/11;
     grid-column-start: 2;
     grid-row-start: 2;
-} 
+}
 
 .section-web {
     grid-column: 2/11;
@@ -401,7 +401,9 @@ textarea {
     grid-row-start: 4;
 }
 
-.section-audio button, .section-ux button, .section-web button {
+.section-audio button,
+.section-ux button,
+.section-web button {
     background-color: #1F1F1F;
     color: white;
     padding: 16px 56px;
@@ -416,7 +418,9 @@ textarea {
     gap: 20px;
 }
 
-.section-audio, .section-ux, .section-web {
+.section-audio,
+.section-ux,
+.section-web {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
