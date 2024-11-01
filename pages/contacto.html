@@ -53,21 +53,32 @@
 
             <div class="form-container">
                 <section>
-                    <form>
-                        <div class="form-group">
-                            <label for="form-input-name" class="form-label">Nombre</label>
-                            <input type="text" class="form-control" id="form-input-name" name="sender_name" required>
+                    <div class="form-box">
+                        <form>
 
-                            <label for="form-input-email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="form-input-email" name="sender_email" required>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="form-input-name" name="sender_name"
+                                    required>
+                                <label for="form-input-name" class="form-label">Nombre</label>
+                            </div>
 
-                            <label for="form-input-mensaje">Mensaje</label>
-                            <textarea class="form-control" id="form-input-mensaje" placeholder="Leave a comment here"
-                                name="sender_message" required></textarea>
+                            <div class="form-group">
 
-                            <button type="submit" class="button-form">Enviar</button>
-                        </div>
-                    </form>
+                                <input type="email" class="form-control" id="form-input-email" name="sender_email"
+                                    required>
+                                <label for="form-input-email" class="form-label">Email</label>
+
+                            </div>
+
+                            <div class="form-group">
+                                <label for="form-input-mensaje">Mensaje</label>
+                                <textarea class="form-control" id="form-input-mensaje"
+                                    placeholder="Deja un comentario aca" name="sender_message" required></textarea>
+
+                                <button type="submit" class="button-form">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
                 </section>
             </div>
         </div>
