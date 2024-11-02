@@ -78,21 +78,24 @@ body {
   .example-2 .icon-content a:hover .filled {
     height: 100%;
   }
-  .example-2 .icon-content a[data-social="spotify"] .filled,
-  .example-2 .icon-content a[data-social="spotify"] ~ .tooltip {
-    background-color: #1d7bb9;
+  .example-2 .icon-content a[data-social="linkedin"] .filled,
+  .example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+    background-color: #0e76a8;
   }
   .example-2 .icon-content a[data-social="pinterest"] .filled,
   .example-2 .icon-content a[data-social="pinterest"] ~ .tooltip {
     background-color: #bd081c;
   }
-  .example-2 .icon-content a[data-social="dribbble"] .filled,
-  .example-2 .icon-content a[data-social="dribbble"] ~ .tooltip {
-    background-color: #ea4c89;
+  .example-2 .icon-content a[data-social="behance"] .filled,
+  .example-2 .icon-content a[data-social="behance"] ~ .tooltip {
+    background-color: #053eff;
   }
-  .example-2 .icon-content a[data-social="telegram"] .filled,
-  .example-2 .icon-content a[data-social="telegram"] ~ .tooltip {
-    background-color: #0088cc;
+  .example-2 .icon-content a[data-social="instagram"] .filled,
+  .example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+    background-color: #833ab4;
+    background: linear-gradient(
+      to right,
+      #833ab4,#fd1d1d,#fcb045)
   }
 
 
