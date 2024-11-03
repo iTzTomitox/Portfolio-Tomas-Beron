@@ -640,10 +640,20 @@ textarea {
     grid-row-start: 3;
 }
 
+.programa-2 h3 {
+    text-align: center;
+    justify-self: center;
+}
+
 .programa-3 {
-    grid-column: 5 / 7;
-    grid-column-start: 6;
+    grid-column: 4 / 7;
+    grid-column-start: 5;
     grid-row-start: 3;
+}
+
+.programa-3 h3 {
+    text-align: center;
+    justify-self: center;
 }
 
 /* CSS CODE PROYECTOS.HTML */
