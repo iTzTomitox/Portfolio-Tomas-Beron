@@ -301,6 +301,7 @@ footer div h3 {
     grid-auto-rows: auto;
     gap: 24px;
     padding-top: 40px;
+    margin-bottom: 56px;
 }
 
 .button-contactame {
@@ -646,7 +647,6 @@ textarea {
 }
 
 .programa-3 {
-    grid-column: 4 / 7;
     grid-column-start: 5;
     grid-row-start: 3;
 }
@@ -676,17 +676,6 @@ textarea {
     grid-row-start: 4;
 }
 
-.section-audio button,
-.section-ux button,
-.section-web button {
-    background-color: #1F1F1F;
-    color: white;
-    padding: 16px 56px;
-    font-family: Sen;
-    font-size: 24px;
-    border-radius: 8px;
-    margin-top: 8px;
-}
 
 .grid-container {
     display: grid;
@@ -700,6 +689,12 @@ textarea {
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     align-items: center;
+}
+
+.section-audio button,
+.section-ux button,
+.section-web button {
+    margin-top: 24px;
 }
 
 .imagen-proyecto img {
@@ -759,7 +754,7 @@ ul {
 .productdesigner-icon .icon-content:hover .tooltip {
     opacity: 1;
     visibility: visible;
-    top: -50px;
+    top: 110px;
 }
 
 .productdesigner-icon .icon-content a {
@@ -810,7 +805,7 @@ ul {
 
 .productdesigner-icon .icon-content a[data-social="figma"] .filled,
 .productdesigner-icon .icon-content a[data-social="figma"]~.tooltip {
-    background: linear-gradient( to right, #F2015B, #ED02F1 , #04038D)
+    background: linear-gradient(to right, #F2015B, #ED02F1, #04038D)
 }
 
 .productdesigner-icon .icon-content a[data-social="optimal-workshop"] .filled,
@@ -820,5 +815,79 @@ ul {
 
 .productdesigner-icon .icon-content a[data-social="whimsical"] .filled,
 .productdesigner-icon .icon-content a[data-social="whimsical"]~.tooltip {
-    background: linear-gradient( to right, #4B31FE, #E26AFE)
+    background: linear-gradient(to right, #4B31FE, #E26AFE)
+}
+
+.productdesigner-icon .icon-content a[data-social="premiere-pro"] .filled,
+.productdesigner-icon .icon-content a[data-social="premiere-pro"]~.tooltip {
+    background-color: #00005A;
+}
+
+.productdesigner-icon .icon-content a[data-social="illustrator"] .filled,
+.productdesigner-icon .icon-content a[data-social="illustrator"]~.tooltip {
+    background-color: #2f0000;
+}
+
+.productdesigner-icon .icon-content a[data-social="lightroom"] .filled,
+.productdesigner-icon .icon-content a[data-social="lightroom"]~.tooltip {
+    background-color: #001E36;
+}
+
+.productdesigner-icon .icon-content a[data-social="html"] .filled,
+.productdesigner-icon .icon-content a[data-social="html"]~.tooltip {
+    background: linear-gradient(to right, #ef642b, #E44B20);
+}
+
+.productdesigner-icon .icon-content a[data-social="css"] .filled,
+.productdesigner-icon .icon-content a[data-social="css"]~.tooltip {
+    background: linear-gradient(to right, #254DE3, #2964F0);
+}
+
+.productdesigner-icon .icon-content a[data-social="js"] .filled,
+.productdesigner-icon .icon-content a[data-social="js"]~.tooltip {
+    background: linear-gradient(to right, #D3B72F, #fcd73b);
+}
+
+.productdesigner-icon .icon-content a[data-social="ruby"] .filled,
+.productdesigner-icon .icon-content a[data-social="ruby"]~.tooltip {
+    background: linear-gradient(to right, #950B00, #E36848);
+}
+
+.programa-4 {
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+
+.programa-4 h3 {
+    text-align: center;
+    justify-self: center;
+}
+
+.programa-5 {
+    grid-column-start: 7;
+    grid-row-start: 3;
+}
+
+.programa-5 h3 {
+    text-align: center;
+    justify-self: center;
+}
+
+.programa-6 {
+    grid-column-start: 8;
+    grid-row-start: 3;
+}
+
+.programa-6 h3 {
+    text-align: center;
+    justify-self: center;
+}
+
+.svgIcon {
+    width: 24px;
+    height: 24px;
+}
+
+.svgIcon path {
+    fill: rgb(3, 3, 3);
 }
