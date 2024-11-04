@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Home</title>
 </head>
 
@@ -29,7 +30,8 @@
 
                 <ul class="example-2">
                     <li class="icon-content">
-                        <a data-social="linkedin" aria-label="Linkedin" href="https://www.linkedin.com/in/tomas-beron/" target="_blank">
+                        <a data-social="linkedin" aria-label="Linkedin" href="https://www.linkedin.com/in/tomas-beron/"
+                            target="_blank">
                             <div class="filled"></div>
 
                             <svg viewBox="0 0 40 40" version="1.1">
@@ -43,7 +45,8 @@
 
                     </li>
                     <li class="icon-content">
-                        <a data-social="pinterest" aria-label="Pinterest" href="https://pin.it/3CI0PeYRZ" target="_blank">
+                        <a data-social="pinterest" aria-label="Pinterest" href="https://pin.it/3CI0PeYRZ"
+                            target="_blank">
                             <div class="filled"></div>
                             <svg xml:space="preserve" viewBox="0 0 100 100" version="1.1">
                                 <path fill="currentColor"
@@ -92,7 +95,7 @@
             <img class="img-principal" src="./assent/pic.jpeg" alt="">
 
             <section class="container-sobre-mi">
-                <article id="sobre-mi">
+                <article id="sobre-mi" data-aos="fade-down" data-aos-easing="linear">
                     <h2>Sobre Mi</h2>
                     <p>Soy Tomás, un apasionado estudiante del segundo año de la carrera de Audiovisión. Actualmente,
                         estoy ampliando mis conocimientos en UX/UI a través de CoderHouse, donde estoy desarrollando
@@ -108,9 +111,10 @@
                         llevar tus ideas al siguiente nivel!</p>
                 </article>
             </section>
-            <img class="pic-camara" src="./assent/pic-camara.jpg" alt="">
+            
+            <img class="pic-camara" src="./assent/pic-camara.jpg" data-aos="fade-down" alt="">
 
-            <section class="container-ex-working">
+            <section class="container-ex-working" data-aos="fade-down">
                 <h2>Experiencia Laboral</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique commodi, architecto alias nam cum
                     atque necessitatibus laudantium ab sequi iste repudiandae nisi odit ea nostrum, aspernatur aliquid
@@ -118,7 +122,7 @@
                     veniam optio.</p>
             </section>
 
-            <section class="container-education">
+            <section class="container-education" data-aos="fade-down">
                 <h2>Educación</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ipsa laudantium sit tempore eius
                     atque quod magnam hic nemo placeat dolorem, iusto ratione vero quae minima explicabo laborum
@@ -126,7 +130,7 @@
                     nobis.</p>
             </section>
 
-            <section class="container-disciplinas">
+            <section class="container-disciplinas" data-aos="fade-down">
                 <h2>Disciplinas</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet perspiciatis possimus commodi! Ipsam
                     nam
@@ -135,7 +139,7 @@
                     nostrum ut?</p>
             </section>
 
-            <section class="container-contacto-index">
+            <section class="container-contacto-index" data-aos="fade-down">
                 <h2>Contacto</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga earum unde recusandae minus provident,
                     praesentium excepturi ullam itaque consequatur maiores dolore impedit possimus, ea, molestias id
@@ -167,6 +171,11 @@
                 });
             });
         });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 
 </body>

@@ -332,7 +332,7 @@ footer div h3 {
     z-index: -1;
     -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    transition: all 250ms
+    transition: all 250ms;
 }
 
 .button-contactame:hover {
@@ -883,11 +883,58 @@ ul {
     justify-self: center;
 }
 
+.button-vermas {
+    width: 170px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: white;
+    font-weight: 1000;
+    font-size: 17px;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+.button-vermas::before {
+    width: 170px;
+    height: 130px;
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: -100%;
+    top: 0;
+    transition-duration: .3s;
+    mix-blend-mode: difference;
+}
+
 .svgIcon {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    margin-left: 8px;
 }
 
 .svgIcon path {
-    fill: rgb(3, 3, 3);
+    fill: white
+}
+
+.button-vermas:hover::before {
+    transition-duration: .3s;
+    transform: translate(100%,-50%);
+    border-radius: 0;
+}
+
+.button-verma:active {
+    transform: translate(5px,5px);
+    transition-duration: .3s;
+  }
+
+a {
+    text-decoration: none;
 }
