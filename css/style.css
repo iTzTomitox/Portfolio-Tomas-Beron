@@ -964,11 +964,15 @@ a {
 
     footer .right {
         text-align: left;
-        margin-top: 16px;
+        margin-top: 8px;
     }
 
     footer div h3 {
         font-size: 16px;
+    }
+
+    .section-audio h2, .section-ux h2, .section-web h2 {
+        font-size: 20x;
     }
 
 .grid-container{
@@ -1006,12 +1010,17 @@ a {
         grid-template-columns: 1fr 1fr;
     }
 
-    h1 {
-        font-size: 1rem;
-    }
-
     .section-audio h2, .section-ux h2, .section-web h2 {
         font-size: 20px;
+    }
+
+    footer .right {
+        text-align: left;
+        margin-top: 8px;
+    }
+
+    footer div h3 {
+        font-size: 16px;
     }
 
 }
