@@ -989,14 +989,17 @@ a {
 
     .section-audio{
         grid-template-columns: 2fr 1fr;
+        grid-column: 2 / 12
     }
 
     .section-ux {
         grid-template-columns: 2fr 1fr;
+        grid-column: 2 / 12
     }
 
     .section-web {
         grid-template-columns: 2fr 1fr;
+        grid-column: 2 / 12
     }
 
     .container-presentacion {
@@ -1007,5 +1010,8 @@ a {
         font-size: 1rem;
     }
 
+    .section-audio h2, .section-ux h2, .section-web h2 {
+        font-size: 20px;
+    }
 
 }
