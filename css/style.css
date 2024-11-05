@@ -346,6 +346,7 @@ footer div h3 {
     grid-column: 2 / 8;
     grid-row-start: 1;
     grid-column-start: 2;
+    grid-template-columns: 2fr 1fr;
 }
 
 .tomas {
@@ -941,6 +942,10 @@ a {
         flex-direction: column;
     }
 
+    .navegacion ul {
+        flex-direction: column;
+    }
+
     .section-audio{
         grid-template-columns: 1fr;
     }
@@ -961,6 +966,16 @@ a {
         text-align: left;
         margin-top: 16px;
     }
+
+    footer div h3 {
+        font-size: 16px;
+    }
+
+.grid-container{
+    grid-template-columns: 1fr;
+    padding: 10px;   
+}
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -983,4 +998,14 @@ a {
     .section-web {
         grid-template-columns: 2fr 1fr;
     }
+
+    .container-presentacion {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+
 }
