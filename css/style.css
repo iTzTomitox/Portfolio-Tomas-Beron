@@ -240,9 +240,10 @@ footer div h3 {
 .img-principal {
     width: 100%;
     height: auto;
+    justify-content: center;
+    align-items: center;
     flex-shrink: 0;
 }
-
 
 .pic-camara {
     width: 100%;
@@ -355,16 +356,17 @@ footer div h3 {
     grid-column-start: 3;
 }
 
-.img-principal {
-    grid-column: 8 / 12;
-    grid-column-start: 10;
-    grid-row-start: 1;
+.container-sobre-mi {
+    grid-column: 2/11;
+    grid-column-start: 2;
+    grid-row-start: 2;
 }
 
 .container-sobre-mi {
-    grid-column: 10 / 12;
-    grid-column-start: 2;
-    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: center;
 }
 
 .container-sobre-mi h2 {
@@ -697,6 +699,23 @@ textarea {
     margin-top: 24px;
 }
 
+.section-soy {
+    grid-column: 2/11;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.section-soy {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    align-items: center;
+}
+
+.section-soy button {
+    margin-top: 16px;
+}
+
 .imagen-proyecto img {
     width: 100%;
     height: auto;
@@ -937,6 +956,11 @@ a {
     text-decoration: none;
 }
 
+.texto-proyecto button {
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -972,8 +996,19 @@ a {
     }
 
     .section-audio h2, .section-ux h2, .section-web h2 {
-        font-size: 20x;
+        font-size: 20px;
     }
+
+    .container-sobre-mi {
+        grid-template-columns: 1fr;
+        grid-column: 2 / 12
+    }
+
+    .section-soy {
+        grid-template-columns: 1fr;
+        grid-column: 2 / 12
+    }
+
 
 .grid-container{
     grid-template-columns: 1fr;
@@ -1006,9 +1041,16 @@ a {
         grid-column: 2 / 12
     }
 
-    .container-presentacion {
+    .section-soy {
         grid-template-columns: 1fr 1fr;
+        grid-column: 2 / 12
     }
+
+    .container-sobre-mi {
+        grid-template-columns: 1fr;
+        grid-column: 2 / 12
+    }
+
 
     .section-audio h2, .section-ux h2, .section-web h2 {
         font-size: 20px;
