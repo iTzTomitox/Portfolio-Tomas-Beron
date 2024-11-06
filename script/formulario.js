@@ -52,9 +52,7 @@ function toggleMenu() {
   const navLinks = document.querySelector('.nav-links');
   const body = document.querySelector('body');
   
-  // Cambiar la clase 'open' para mostrar o esconder el menú
   navLinks.classList.toggle('open');
   
-  // Añadir o quitar la clase 'menu-open' al body para evitar que el contenido se desplace
   body.classList.toggle('menu-open');
 }
