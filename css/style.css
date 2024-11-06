@@ -962,6 +962,33 @@ a {
     text-decoration: none;
 }
 
+
+.hamburger-menu {
+    display: none; /* Mostrar solo en pantallas pequeñas */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: #333; /* Cambia el color si lo necesitas */
+    transition: 0.3s;
+  }
+  
+  /* Navbar para pantallas pequeñas */
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -1017,6 +1044,30 @@ a {
         grid-template-columns: 1fr;
         padding: 10px;
     }
+
+    .section-soy div h1 {
+        font-size: 40px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+      }
+      
+      .nav-links {
+        display: none; /* Ocultar el menú inicialmente */
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background: #fff; /* Cambia el color de fondo si es necesario */
+        padding: 20px;
+        width: 200px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      
+      .nav-links.open {
+        display: flex; /* Mostrar el menú al activarlo */
+      }
 
 }
 

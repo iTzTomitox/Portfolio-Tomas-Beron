@@ -20,3 +20,8 @@ form.addEventListener('submit', e => {
     alert('Oops... Something went wrong...')
   })
 })
+
+function toggleMenu() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('open');
+}
