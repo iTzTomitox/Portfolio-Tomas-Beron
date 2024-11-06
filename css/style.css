@@ -996,7 +996,7 @@ header {
 
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .navegacion ul {
@@ -1057,7 +1057,7 @@ header {
     .hamburger-menu {
         display: flex;
         align-items: center;
-        margin-right: 20px;
+        margin-left: 24px;
     }
 
     .nav-links {
@@ -1107,7 +1107,8 @@ header {
     }
 
     nav {
-        flex-direction: column;
+        flex-direction: row;
+        
     }
 
     .section-audio {
@@ -1158,7 +1159,7 @@ header {
     .hamburger-menu {
         display: flex;
         align-items: center;
-        margin-right: 20px;
+        margin-left: 24px;
     }
 
     .nav-links {
