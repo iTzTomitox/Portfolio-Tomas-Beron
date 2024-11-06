@@ -146,6 +146,7 @@ nav a {
     padding: 0px 0px;
 }
 
+/*
 .underline-sobre-mi::after {
     content: "";
     position: absolute;
@@ -184,6 +185,7 @@ nav a {
 .underline-contacto:hover:after {
     width: 19%;
 }
+*/
 
 footer {
     background-color: #1F1F1F;
