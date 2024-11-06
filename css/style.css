@@ -116,6 +116,7 @@ nav {
     align-items: center;
     padding: 24px 24px;
     font-size: 24px;
+    justify-content: space-between;
 }
 
 .navegacion {
@@ -962,9 +963,7 @@ a {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
     padding: 10px 20px;
 }
 
