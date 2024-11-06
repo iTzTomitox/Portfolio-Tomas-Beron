@@ -357,7 +357,7 @@ footer div h3 {
 }
 
 .container-sobre-mi {
-    grid-column: 2/11;
+    grid-column: 2/12;
     grid-column-start: 2;
     grid-row-start: 2;
 }
@@ -700,7 +700,7 @@ textarea {
 }
 
 .section-soy {
-    grid-column: 2/11;
+    grid-column: 2/12;
     grid-column-start: 2;
     grid-row-start: 1;
 }
@@ -956,11 +956,6 @@ a {
     text-decoration: none;
 }
 
-.texto-proyecto button {
-    align-items: center;
-    justify-content: center;
-}
-
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -1063,6 +1058,10 @@ a {
 
     footer div h3 {
         font-size: 16px;
+    }
+
+    .section-soy div h1 {
+        font-size: 48px;
     }
 
 }
