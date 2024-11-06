@@ -661,19 +661,19 @@ textarea {
 /* CSS CODE PROYECTOS.HTML */
 
 .section-audio {
-    grid-column: 2/11;
+    grid-column: 2/12;
     grid-column-start: 2;
     grid-row-start: 1;
 }
 
 .section-ux {
-    grid-column: 2/11;
+    grid-column: 2/12;
     grid-column-start: 2;
     grid-row-start: 2;
 }
 
 .section-web {
-    grid-column: 2/11;
+    grid-column: 2/12;
     grid-column-start: 2;
     grid-row-start: 3;
 }
