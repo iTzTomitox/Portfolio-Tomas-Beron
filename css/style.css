@@ -1120,15 +1120,22 @@ header {
     }
 
     .form-box {
-        transform: scale(50%);
+        transform: scale(20%);
     }
 
     .form-container {
         grid: flex;
         grid-row-start: 2;
         grid-template-columns: 1fr;
-        width: 100%;
     }
+
+    .form-container {
+        grid: flex;
+        grid-row-start: 2;
+        grid-template-columns: 1fr;
+        grid-column: 6;
+    }
+
 
 }
 
