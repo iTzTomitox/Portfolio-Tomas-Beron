@@ -253,8 +253,11 @@ footer div h3 {
 
 
 .contacto img {
-    width: 432px;
-    height: 576px;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .logo-nav {
@@ -417,20 +420,19 @@ footer div h3 {
 
 .form-container {
     grid-column-start: 6;
-    grid-row-start: 15;
+    grid-row-start: 2;
 }
 
 .form-box {
     position: absolute;
     top: 50%;
-    left: 50%;
     width: 400px;
     padding: 40px;
-    transform: translate(-50%, -50%);
     background: rgba(24, 20, 20, 0.987);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
     border-radius: 10px;
+    transform: scale(100%);
 }
 
 .form-box,
@@ -1099,6 +1101,35 @@ header {
         display: flex;
     }
 
+    .contacto {
+        grid-column: 1/11;
+        grid-template-columns: 1fr;
+    }
+
+    .contacto img {
+        width: 50%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        grid: flex;
+    }
+
+    .contacto h1 {
+        font-size: 32px;
+    }
+
+    .form-box {
+        transform: scale(50%);
+    }
+
+    .form-container {
+        grid: flex;
+        grid-row-start: 2;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -1136,6 +1167,18 @@ header {
         grid-column: 2 / 12
     }
 
+    .contacto {
+        grid-template-columns: 1fr;
+        grid-column: 2 / 11
+    }
+
+    .contacto img {
+        width: 50%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
 
     .section-audio h2,
     .section-ux h2,
@@ -1200,5 +1243,19 @@ header {
         z-index: 11;
         display: flex;
     }
+
+    .contacto h1 {
+        font-size: 40px;
+    }
+    
+    .form-box {
+        transform: scale(80%);
+    }
+
+    .form-container {
+        grid-row-start: 2;
+        grid-template-columns: 1fr;
+    }
+
 
 }
