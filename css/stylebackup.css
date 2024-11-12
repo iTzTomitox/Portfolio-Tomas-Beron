@@ -1,4 +1,121 @@
-/* GLOBAL CSS CODE */
+/*
+.underline-sobre-mi::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background: black;
+    transition: width .2s;
+}
+
+.underline-sobre-mi:hover:after {
+    width: 18%;
+}
+
+.underline-proyectos::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background: black;
+    transition: width .2s;
+}
+
+.underline-proyectos:hover:after {
+    width: 20%;
+}
+
+.underline-contacto::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    background: black;
+    transition: width .2s;
+}
+
+.underline-contacto:hover:after {
+    width: 19%;
+}
+*/
+
+.img-principal {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo-nav {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    align-items: flex-end;
+}
+
+.container-presentacion {
+    grid-column: 2 / 8;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+/* CSS CODE productoraudiovisual.html */
+
+
+.propiedad-nohover {
+    width: 100%;
+    position: relative;
+    border-radius: 79px;
+    background-color: #dfdfdf;
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 51px;
+    box-sizing: border-box;
+    transition: ease-out 0.3s;
+}
+
+.figma-icon {
+    width: 56px;
+    position: relative;
+    height: 56px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: ease-out 0.3s;
+}
+
+.propiedad-nohover:hover {
+    width: 100%;
+    position: relative;
+    border-radius: 79px;
+    background-color: #1f1f1f;
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 39px;
+    box-sizing: border-box;
+}
+
+.figma-icon:hover {
+    width: 80px;
+    position: relative;
+    height: 80px;
+    object-fit: cover;
+}
+
+
+/*media queries*/
+
+.navegacion ul {
+        flex-direction: column;
+}
 
 * {
     margin: 0;
@@ -994,275 +1111,4 @@ header {
     padding: 10px; 
     width: 100%; 
     box-sizing: border-box; 
-}
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: row;
-    }
-
-    .navegacion ul {
-        flex-direction: column;
-    }
-
-    .section-audio {
-        grid-template-columns: 1fr;
-    }
-
-    .section-ux {
-        grid-template-columns: 1fr;
-    }
-
-    .section-web {
-        grid-template-columns: 1fr;
-    }
-
-    footer {
-        flex-direction: column;
-    }
-
-    footer .right {
-        text-align: left;
-        margin-top: 8px;
-    }
-
-    footer div h3 {
-        font-size: 16px;
-    }
-
-    .section-audio h2,
-    .section-ux h2,
-    .section-web h2 {
-        font-size: 20px;
-    }
-
-    .container-sobre-mi {
-        grid-template-columns: 1fr;
-        grid-column: 2 / 12
-    }
-
-    .section-soy {
-        grid-template-columns: 1fr;
-        grid-column: 2 / 12
-    }
-
-
-    .grid-container {
-        grid-template-columns: 1fr;
-        padding: 10px;
-    }
-
-    .section-soy div h1 {
-        font-size: 40px;
-    }
-
-    .hamburger-menu {
-        display: flex;
-        align-items: center;
-        margin-left: 24px;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: -250px;
-        height: 100%;
-        width: 250px;
-        background-color: rgba(255, 255, 255, 0.95);
-        box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
-        padding-top: 60px;
-        transition: left 0.3s ease;
-        z-index: 10;
-
-    }
-
-    .nav-links.open {
-        left: 0;
-    }
-
-    body.menu-open {
-        overflow: hidden;
-    }
-
-    .navegacion-2 {
-        display: none;
-    }
-
-    .close-btn {
-        font-size: 30px;
-        color: #333;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-        z-index: 11;
-        display: flex;
-    }
-
-    .contacto {
-        grid-column: 1/11;
-        grid-template-columns: 1fr;
-    }
-
-    .contacto img {
-        width: 50%;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
-        grid: flex;
-    }
-
-    .contacto h1 {
-        font-size: 32px;
-    }
-
-    .form-box {
-        transform: scale(20%);
-    }
-
-    .form-container {
-        grid: flex;
-        grid-row-start: 2;
-        grid-template-columns: 1fr;
-    }
-
-    .form-container {
-        grid: flex;
-        grid-row-start: 2;
-        grid-template-columns: 1fr;
-        grid-column: 6;
-    }
-
-
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    footer {
-        flex-direction: column;
-    }
-
-    nav {
-        flex-direction: row;
-        
-    }
-
-    .section-audio {
-        grid-template-columns: 2fr 1fr;
-        grid-column: 2 / 12
-    }
-
-    .section-ux {
-        grid-template-columns: 2fr 1fr;
-        grid-column: 2 / 12
-    }
-
-    .section-web {
-        grid-template-columns: 2fr 1fr;
-        grid-column: 2 / 12
-    }
-
-    .section-soy {
-        grid-template-columns: 1fr 1fr;
-        grid-column: 2 / 12
-    }
-
-    .container-sobre-mi {
-        grid-template-columns: 1fr;
-        grid-column: 2 / 12
-    }
-
-    .contacto {
-        grid-template-columns: 1fr;
-        grid-column: 2 / 11
-    }
-
-    .contacto img {
-        width: 50%;
-        height: auto;
-        justify-content: center;
-        align-items: center;
-        flex-shrink: 0;
-    }
-
-    .section-audio h2,
-    .section-ux h2,
-    .section-web h2 {
-        font-size: 20px;
-    }
-
-    footer .right {
-        text-align: left;
-        margin-top: 8px;
-    }
-
-    footer div h3 {
-        font-size: 16px;
-    }
-
-    .section-soy div h1 {
-        font-size: 48px;
-    }
-
-    .hamburger-menu {
-        display: flex;
-        align-items: center;
-        margin-left: 24px;
-    }
-
-    .nav-links {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        left: -250px;
-        height: 100%;
-        width: 250px;
-        background-color: rgba(255, 255, 255, 0.95);
-        box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
-        padding-top: 60px;
-        transition: left 0.3s ease;
-        z-index: 10;
-
-    }
-
-    .nav-links.open {
-        left: 0;
-    }
-    
-    body.menu-open {
-        overflow: hidden;
-    }
-
-    .navegacion-2 {
-        display: none;
-    }
-
-    .close-btn {
-        font-size: 30px;
-        color: #333;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        cursor: pointer;
-        z-index: 11;
-        display: flex;
-    }
-
-    .contacto h1 {
-        font-size: 40px;
-    }
-    
-    .form-box {
-        transform: scale(80%);
-    }
-
-    .form-container {
-        grid-row-start: 2;
-        grid-template-columns: 1fr;
-    }
-
-
 }

@@ -1,0 +1,79 @@
+main {
+    .grid-container {
+        .programa-1 {
+            .productdesigner-icon {
+                .icon-content {
+
+                    [data-social="figma"] {
+                        .filled {
+                            background: linear-gradient(to right, #F2015B, #ED02F1, #04038D)
+                        }
+                    }
+
+                    [data-social="figma"] {
+                        ~.tooltip {
+                            background: linear-gradient(to right, #F2015B, #ED02F1, #04038D)
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .programa-2 {
+            .productdesigner-icon {
+                .icon-content {
+                    [data-social="whimsical"] {
+                        .filled {
+                            background: linear-gradient(to right, #4B31FE, #E26AFE)
+                        }
+                    }
+
+                    [data-social="whimsical"] {
+                        ~.tooltip {
+                            background: linear-gradient(to right, #4B31FE, #E26AFE)
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .programa-3 {
+            .productdesigner-icon {
+                .icon-content {
+
+                    [data-social="optimal-workshop"] {
+                        .filled {
+                            background-color: #fed600;
+                        }
+                    }
+
+                    [data-social="optimal-workshop"] {
+                        ~.tooltip {
+                            background-color: #fed600;
+                        }
+                    }
+                }
+            }
+        }
+
+        .programa-4 {
+            .productdesigner-icon {
+                .icon-content {
+                    [data-social=""] {
+                        .filled {
+                            background-color: #00005A;
+                        }
+                    }
+
+                    [data-social=""] {
+                        ~.tooltip {
+                            background-color: #00005A;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
