@@ -4,7 +4,6 @@
         overflow: hidden;
     }
 
-    body {
         header {
             nav {
                 flex-direction: row;
@@ -47,13 +46,10 @@
                             }
                         }
                     }
-
                     .navegacion-2 {
                         display: none;
                     }
                 }
-
-
             }
         }
 
@@ -98,8 +94,11 @@
                 }
 
                 .contacto {
-                    grid-column: 1/11;
-                    grid-template-columns: 1fr;
+                    grid-column: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
 
                     h1 {
                         font-size: 32px;
@@ -115,15 +114,15 @@
                     }
                 }
 
+
                 .form-container {
-                    grid: flex;
                     grid-row-start: 2;
-                    grid-template-columns: 1fr;
-                    grid-column: 6;
-
-
-                    .form-box {
-                        transform: scale(100%);
+                    grid-column: auto;
+                    .contacto{
+                        .form-box {
+                            transform: scale(100%);
+                            width: 80%;
+                        }
                     }
                 }
 
@@ -151,7 +150,6 @@
                 margin-top: 8px;
             }
         }
-    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {

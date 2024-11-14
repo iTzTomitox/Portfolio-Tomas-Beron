@@ -1183,18 +1183,18 @@ footer div h3 {
   body.menu-open {
     overflow: hidden;
   }
-  body header nav {
+  header nav {
     flex-direction: row;
   }
-  body header nav .hamburger-menu {
+  header nav .hamburger-menu {
     display: flex;
     align-items: center;
     margin-left: 24px;
   }
-  body header nav .nav-container .navbar .nav-links.open {
+  header nav .nav-container .navbar .nav-links.open {
     left: 0;
   }
-  body header nav .nav-container .navbar .nav-links {
+  header nav .nav-container .navbar .nav-links {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -1208,7 +1208,7 @@ footer div h3 {
     transition: left 0.3s ease;
     z-index: 10;
   }
-  body header nav .nav-container .navbar .nav-links .close-btn {
+  header nav .nav-container .navbar .nav-links .close-btn {
     font-size: 30px;
     color: #333;
     position: absolute;
@@ -1218,46 +1218,49 @@ footer div h3 {
     z-index: 11;
     display: flex;
   }
-  body header nav .nav-container .navegacion-2 {
+  header nav .nav-container .navegacion-2 {
     display: none;
   }
-  body main .grid-container {
+  main .grid-container {
     grid-template-columns: 1fr;
     padding: 10px;
   }
-  body main .grid-container .section-audio {
+  main .grid-container .section-audio {
     grid-template-columns: 1fr;
   }
-  body main .grid-container .section-audio h2 {
+  main .grid-container .section-audio h2 {
     font-size: 20px;
   }
-  body main .grid-container .section-ux {
+  main .grid-container .section-ux {
     grid-template-columns: 1fr;
   }
-  body main .grid-container .section-ux h2 {
+  main .grid-container .section-ux h2 {
     font-size: 20px;
   }
-  body main .grid-container .section-web {
+  main .grid-container .section-web {
     grid-template-columns: 1fr;
   }
-  body main .grid-container .section-web h2 {
+  main .grid-container .section-web h2 {
     font-size: 20px;
   }
-  body main .grid-container .section-soy {
+  main .grid-container .section-soy {
     grid-column: 2/12;
     grid-template-columns: 1fr;
   }
-  body main .grid-container .section-soy div h1 {
+  main .grid-container .section-soy div h1 {
     font-size: 40px;
   }
-  body main .grid-container .contacto {
-    grid-column: 1/11;
-    grid-template-columns: 1fr;
+  main .grid-container .contacto {
+    grid-column: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-  body main .grid-container .contacto h1 {
+  main .grid-container .contacto h1 {
     font-size: 32px;
   }
-  body main .grid-container .contacto img {
+  main .grid-container .contacto img {
     width: 50%;
     height: auto;
     justify-content: center;
@@ -1265,26 +1268,25 @@ footer div h3 {
     flex-shrink: 0;
     grid: flex;
   }
-  body main .grid-container .form-container {
-    grid: flex;
+  main .grid-container .form-container {
     grid-row-start: 2;
-    grid-template-columns: 1fr;
-    grid-column: 6;
+    grid-column: auto;
   }
-  body main .grid-container .form-container .form-box {
+  main .grid-container .form-container .contacto .form-box {
     transform: scale(100%);
+    width: 80%;
   }
-  body main .grid-container .container-sobre-mi {
+  main .grid-container .container-sobre-mi {
     grid-template-columns: 1fr;
     grid-column: 2/12;
   }
-  body footer {
+  footer {
     flex-direction: column;
   }
-  body footer div h3 {
+  footer div h3 {
     font-size: 16px;
   }
-  body footer .right {
+  footer .right {
     text-align: left;
     margin-top: 8px;
   }
