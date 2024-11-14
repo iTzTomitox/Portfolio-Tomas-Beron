@@ -6,16 +6,17 @@ main {
             grid-row-start: 1;
         }
 
+
         .programas-utilizados {
             grid-column: 3 / 5;
             grid-column-start: 3;
-            grid-row-start: 2;
+            grid-row-start: 4;
         }
 
 
         .programa-1 {
             grid-column-start: 3;
-            grid-row-start: 3;
+            grid-row-start: 5;
 
             .productdesigner-icon {
                 display: flex;
@@ -113,7 +114,7 @@ main {
 
         .programa-2 {
             grid-column-start: 4;
-            grid-row-start: 3;
+            grid-row-start: 5;
 
             .productdesigner-icon {
                 display: flex;
@@ -211,7 +212,7 @@ main {
 
         .programa-3 {
             grid-column-start: 5;
-            grid-row-start: 3;
+            grid-row-start: 5;
 
             .productdesigner-icon {
                 display: flex;
@@ -309,7 +310,7 @@ main {
 
         .programa-4 {
             grid-column-start: 6;
-            grid-row-start: 3;
+            grid-row-start: 5;
 
             .productdesigner-icon {
                 display: flex;
@@ -408,7 +409,7 @@ main {
 
         .programa-5 {
             grid-column-start: 7;
-            grid-row-start: 3;
+            grid-row-start: 5;
 
             .productdesigner-icon {
                 display: flex;
@@ -476,6 +477,7 @@ main {
                     .tooltip {
                         position: absolute;
                         top: -30px;
+
                         left: 50%;
                         transform: translateX(-50%);
                         color: #fff;
@@ -506,7 +508,7 @@ main {
 
         .programa-6 {
             grid-column-start: 8;
-            grid-row-start: 3;
+            grid-row-start: 5;
 
             .productdesigner-icon {
                 display: flex;
@@ -603,6 +605,7 @@ main {
 
 
         }
+
 
     }
 }

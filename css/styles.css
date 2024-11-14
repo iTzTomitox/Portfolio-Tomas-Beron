@@ -465,11 +465,11 @@ main .grid-container .grid-productdesigner {
 main .grid-container .programas-utilizados {
   grid-column: 3/5;
   grid-column-start: 3;
-  grid-row-start: 2;
+  grid-row-start: 4;
 }
 main .grid-container .programa-1 {
   grid-column-start: 3;
-  grid-row-start: 3;
+  grid-row-start: 5;
 }
 main .grid-container .programa-1 .productdesigner-icon {
   display: flex;
@@ -546,7 +546,7 @@ main .grid-container .programa-1 h3 {
 }
 main .grid-container .programa-2 {
   grid-column-start: 4;
-  grid-row-start: 3;
+  grid-row-start: 5;
 }
 main .grid-container .programa-2 .productdesigner-icon {
   display: flex;
@@ -623,7 +623,7 @@ main .grid-container .programa-2 h3 {
 }
 main .grid-container .programa-3 {
   grid-column-start: 5;
-  grid-row-start: 3;
+  grid-row-start: 5;
 }
 main .grid-container .programa-3 .productdesigner-icon {
   display: flex;
@@ -700,7 +700,7 @@ main .grid-container .programa-3 h3 {
 }
 main .grid-container .programa-4 {
   grid-column-start: 6;
-  grid-row-start: 3;
+  grid-row-start: 5;
 }
 main .grid-container .programa-4 .productdesigner-icon {
   display: flex;
@@ -777,7 +777,7 @@ main .grid-container .programa-4 h3 {
 }
 main .grid-container .programa-5 {
   grid-column-start: 7;
-  grid-row-start: 3;
+  grid-row-start: 5;
 }
 main .grid-container .programa-5 .productdesigner-icon {
   display: flex;
@@ -854,7 +854,7 @@ main .grid-container .programa-5 h3 {
 }
 main .grid-container .programa-6 {
   grid-column-start: 8;
-  grid-row-start: 3;
+  grid-row-start: 5;
 }
 main .grid-container .programa-6 .productdesigner-icon {
   display: flex;
