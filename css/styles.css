@@ -121,15 +121,36 @@ main .grid-container .container-ex-working {
   grid-row-start: 4;
   grid-column-start: 2;
 }
+main .grid-container .container-ex-working h2 {
+  font-size: 32px;
+}
 main .grid-container .container-education {
   grid-column: 2/12;
   grid-row-start: 5;
   grid-column-start: 2;
 }
+main .grid-container .container-education h2 {
+  font-size: 32px;
+}
+main .grid-container .container-education h3 {
+  font-size: 24px;
+  margin-top: 16px;
+}
+main .grid-container .container-education p {
+  margin-top: 8px;
+  font-size: 16px;
+}
+main .grid-container .container-education a {
+  text-decoration: underline;
+  color: #212121;
+}
 main .grid-container .container-disciplinas {
   grid-column: 2/12;
   grid-row-start: 6;
   grid-column-start: 2;
+}
+main .grid-container .container-disciplinas h2 {
+  font-size: 32px;
 }
 main .grid-container .container-contacto-index {
   grid-column: 2/12;
