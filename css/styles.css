@@ -488,26 +488,29 @@ main .grid-container .programas-utilizados {
   grid-column-start: 3;
   grid-row-start: 4;
 }
-main .grid-container .programa-1 {
+main .grid-container .programa1-6 {
+  grid-row-start: 5;
+}
+main .grid-container .programa1-6 .programa-1 {
   grid-column-start: 3;
   grid-row-start: 5;
 }
-main .grid-container .programa-1 .productdesigner-icon {
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .grid-container .programa-1 .productdesigner-icon .icon-content {
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content {
   margin: 0 10px;
   position: relative;
 }
-main .grid-container .programa-1 .productdesigner-icon .icon-content [data-social=premiere-pro] .filled {
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content [data-social=premiere-pro] .filled {
   background-color: #00005A;
 }
-main .grid-container .programa-1 .productdesigner-icon .icon-content [data-social=premiere-pro] ~ .tooltip {
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content [data-social=premiere-pro] ~ .tooltip {
   background-color: #00005A;
 }
-main .grid-container .programa-1 .productdesigner-icon .icon-content a {
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content a {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -520,7 +523,7 @@ main .grid-container .programa-1 .productdesigner-icon .icon-content a {
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
-main .grid-container .programa-1 .productdesigner-icon .icon-content a .filled {
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content a .filled {
   position: absolute;
   top: auto;
   bottom: 0;
@@ -530,20 +533,20 @@ main .grid-container .programa-1 .productdesigner-icon .icon-content a .filled {
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
-main .grid-container .programa-1 .productdesigner-icon .icon-content a svg {
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 48px;
   height: 48px;
 }
-main .grid-container .programa-1 .productdesigner-icon .icon-content a:hover .filled {
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content a:hover .filled {
   height: 100%;
 }
-main .grid-container .programa-1 .productdesigner-icon .icon-content a:hover {
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
   color: white;
 }
-main .grid-container .programa-1 .productdesigner-icon .icon-content .tooltip {
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content .tooltip {
   position: absolute;
   top: -30px;
   left: 50%;
@@ -556,35 +559,35 @@ main .grid-container .programa-1 .productdesigner-icon .icon-content .tooltip {
   font-size: 14px;
   transition: all 0.3s ease;
 }
-main .grid-container .programa-1 .productdesigner-icon .icon-content:hover .tooltip {
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: 110px;
 }
-main .grid-container .programa-1 h3 {
+main .grid-container .programa1-6 .programa-1 h3 {
   text-align: center;
   justify-self: center;
 }
-main .grid-container .programa-2 {
+main .grid-container .programa1-6 .programa-2 {
   grid-column-start: 4;
   grid-row-start: 5;
 }
-main .grid-container .programa-2 .productdesigner-icon {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .grid-container .programa-2 .productdesigner-icon .icon-content {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content {
   margin: 0 10px;
   position: relative;
 }
-main .grid-container .programa-2 .productdesigner-icon .icon-content [data-social=illustrator] .filled {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=illustrator] .filled {
   background-color: #2f0000;
 }
-main .grid-container .programa-2 .productdesigner-icon .icon-content [data-social=illustrator] ~ .tooltip {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=illustrator] ~ .tooltip {
   background-color: #2f0000;
 }
-main .grid-container .programa-2 .productdesigner-icon .icon-content a {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content a {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -597,7 +600,7 @@ main .grid-container .programa-2 .productdesigner-icon .icon-content a {
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
-main .grid-container .programa-2 .productdesigner-icon .icon-content a .filled {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content a .filled {
   position: absolute;
   top: auto;
   bottom: 0;
@@ -607,20 +610,20 @@ main .grid-container .programa-2 .productdesigner-icon .icon-content a .filled {
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
-main .grid-container .programa-2 .productdesigner-icon .icon-content a svg {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 48px;
   height: 48px;
 }
-main .grid-container .programa-2 .productdesigner-icon .icon-content a:hover .filled {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content a:hover .filled {
   height: 100%;
 }
-main .grid-container .programa-2 .productdesigner-icon .icon-content a:hover {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
   color: white;
 }
-main .grid-container .programa-2 .productdesigner-icon .icon-content .tooltip {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content .tooltip {
   position: absolute;
   top: -30px;
   left: 50%;
@@ -633,35 +636,35 @@ main .grid-container .programa-2 .productdesigner-icon .icon-content .tooltip {
   font-size: 14px;
   transition: all 0.3s ease;
 }
-main .grid-container .programa-2 .productdesigner-icon .icon-content:hover .tooltip {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: 110px;
 }
-main .grid-container .programa-2 h3 {
+main .grid-container .programa1-6 .programa-2 h3 {
   text-align: center;
   justify-self: center;
 }
-main .grid-container .programa-3 {
+main .grid-container .programa1-6 .programa-3 {
   grid-column-start: 5;
   grid-row-start: 5;
 }
-main .grid-container .programa-3 .productdesigner-icon {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .grid-container .programa-3 .productdesigner-icon .icon-content {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content {
   margin: 0 10px;
   position: relative;
 }
-main .grid-container .programa-3 .productdesigner-icon .icon-content [data-social=photoshop] .filled {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=photoshop] .filled {
   background-color: #58bcff;
 }
-main .grid-container .programa-3 .productdesigner-icon .icon-content [data-social=photoshop] ~ .tooltip {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=photoshop] ~ .tooltip {
   background-color: #58bcff;
 }
-main .grid-container .programa-3 .productdesigner-icon .icon-content a {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content a {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -674,7 +677,7 @@ main .grid-container .programa-3 .productdesigner-icon .icon-content a {
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
-main .grid-container .programa-3 .productdesigner-icon .icon-content a .filled {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content a .filled {
   position: absolute;
   top: auto;
   bottom: 0;
@@ -684,20 +687,20 @@ main .grid-container .programa-3 .productdesigner-icon .icon-content a .filled {
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
-main .grid-container .programa-3 .productdesigner-icon .icon-content a svg {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 48px;
   height: 48px;
 }
-main .grid-container .programa-3 .productdesigner-icon .icon-content a:hover .filled {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content a:hover .filled {
   height: 100%;
 }
-main .grid-container .programa-3 .productdesigner-icon .icon-content a:hover {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
   color: white;
 }
-main .grid-container .programa-3 .productdesigner-icon .icon-content .tooltip {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content .tooltip {
   position: absolute;
   top: -30px;
   left: 50%;
@@ -710,35 +713,35 @@ main .grid-container .programa-3 .productdesigner-icon .icon-content .tooltip {
   font-size: 14px;
   transition: all 0.3s ease;
 }
-main .grid-container .programa-3 .productdesigner-icon .icon-content:hover .tooltip {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: 110px;
 }
-main .grid-container .programa-3 h3 {
+main .grid-container .programa1-6 .programa-3 h3 {
   text-align: center;
   justify-self: center;
 }
-main .grid-container .programa-4 {
+main .grid-container .programa1-6 .programa-4 {
   grid-column-start: 6;
   grid-row-start: 5;
 }
-main .grid-container .programa-4 .productdesigner-icon {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content {
   margin: 0 10px;
   position: relative;
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content [data-social=lightroom] .filled {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=lightroom] .filled {
   background-color: #001E36;
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content [data-social=lightroom] ~ .tooltip {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=lightroom] ~ .tooltip {
   background-color: #001E36;
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content a {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content a {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -751,7 +754,7 @@ main .grid-container .programa-4 .productdesigner-icon .icon-content a {
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content a .filled {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content a .filled {
   position: absolute;
   top: auto;
   bottom: 0;
@@ -761,20 +764,20 @@ main .grid-container .programa-4 .productdesigner-icon .icon-content a .filled {
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content a svg {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 48px;
   height: 48px;
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content a:hover .filled {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content a:hover .filled {
   height: 100%;
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content a:hover {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
   color: white;
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content .tooltip {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content .tooltip {
   position: absolute;
   top: -30px;
   left: 50%;
@@ -787,35 +790,35 @@ main .grid-container .programa-4 .productdesigner-icon .icon-content .tooltip {
   font-size: 14px;
   transition: all 0.3s ease;
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content:hover .tooltip {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: 110px;
 }
-main .grid-container .programa-4 h3 {
+main .grid-container .programa1-6 .programa-4 h3 {
   text-align: center;
   justify-self: center;
 }
-main .grid-container .programa-5 {
+main .grid-container .programa1-6 .programa-5 {
   grid-column-start: 7;
   grid-row-start: 5;
 }
-main .grid-container .programa-5 .productdesigner-icon {
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .grid-container .programa-5 .productdesigner-icon .icon-content {
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content {
   margin: 0 10px;
   position: relative;
 }
-main .grid-container .programa-5 .productdesigner-icon .icon-content [data-social=VMIX] .filled {
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content [data-social=VMIX] .filled {
   background-color: #00005A;
 }
-main .grid-container .programa-5 .productdesigner-icon .icon-content [data-social=VMIX] ~ .tooltip {
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content [data-social=VMIX] ~ .tooltip {
   background-color: #00005A;
 }
-main .grid-container .programa-5 .productdesigner-icon .icon-content a {
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content a {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -828,7 +831,7 @@ main .grid-container .programa-5 .productdesigner-icon .icon-content a {
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
-main .grid-container .programa-5 .productdesigner-icon .icon-content a .filled {
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content a .filled {
   position: absolute;
   top: auto;
   bottom: 0;
@@ -838,20 +841,20 @@ main .grid-container .programa-5 .productdesigner-icon .icon-content a .filled {
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
-main .grid-container .programa-5 .productdesigner-icon .icon-content a svg {
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 48px;
   height: 48px;
 }
-main .grid-container .programa-5 .productdesigner-icon .icon-content a:hover .filled {
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content a:hover .filled {
   height: 100%;
 }
-main .grid-container .programa-5 .productdesigner-icon .icon-content a:hover {
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
   color: white;
 }
-main .grid-container .programa-5 .productdesigner-icon .icon-content .tooltip {
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content .tooltip {
   position: absolute;
   top: -30px;
   left: 50%;
@@ -864,12 +867,12 @@ main .grid-container .programa-5 .productdesigner-icon .icon-content .tooltip {
   font-size: 14px;
   transition: all 0.3s ease;
 }
-main .grid-container .programa-5 .productdesigner-icon .icon-content:hover .tooltip {
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: 110px;
 }
-main .grid-container .programa-5 h3 {
+main .grid-container .programa1-6 .programa-5 h3 {
   text-align: center;
   justify-self: center;
 }
