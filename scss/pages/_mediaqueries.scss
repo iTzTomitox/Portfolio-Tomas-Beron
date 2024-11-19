@@ -114,6 +114,10 @@
                     }
                 }
 
+                .programa1-6{
+                    display: flex;
+                    flex-direction: column;
+                }
 
                 .form-container {
                     grid-row-start: 2;
@@ -157,7 +161,7 @@
         overflow: hidden;
     }
 
-    body {
+
         header {
             nav {
                 flex-direction: row;
@@ -271,6 +275,11 @@
 
                 }
 
+                .programa1-6{
+                    display: flex;
+                    flex-direction: column;
+                }
+
                 .form-container {
                     grid-row-start: 2;
                     grid-template-columns: 1fr;
@@ -308,5 +317,5 @@
                 margin-top: 8px;
             }
         }
-    }
+    
 }
