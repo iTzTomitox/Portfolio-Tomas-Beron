@@ -124,6 +124,20 @@ main .grid-container .container-ex-working {
 main .grid-container .container-ex-working h2 {
   font-size: 32px;
 }
+main .grid-container .container-ex-working h3 {
+  font-size: 24px;
+  margin-top: 16px;
+}
+main .grid-container .container-ex-working h4 {
+  margin-bottom: 8px;
+}
+main .grid-container .container-ex-working a {
+  text-decoration: underline;
+  color: #212121;
+}
+main .grid-container .container-ex-working p {
+  font-size: 16px;
+}
 main .grid-container .container-education {
   grid-column: 2/12;
   grid-row-start: 5;
@@ -151,6 +165,9 @@ main .grid-container .container-disciplinas {
 }
 main .grid-container .container-disciplinas h2 {
   font-size: 32px;
+}
+main .grid-container .container-disciplinas p {
+  font-size: 16px;
 }
 main .grid-container .container-contacto-index {
   grid-column: 2/12;
@@ -492,7 +509,7 @@ main .grid-container .programa1-6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-column: 1/12;
+  grid-column: 1/13;
   grid-row: 5;
   gap: 40px;
 }
