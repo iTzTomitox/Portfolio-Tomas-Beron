@@ -959,53 +959,53 @@ main .grid-container .programa1-6 .programa-6 h3 {
   justify-self: center;
 }
 
-main .grid-container .programa-1 .productdesigner-icon .icon-content [data-social=figma] .filled {
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content [data-social=figma] .filled {
   background: linear-gradient(to right, #F2015B, #ED02F1, #04038D);
 }
-main .grid-container .programa-1 .productdesigner-icon .icon-content [data-social=figma] ~ .tooltip {
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content [data-social=figma] ~ .tooltip {
   background: linear-gradient(to right, #F2015B, #ED02F1, #04038D);
 }
-main .grid-container .programa-2 .productdesigner-icon .icon-content [data-social=whimsical] .filled {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=whimsical] .filled {
   background: linear-gradient(to right, #4B31FE, #E26AFE);
 }
-main .grid-container .programa-2 .productdesigner-icon .icon-content [data-social=whimsical] ~ .tooltip {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=whimsical] ~ .tooltip {
   background: linear-gradient(to right, #4B31FE, #E26AFE);
 }
-main .grid-container .programa-3 .productdesigner-icon .icon-content [data-social=optimal-workshop] .filled {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=optimal-workshop] .filled {
   background-color: #fed600;
 }
-main .grid-container .programa-3 .productdesigner-icon .icon-content [data-social=optimal-workshop] ~ .tooltip {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=optimal-workshop] ~ .tooltip {
   background-color: #fed600;
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content [data-social=""] .filled {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=""] .filled {
   background-color: #00005A;
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content [data-social=""] ~ .tooltip {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=""] ~ .tooltip {
   background-color: #00005A;
 }
 
-main .grid-container .programa-3 .productdesigner-icon .icon-content [data-social=html] .filled {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=html] .filled {
   background: linear-gradient(to right, #ef642b, #E44B20);
 }
-main .grid-container .programa-3 .productdesigner-icon .icon-content [data-social=html] ~ .tooltip {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=html] ~ .tooltip {
   background: linear-gradient(to right, #ef642b, #E44B20);
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content [data-social=css] .filled {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=css] .filled {
   background: linear-gradient(to right, #254DE3, #2964F0);
 }
-main .grid-container .programa-4 .productdesigner-icon .icon-content [data-social=css] ~ .tooltip {
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=css] ~ .tooltip {
   background: linear-gradient(to right, #254DE3, #2964F0);
 }
-main .grid-container .programa-5 .productdesigner-icon .icon-content [data-social=js] .filled {
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content [data-social=js] .filled {
   background: linear-gradient(to right, #D3B72F, #fcd73b);
 }
-main .grid-container .programa-5 .productdesigner-icon .icon-content [data-social=js] ~ .tooltip {
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content [data-social=js] ~ .tooltip {
   background: linear-gradient(to right, #D3B72F, #fcd73b);
 }
-main .grid-container .programa-6 .productdesigner-icon .icon-content [data-social=ruby] .filled {
+main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content [data-social=ruby] .filled {
   background: linear-gradient(to right, #950B00, #E36848);
 }
-main .grid-container .programa-6 .productdesigner-icon .icon-content [data-social=ruby] ~ .tooltip {
+main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content [data-social=ruby] ~ .tooltip {
   background: linear-gradient(to right, #950B00, #E36848);
 }
 
