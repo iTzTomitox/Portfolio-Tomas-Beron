@@ -500,6 +500,138 @@ main .grid-container .grid-productdesigner {
   grid-column-start: 3;
   grid-row-start: 1;
 }
+main .grid-container .section-product {
+  grid-column: 2/12;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+  align-items: center;
+}
+main .grid-container .section-product img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+main .grid-container .section-product img:hover {
+  transform: scale(1.04);
+}
+main .grid-container .section-product button {
+  margin-top: 24px;
+}
+main .grid-container .section-product .texto-proyecto a :hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+main .grid-container .section-product .texto-proyecto a ::before {
+  width: 170px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+main .grid-container .section-product .texto-proyecto a .button-vermas {
+  width: 170px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 1000;
+  font-size: 17px;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+main .grid-container .section-product .texto-proyecto a .button-vermas .svgIcon {
+  width: 32px;
+  margin-left: 8px;
+}
+main .grid-container .section-product .texto-proyecto a .button-vermas .svgIcon path {
+  fill: white;
+}
+main .grid-container .section-fam {
+  grid-column: 2/12;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  align-items: center;
+}
+main .grid-container .section-fam img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+main .grid-container .section-fam img:hover {
+  transform: scale(1.04);
+}
+main .grid-container .section-fam button {
+  margin-top: 24px;
+}
+main .grid-container .section-fam .texto-proyecto a :hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+main .grid-container .section-fam .texto-proyecto a ::before {
+  width: 170px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+main .grid-container .section-fam .texto-proyecto a .button-vermas {
+  width: 170px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 1000;
+  font-size: 17px;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+main .grid-container .section-fam .texto-proyecto a .button-vermas .svgIcon {
+  width: 32px;
+  margin-left: 8px;
+}
+main .grid-container .section-fam .texto-proyecto a .button-vermas .svgIcon path {
+  fill: white;
+}
 main .grid-container .programas-utilizados {
   grid-column: 3/5;
   grid-column-start: 2;
@@ -976,6 +1108,72 @@ main .grid-container .programa1-6 .programa-6 h3 {
   justify-self: center;
 }
 
+main .grid-container .section-product {
+  grid-column: 2/12;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 24px;
+  align-items: center;
+}
+main .grid-container .section-product img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+main .grid-container .section-product img:hover {
+  transform: scale(1.04);
+}
+main .grid-container .section-product button {
+  margin-top: 24px;
+}
+main .grid-container .section-product .texto-proyecto a :hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+main .grid-container .section-product .texto-proyecto a ::before {
+  width: 170px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+main .grid-container .section-product .texto-proyecto a .button-vermas {
+  width: 170px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 1000;
+  font-size: 17px;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+main .grid-container .section-product .texto-proyecto a .button-vermas .svgIcon {
+  width: 32px;
+  margin-left: 8px;
+}
+main .grid-container .section-product .texto-proyecto a .button-vermas .svgIcon path {
+  fill: white;
+}
 main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content [data-social=figma] .filled {
   background: linear-gradient(to right, #F2015B, #ED02F1, #04038D);
 }
@@ -1001,17 +1199,32 @@ main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-conten
   background-color: #00005A;
 }
 
-main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=html] .filled {
+main .grid-container .section-web-web {
+  grid-column: 2/12;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: center;
+}
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=html] .filled {
   background: linear-gradient(to right, #ef642b, #E44B20);
 }
-main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=html] ~ .tooltip {
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=html] ~ .tooltip {
   background: linear-gradient(to right, #ef642b, #E44B20);
 }
-main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=css] .filled {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=css] .filled {
   background: linear-gradient(to right, #254DE3, #2964F0);
 }
-main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=css] ~ .tooltip {
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=css] ~ .tooltip {
   background: linear-gradient(to right, #254DE3, #2964F0);
+}
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=sass] .filled {
+  background-color: #E6659B;
+}
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=sass] ~ .tooltip {
+  background-color: #E6659B;
 }
 main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content [data-social=js] .filled {
   background: linear-gradient(to right, #D3B72F, #fcd73b);
@@ -1277,6 +1490,12 @@ footer div h3 {
   main .grid-container .section-audio h2 {
     font-size: 20px;
   }
+  main .grid-container .section-product {
+    grid-template-columns: 1fr;
+  }
+  main .grid-container .section-fam {
+    grid-template-columns: 1fr;
+  }
   main .grid-container .section-ux {
     grid-template-columns: 1fr;
   }
@@ -1400,6 +1619,12 @@ footer div h3 {
   }
   main .grid-container .section-ux h2 {
     font-size: 20px;
+  }
+  main .grid-container .section-product {
+    grid-template-columns: 1fr 1fr;
+  }
+  main .grid-container .section-fam {
+    grid-template-columns: 1fr 2fr;
   }
   main .grid-container .section-web {
     grid-template-columns: 2fr 1fr;

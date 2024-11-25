@@ -66,6 +66,14 @@
                     }
                 }
 
+                .section-product {
+                    grid-template-columns: 1fr;
+                }
+
+                .section-fam {
+                    grid-template-columns: 1fr;
+                }
+
                 .section-ux {
                     grid-template-columns: 1fr;
 
@@ -235,6 +243,14 @@
                     h2 {
                         font-size: 20px;
                     }
+                }
+
+                .section-product {
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                .section-fam {
+                    grid-template-columns: 1fr 2fr;
                 }
 
                 .section-web {

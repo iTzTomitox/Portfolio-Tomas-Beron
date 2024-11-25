@@ -1,8 +1,21 @@
 main {
     .grid-container {
+
+        .section-web-web {
+            grid-column: 2/12;
+            grid-column-start: 2;
+            grid-row-start: 2;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            align-items: center;
+                }
+            
+        
+
         .programa1-6{
 
-            .programa-3 {
+            .programa-2 {
                 .productdesigner-icon {
                     .icon-content {
     
@@ -18,6 +31,24 @@ main {
                             }
                         }
     
+                    }
+                }
+            }
+    
+            .programa-3 {
+                .productdesigner-icon {
+                    .icon-content {
+                        [data-social="css"] {
+                            .filled {
+                                background: linear-gradient(to right, #254DE3, #2964F0);
+                            }
+                        }
+    
+                        [data-social="css"] {
+                            ~.tooltip {
+                                background: linear-gradient(to right, #254DE3, #2964F0);
+                            }
+                        }
                     }
                 }
             }
@@ -25,21 +56,22 @@ main {
             .programa-4 {
                 .productdesigner-icon {
                     .icon-content {
-                        [data-social="css"] {
+    
+                        [data-social="sass"] {
                             .filled {
-                                background: linear-gradient(to right, #254DE3, #2964F0);
+                                background-color: #E6659B;
                             }
                         }
     
-                        [data-social="css"] {
+                        [data-social="sass"] {
                             ~.tooltip {
-                                background: linear-gradient(to right, #254DE3, #2964F0);
+                                background-color:#E6659B;
                             }
                         }
+    
                     }
                 }
             }
-    
     
             .programa-5 {
                 .productdesigner-icon {
