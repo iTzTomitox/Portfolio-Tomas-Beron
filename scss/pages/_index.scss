@@ -126,9 +126,6 @@ main {
         .imagen-proyecto {
                 width: 100%;
                 height: auto;
-                border-radius: 8px;
-                transition: transform 0.3s ease;
-
 
                 .pic-camara {
                     width: 100%;
@@ -137,6 +134,7 @@ main {
                     display: grid;
                     grid-column: 3/10;
                     grid-row-start: 3;
+                    border-radius: 8px;
                 }
 
         }
@@ -149,6 +147,7 @@ main {
 
         h2 {
             font-size: 32px;
+            padding-top: 8px;
         }
         
         h3 {
@@ -178,6 +177,7 @@ main {
 
         h2 {
             font-size: 32px;
+            padding-top: 16px;
         }
         h3 {
             font-size: 24px;
