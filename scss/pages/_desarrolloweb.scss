@@ -1,0 +1,114 @@
+main {
+    .grid-container {
+
+        .section-web-web {
+            grid-column: 2/12;
+            grid-column-start: 2;
+            grid-row-start: 2;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            align-items: center;
+                }
+            
+        
+
+        .programa1-6{
+
+            .programa-2 {
+                .productdesigner-icon {
+                    .icon-content {
+    
+                        [data-social="html"] {
+                            .filled {
+                                background: linear-gradient(to right, #ef642b, #E44B20);
+                            }
+                        }
+    
+                        [data-social="html"] {
+                            ~.tooltip {
+                                background: linear-gradient(to right, #ef642b, #E44B20);
+                            }
+                        }
+    
+                    }
+                }
+            }
+    
+            .programa-3 {
+                .productdesigner-icon {
+                    .icon-content {
+                        [data-social="css"] {
+                            .filled {
+                                background: linear-gradient(to right, #254DE3, #2964F0);
+                            }
+                        }
+    
+                        [data-social="css"] {
+                            ~.tooltip {
+                                background: linear-gradient(to right, #254DE3, #2964F0);
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .programa-4 {
+                .productdesigner-icon {
+                    .icon-content {
+    
+                        [data-social="sass"] {
+                            .filled {
+                                background-color: #E6659B;
+                            }
+                        }
+    
+                        [data-social="sass"] {
+                            ~.tooltip {
+                                background-color:#E6659B;
+                            }
+                        }
+    
+                    }
+                }
+            }
+    
+            .programa-5 {
+                .productdesigner-icon {
+                    .icon-content {
+    
+                        [data-social="js"] {
+                            .filled {
+                                background: linear-gradient(to right, #D3B72F, #fcd73b);
+                            }
+                        }
+    
+                        [data-social="js"] {
+                            ~.tooltip {
+                                background: linear-gradient(to right, #D3B72F, #fcd73b);
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .programa-6 {
+                .productdesigner-icon {
+                    .icon-content {
+                        [data-social="ruby"] {
+                            .filled {
+                                background: linear-gradient(to right, #950B00, #E36848);
+                            }
+                        }
+    
+                        [data-social="ruby"] {
+                            ~.tooltip {
+                                background: linear-gradient(to right, #950B00, #E36848);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
