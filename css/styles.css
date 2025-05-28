@@ -10,7 +10,7 @@ main .grid-container .section-soy {
 
 
 
-/* From Uiverse.io by 3HugaDa3 */ 
+/* From Uiverse.io by 3HugaDa3 */
 .checkbox-wrapper {
   --checkbox-size: 25px;
   --checkbox-color: #00ff88;
@@ -57,7 +57,7 @@ main .grid-container .section-soy {
   transform: scale(0) rotate(-45deg);
 }
 
-.checkbox-wrapper input:checked ~ .checkmark::before {
+.checkbox-wrapper input:checked~.checkmark::before {
   opacity: 1;
   transform: scale(1) rotate(0);
 }
@@ -71,7 +71,7 @@ main .grid-container .section-soy {
   filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
 }
 
-.checkbox-wrapper input:checked ~ .checkmark svg {
+.checkbox-wrapper input:checked~.checkmark svg {
   width: 18px;
   height: 18px;
   transform: rotate(360deg);
@@ -86,7 +86,7 @@ main .grid-container .section-soy {
     inset 0 0 10px var(--checkbox-shadow);
 }
 
-.checkbox-wrapper input:checked ~ .checkmark {
+.checkbox-wrapper input:checked~.checkmark {
   animation: pulse 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
@@ -95,12 +95,14 @@ main .grid-container .section-soy {
     transform: scale(1);
     box-shadow: 0 0 20px var(--checkbox-shadow);
   }
+
   50% {
     transform: scale(0.9);
     box-shadow:
       0 0 30px var(--checkbox-shadow),
       0 0 50px var(--checkbox-shadow);
   }
+
   100% {
     transform: scale(1);
     box-shadow: 0 0 20px var(--checkbox-shadow);
@@ -162,19 +164,23 @@ main .grid-container .section-soy {
 main .grid-container .section-soy button {
   margin-top: 16px;
 }
+
 main .grid-container .section-soy .imagen-section-soy img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
+
 main .grid-container .section-soy .texto-proyecto {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 main .grid-container .section-soy .texto-proyecto h2 {
   font-size: 32px;
 }
+
 main .grid-container .section-soy .texto-proyecto .button-work {
   padding: 16px 52px;
   border: unset;
@@ -192,6 +198,7 @@ main .grid-container .section-soy .texto-proyecto .button-work {
   margin-top: 8px;
   margin-right: 16px;
 }
+
 main .grid-container .section-soy .texto-proyecto .button-contactame {
   padding: 16px 52px;
   border: unset;
@@ -207,6 +214,7 @@ main .grid-container .section-soy .texto-proyecto .button-contactame {
   transition: all 250ms;
   overflow: hidden;
 }
+
 main .grid-container .section-soy .texto-proyecto .button-contactame::before {
   content: "";
   position: absolute;
@@ -221,12 +229,15 @@ main .grid-container .section-soy .texto-proyecto .button-contactame::before {
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms;
 }
+
 main .grid-container .section-soy .texto-proyecto .button-contactame:hover:before {
   width: 100%;
 }
+
 main .grid-container .section-soy .texto-proyecto .button-contactame:hover {
   color: #e8e8e8;
 }
+
 main .grid-container .section-soy .tomas {
   color: var(--text-color);
   font-family: Sen;
@@ -238,6 +249,7 @@ main .grid-container .section-soy .tomas {
   grid-row-start: 1;
   grid-column-start: 3;
 }
+
 main .grid-container .container-sobre-mi {
   grid-column: 2/12;
   grid-column-start: 2;
@@ -247,17 +259,21 @@ main .grid-container .container-sobre-mi {
   gap: 24px;
   align-items: center;
 }
+
 main .grid-container .container-sobre-mi h2 {
   font-size: 40px;
 }
+
 main .grid-container .container-sobre-mi p {
   font-size: 20px;
   padding-top: 8px;
 }
+
 main .grid-container .container-sobre-mi .imagen-proyecto {
   width: 100%;
   height: auto;
 }
+
 main .grid-container .container-sobre-mi .imagen-proyecto .pic-camara {
   width: 100%;
   height: auto;
@@ -267,61 +283,76 @@ main .grid-container .container-sobre-mi .imagen-proyecto .pic-camara {
   grid-row-start: 3;
   border-radius: 8px;
 }
+
 main .grid-container .container-ex-working {
   grid-column: 2/12;
   grid-row-start: 4;
   grid-column-start: 2;
 }
+
 main .grid-container .container-ex-working h2 {
   font-size: 32px;
   padding-top: 8px;
 }
+
 main .grid-container .container-ex-working h3 {
   font-size: 24px;
   margin-top: 16px;
 }
+
 main .grid-container .container-ex-working h4 {
   margin-bottom: 8px;
 }
+
 main .grid-container .container-ex-working a {
   text-decoration: underline;
-  color: #212121;
+  color: var(--text-color)
 }
+
 main .grid-container .container-ex-working p {
   font-size: 16px;
 }
+
 main .grid-container .container-education {
   grid-column: 2/12;
   grid-row-start: 5;
   grid-column-start: 2;
 }
+
 main .grid-container .container-education h2 {
   font-size: 32px;
   padding-top: 16px;
 }
+
 main .grid-container .container-education h3 {
   font-size: 24px;
   margin-top: 16px;
 }
+
 main .grid-container .container-education p {
   margin-top: 8px;
   font-size: 16px;
 }
+
 main .grid-container .container-education a {
   text-decoration: underline;
-  color: #212121;
+  color: var(--text-color)
 }
+
 main .grid-container .container-disciplinas {
   grid-column: 2/12;
   grid-row-start: 6;
   grid-column-start: 2;
 }
+
 main .grid-container .container-disciplinas h2 {
   font-size: 32px;
 }
+
 main .grid-container .container-disciplinas p {
   font-size: 16px;
 }
+
 main .grid-container .container-contacto-index {
   grid-column: 2/12;
   grid-row-start: 7;
@@ -335,10 +366,12 @@ main .grid-container .contacto {
   justify-content: center;
   text-align: center;
 }
+
 main .grid-container .contacto h1 {
   font-size: 48px;
   margin-bottom: 8px;
 }
+
 main .grid-container .contacto img {
   width: 100%;
   height: auto;
@@ -346,10 +379,12 @@ main .grid-container .contacto img {
   align-items: center;
   flex-shrink: 0;
 }
+
 main .grid-container .form-container {
   grid-column-start: 6;
   grid-row-start: 2;
 }
+
 main .grid-container .form-container .contacto .form-box {
   position: relative;
   top: 50%;
@@ -361,6 +396,7 @@ main .grid-container .form-container .contacto .form-box {
   border-radius: 10px;
   transform: scale(100%);
 }
+
 main .grid-container .form-container .contacto .form-box form .form-group {
   display: flex;
   flex-direction: column;
@@ -368,6 +404,7 @@ main .grid-container .form-container .contacto .form-box form .form-group {
   gap: 8px;
   position: relative;
 }
+
 main .grid-container .form-container .contacto .form-box form .form-group input {
   width: 100%;
   padding: 10px 0;
@@ -379,18 +416,21 @@ main .grid-container .form-container .contacto .form-box form .form-group input 
   outline: none;
   background: transparent;
 }
-main .grid-container .form-container .contacto .form-box form .form-group input:focus ~ label {
+
+main .grid-container .form-container .contacto .form-box form .form-group input:focus~label {
   top: -20px;
   left: 0;
   color: #bdb8b8;
   font-size: 12px;
 }
-main .grid-container .form-container .contacto .form-box form .form-group input:valid ~ label {
+
+main .grid-container .form-container .contacto .form-box form .form-group input:valid~label {
   top: -20px;
   left: 0;
   color: #bdb8b8;
   font-size: 12px;
 }
+
 main .grid-container .form-container .contacto .form-box form .form-group label {
   position: absolute;
   top: 0;
@@ -401,12 +441,14 @@ main .grid-container .form-container .contacto .form-box form .form-group label 
   pointer-events: none;
   transition: 0.5s;
 }
+
 main .grid-container .form-container .contacto .form-box form .form-group textarea {
   width: 100%;
   max-width: 100%;
   height: 120px;
   resize: none;
 }
+
 main .grid-container .form-container .contacto .form-box form .form-group .button-form {
   padding: 16px 24px;
   border: 0;
@@ -422,6 +464,7 @@ main .grid-container .form-container .contacto .form-box form .form-group .butto
   transition: all 250ms;
   overflow: hidden;
 }
+
 main .grid-container .form-container .contacto .form-box form .form-group .button-form::before {
   content: "";
   position: absolute;
@@ -436,15 +479,18 @@ main .grid-container .form-container .contacto .form-box form .form-group .butto
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms;
 }
+
 main .grid-container .form-container .contacto .form-box form .form-group .button-form:hover {
   color: #e8e8e8;
 }
+
 main .grid-container .form-container .contacto .form-box form .form-group .button-form:hover::before {
   width: 100%;
   top: 0;
   left: 0;
   height: 100%;
 }
+
 main .grid-container .form-container .contacto .form-box form .form-group .button-form:active {
   transform: scale(80%);
 }
@@ -458,6 +504,7 @@ main .grid-container .section-audio {
   gap: 24px;
   align-items: center;
 }
+
 main .grid-container .section-audio img {
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -467,17 +514,21 @@ main .grid-container .section-audio img {
   align-items: center;
   flex-shrink: 0;
 }
+
 main .grid-container .section-audio img:hover {
   transform: scale(1.04);
 }
+
 main .grid-container .section-audio button {
   margin-top: 24px;
 }
+
 main .grid-container .section-audio .texto-proyecto a :hover::before {
   transition-duration: 0.3s;
   transform: translate(100%, -50%);
   border-radius: 0;
 }
+
 main .grid-container .section-audio .texto-proyecto a ::before {
   width: 170px;
   height: 130px;
@@ -490,6 +541,7 @@ main .grid-container .section-audio .texto-proyecto a ::before {
   transition-duration: 0.3s;
   mix-blend-mode: difference;
 }
+
 main .grid-container .section-audio .texto-proyecto a .button-vermas {
   width: 170px;
   height: 56px;
@@ -508,13 +560,16 @@ main .grid-container .section-audio .texto-proyecto a .button-vermas {
   overflow: hidden;
   transition-duration: 0.3s;
 }
+
 main .grid-container .section-audio .texto-proyecto a .button-vermas .svgIcon {
   width: 32px;
   margin-left: 8px;
 }
+
 main .grid-container .section-audio .texto-proyecto a .button-vermas .svgIcon path {
   fill: white;
 }
+
 main .grid-container .section-ux {
   grid-column: 2/12;
   grid-column-start: 2;
@@ -524,6 +579,7 @@ main .grid-container .section-ux {
   gap: 24px;
   align-items: center;
 }
+
 main .grid-container .section-ux img {
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -533,17 +589,21 @@ main .grid-container .section-ux img {
   align-items: center;
   flex-shrink: 0;
 }
+
 main .grid-container .section-ux img:hover {
   transform: scale(1.04);
 }
+
 main .grid-container .section-ux button {
   margin-top: 24px;
 }
+
 main .grid-container .section-ux .texto-proyecto a :hover::before {
   transition-duration: 0.3s;
   transform: translate(100%, -50%);
   border-radius: 0;
 }
+
 main .grid-container .section-ux .texto-proyecto a ::before {
   width: 170px;
   height: 130px;
@@ -556,6 +616,7 @@ main .grid-container .section-ux .texto-proyecto a ::before {
   transition-duration: 0.3s;
   mix-blend-mode: difference;
 }
+
 main .grid-container .section-ux .texto-proyecto a .button-vermas {
   width: 170px;
   height: 56px;
@@ -574,13 +635,16 @@ main .grid-container .section-ux .texto-proyecto a .button-vermas {
   overflow: hidden;
   transition-duration: 0.3s;
 }
+
 main .grid-container .section-ux .texto-proyecto a .button-vermas .svgIcon {
   width: 32px;
   margin-left: 8px;
 }
+
 main .grid-container .section-ux .texto-proyecto a .button-vermas .svgIcon path {
   fill: white;
 }
+
 main .grid-container .section-web {
   grid-column: 2/12;
   grid-column-start: 2;
@@ -590,6 +654,7 @@ main .grid-container .section-web {
   gap: 24px;
   align-items: center;
 }
+
 main .grid-container .section-web img {
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -599,17 +664,21 @@ main .grid-container .section-web img {
   align-items: center;
   flex-shrink: 0;
 }
+
 main .grid-container .section-web img:hover {
   transform: scale(1.04);
 }
+
 main .grid-container .section-web button {
   margin-top: 24px;
 }
+
 main .grid-container .section-web .texto-proyecto a :hover::before {
   transition-duration: 0.3s;
   transform: translate(100%, -50%);
   border-radius: 0;
 }
+
 main .grid-container .section-web .texto-proyecto a ::before {
   width: 170px;
   height: 130px;
@@ -622,6 +691,7 @@ main .grid-container .section-web .texto-proyecto a ::before {
   transition-duration: 0.3s;
   mix-blend-mode: difference;
 }
+
 main .grid-container .section-web .texto-proyecto a .button-vermas {
   width: 170px;
   height: 56px;
@@ -640,10 +710,12 @@ main .grid-container .section-web .texto-proyecto a .button-vermas {
   overflow: hidden;
   transition-duration: 0.3s;
 }
+
 main .grid-container .section-web .texto-proyecto a .button-vermas .svgIcon {
   width: 32px;
   margin-left: 8px;
 }
+
 main .grid-container .section-web .texto-proyecto a .button-vermas .svgIcon path {
   fill: white;
 }
@@ -653,6 +725,7 @@ main .grid-container .grid-productdesigner {
   grid-column-start: 3;
   grid-row-start: 1;
 }
+
 main .grid-container .section-product {
   grid-column: 2/12;
   grid-column-start: 2;
@@ -662,6 +735,7 @@ main .grid-container .section-product {
   gap: 24px;
   align-items: center;
 }
+
 main .grid-container .section-product img {
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -671,17 +745,21 @@ main .grid-container .section-product img {
   align-items: center;
   flex-shrink: 0;
 }
+
 main .grid-container .section-product img:hover {
   transform: scale(1.04);
 }
+
 main .grid-container .section-product button {
   margin-top: 24px;
 }
+
 main .grid-container .section-product .texto-proyecto a :hover::before {
   transition-duration: 0.3s;
   transform: translate(100%, -50%);
   border-radius: 0;
 }
+
 main .grid-container .section-product .texto-proyecto a ::before {
   width: 170px;
   height: 130px;
@@ -694,6 +772,7 @@ main .grid-container .section-product .texto-proyecto a ::before {
   transition-duration: 0.3s;
   mix-blend-mode: difference;
 }
+
 main .grid-container .section-product .texto-proyecto a .button-vermas {
   width: 170px;
   height: 56px;
@@ -712,13 +791,16 @@ main .grid-container .section-product .texto-proyecto a .button-vermas {
   overflow: hidden;
   transition-duration: 0.3s;
 }
+
 main .grid-container .section-product .texto-proyecto a .button-vermas .svgIcon {
   width: 32px;
   margin-left: 8px;
 }
+
 main .grid-container .section-product .texto-proyecto a .button-vermas .svgIcon path {
   fill: white;
 }
+
 main .grid-container .section-fam {
   grid-column: 2/12;
   grid-column-start: 2;
@@ -728,6 +810,7 @@ main .grid-container .section-fam {
   gap: 24px;
   align-items: center;
 }
+
 main .grid-container .section-fam img {
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -737,17 +820,21 @@ main .grid-container .section-fam img {
   align-items: center;
   flex-shrink: 0;
 }
+
 main .grid-container .section-fam img:hover {
   transform: scale(1.04);
 }
+
 main .grid-container .section-fam button {
   margin-top: 24px;
 }
+
 main .grid-container .section-fam .texto-proyecto a :hover::before {
   transition-duration: 0.3s;
   transform: translate(100%, -50%);
   border-radius: 0;
 }
+
 main .grid-container .section-fam .texto-proyecto a ::before {
   width: 170px;
   height: 130px;
@@ -760,6 +847,7 @@ main .grid-container .section-fam .texto-proyecto a ::before {
   transition-duration: 0.3s;
   mix-blend-mode: difference;
 }
+
 main .grid-container .section-fam .texto-proyecto a .button-vermas {
   width: 170px;
   height: 56px;
@@ -778,18 +866,22 @@ main .grid-container .section-fam .texto-proyecto a .button-vermas {
   overflow: hidden;
   transition-duration: 0.3s;
 }
+
 main .grid-container .section-fam .texto-proyecto a .button-vermas .svgIcon {
   width: 32px;
   margin-left: 8px;
 }
+
 main .grid-container .section-fam .texto-proyecto a .button-vermas .svgIcon path {
   fill: white;
 }
+
 main .grid-container .programas-utilizados {
   grid-column: 3/5;
   grid-column-start: 2;
   grid-row-start: 4;
 }
+
 main .grid-container .programa1-6 {
   display: flex;
   justify-content: center;
@@ -798,25 +890,31 @@ main .grid-container .programa1-6 {
   grid-row: 5;
   gap: 40px;
 }
+
 main .grid-container .programa1-6 .programa-1 {
   grid-column-start: 3;
   grid-row-start: 5;
 }
+
 main .grid-container .programa1-6 .programa-1 .productdesigner-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content {
   margin: 0 10px;
   position: relative;
 }
+
 main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content [data-social=premiere-pro] .filled {
   background-color: #00005A;
 }
-main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content [data-social=premiere-pro] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content [data-social=premiere-pro]~.tooltip {
   background-color: #00005A;
 }
+
 main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content a {
   position: relative;
   overflow: hidden;
@@ -830,6 +928,7 @@ main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-conten
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
+
 main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content a .filled {
   position: absolute;
   top: auto;
@@ -840,19 +939,23 @@ main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-conten
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
+
 main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 48px;
   height: 48px;
 }
+
 main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content a:hover .filled {
   height: 100%;
 }
+
 main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
   color: white;
 }
+
 main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content .tooltip {
   position: absolute;
   top: -30px;
@@ -866,34 +969,42 @@ main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-conten
   font-size: 14px;
   transition: all 0.3s ease;
 }
+
 main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: 110px;
 }
+
 main .grid-container .programa1-6 .programa-1 h3 {
   text-align: center;
   justify-self: center;
 }
+
 main .grid-container .programa1-6 .programa-2 {
   grid-column-start: 4;
   grid-row-start: 5;
 }
+
 main .grid-container .programa1-6 .programa-2 .productdesigner-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content {
   margin: 0 10px;
   position: relative;
 }
+
 main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=illustrator] .filled {
   background-color: #2f0000;
 }
-main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=illustrator] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=illustrator]~.tooltip {
   background-color: #2f0000;
 }
+
 main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content a {
   position: relative;
   overflow: hidden;
@@ -907,6 +1018,7 @@ main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-conten
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
+
 main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content a .filled {
   position: absolute;
   top: auto;
@@ -917,19 +1029,23 @@ main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-conten
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
+
 main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 48px;
   height: 48px;
 }
+
 main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content a:hover .filled {
   height: 100%;
 }
+
 main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
   color: white;
 }
+
 main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content .tooltip {
   position: absolute;
   top: -30px;
@@ -943,34 +1059,42 @@ main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-conten
   font-size: 14px;
   transition: all 0.3s ease;
 }
+
 main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: 110px;
 }
+
 main .grid-container .programa1-6 .programa-2 h3 {
   text-align: center;
   justify-self: center;
 }
+
 main .grid-container .programa1-6 .programa-3 {
   grid-column-start: 5;
   grid-row-start: 5;
 }
+
 main .grid-container .programa1-6 .programa-3 .productdesigner-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content {
   margin: 0 10px;
   position: relative;
 }
+
 main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=photoshop] .filled {
   background-color: #58bcff;
 }
-main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=photoshop] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=photoshop]~.tooltip {
   background-color: #58bcff;
 }
+
 main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content a {
   position: relative;
   overflow: hidden;
@@ -984,6 +1108,7 @@ main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-conten
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
+
 main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content a .filled {
   position: absolute;
   top: auto;
@@ -994,19 +1119,23 @@ main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-conten
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
+
 main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 48px;
   height: 48px;
 }
+
 main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content a:hover .filled {
   height: 100%;
 }
+
 main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
   color: white;
 }
+
 main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content .tooltip {
   position: absolute;
   top: -30px;
@@ -1020,34 +1149,42 @@ main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-conten
   font-size: 14px;
   transition: all 0.3s ease;
 }
+
 main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: 110px;
 }
+
 main .grid-container .programa1-6 .programa-3 h3 {
   text-align: center;
   justify-self: center;
 }
+
 main .grid-container .programa1-6 .programa-4 {
   grid-column-start: 6;
   grid-row-start: 5;
 }
+
 main .grid-container .programa1-6 .programa-4 .productdesigner-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content {
   margin: 0 10px;
   position: relative;
 }
+
 main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=lightroom] .filled {
   background-color: #001E36;
 }
-main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=lightroom] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=lightroom]~.tooltip {
   background-color: #001E36;
 }
+
 main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content a {
   position: relative;
   overflow: hidden;
@@ -1061,6 +1198,7 @@ main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-conten
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
+
 main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content a .filled {
   position: absolute;
   top: auto;
@@ -1071,19 +1209,23 @@ main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-conten
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
+
 main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 48px;
   height: 48px;
 }
+
 main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content a:hover .filled {
   height: 100%;
 }
+
 main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
   color: white;
 }
+
 main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content .tooltip {
   position: absolute;
   top: -30px;
@@ -1097,34 +1239,42 @@ main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-conten
   font-size: 14px;
   transition: all 0.3s ease;
 }
+
 main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: 110px;
 }
+
 main .grid-container .programa1-6 .programa-4 h3 {
   text-align: center;
   justify-self: center;
 }
+
 main .grid-container .programa1-6 .programa-5 {
   grid-column-start: 7;
   grid-row-start: 5;
 }
+
 main .grid-container .programa1-6 .programa-5 .productdesigner-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content {
   margin: 0 10px;
   position: relative;
 }
+
 main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content [data-social=VMIX] .filled {
   background-color: #00005A;
 }
-main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content [data-social=VMIX] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content [data-social=VMIX]~.tooltip {
   background-color: #00005A;
 }
+
 main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content a {
   position: relative;
   overflow: hidden;
@@ -1138,6 +1288,7 @@ main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-conten
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
+
 main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content a .filled {
   position: absolute;
   top: auto;
@@ -1148,19 +1299,23 @@ main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-conten
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
+
 main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 48px;
   height: 48px;
 }
+
 main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content a:hover .filled {
   height: 100%;
 }
+
 main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
   color: white;
 }
+
 main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content .tooltip {
   position: absolute;
   top: -30px;
@@ -1174,34 +1329,42 @@ main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-conten
   font-size: 14px;
   transition: all 0.3s ease;
 }
+
 main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: 110px;
 }
+
 main .grid-container .programa1-6 .programa-5 h3 {
   text-align: center;
   justify-self: center;
 }
+
 main .grid-container .programa1-6 .programa-6 {
   grid-column-start: 8;
   grid-row-start: 5;
 }
+
 main .grid-container .programa1-6 .programa-6 .productdesigner-icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content {
   margin: 0 10px;
   position: relative;
 }
+
 main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content [data-social=obs] .filled {
   background-color: #000000;
 }
-main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content [data-social=obs] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content [data-social=obs]~.tooltip {
   background-color: #000000;
 }
+
 main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content a {
   position: relative;
   overflow: hidden;
@@ -1215,6 +1378,7 @@ main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-conten
   background-color: #fff;
   transition: all 0.3s ease-in-out;
 }
+
 main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content a .filled {
   position: absolute;
   top: auto;
@@ -1225,19 +1389,23 @@ main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-conten
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
+
 main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 48px;
   height: 48px;
 }
+
 main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content a:hover .filled {
   height: 100%;
 }
+
 main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content a:hover {
   box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
   color: white;
 }
+
 main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content .tooltip {
   position: absolute;
   top: -30px;
@@ -1251,11 +1419,13 @@ main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-conten
   font-size: 14px;
   transition: all 0.3s ease;
 }
+
 main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
   top: 110px;
 }
+
 main .grid-container .programa1-6 .programa-6 h3 {
   text-align: center;
   justify-self: center;
@@ -1270,6 +1440,7 @@ main .grid-container .section-product {
   gap: 24px;
   align-items: center;
 }
+
 main .grid-container .section-product img {
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -1279,17 +1450,21 @@ main .grid-container .section-product img {
   align-items: center;
   flex-shrink: 0;
 }
+
 main .grid-container .section-product img:hover {
   transform: scale(1.04);
 }
+
 main .grid-container .section-product button {
   margin-top: 24px;
 }
+
 main .grid-container .section-product .texto-proyecto a :hover::before {
   transition-duration: 0.3s;
   transform: translate(100%, -50%);
   border-radius: 0;
 }
+
 main .grid-container .section-product .texto-proyecto a ::before {
   width: 170px;
   height: 130px;
@@ -1302,6 +1477,7 @@ main .grid-container .section-product .texto-proyecto a ::before {
   transition-duration: 0.3s;
   mix-blend-mode: difference;
 }
+
 main .grid-container .section-product .texto-proyecto a .button-vermas {
   width: 170px;
   height: 56px;
@@ -1320,35 +1496,45 @@ main .grid-container .section-product .texto-proyecto a .button-vermas {
   overflow: hidden;
   transition-duration: 0.3s;
 }
+
 main .grid-container .section-product .texto-proyecto a .button-vermas .svgIcon {
   width: 32px;
   margin-left: 8px;
 }
+
 main .grid-container .section-product .texto-proyecto a .button-vermas .svgIcon path {
   fill: white;
 }
+
 main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content [data-social=figma] .filled {
   background: linear-gradient(to right, #F2015B, #ED02F1, #04038D);
 }
-main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content [data-social=figma] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-1 .productdesigner-icon .icon-content [data-social=figma]~.tooltip {
   background: linear-gradient(to right, #F2015B, #ED02F1, #04038D);
 }
+
 main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=whimsical] .filled {
   background: linear-gradient(to right, #4B31FE, #E26AFE);
 }
-main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=whimsical] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=whimsical]~.tooltip {
   background: linear-gradient(to right, #4B31FE, #E26AFE);
 }
+
 main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=optimal-workshop] .filled {
   background-color: #fed600;
 }
-main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=optimal-workshop] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=optimal-workshop]~.tooltip {
   background-color: #fed600;
 }
+
 main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=""] .filled {
   background-color: #00005A;
 }
-main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=""] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=""]~.tooltip {
   background-color: #00005A;
 }
 
@@ -1361,34 +1547,44 @@ main .grid-container .section-web-web {
   gap: 24px;
   align-items: center;
 }
+
 main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=html] .filled {
   background: linear-gradient(to right, #ef642b, #E44B20);
 }
-main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=html] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-2 .productdesigner-icon .icon-content [data-social=html]~.tooltip {
   background: linear-gradient(to right, #ef642b, #E44B20);
 }
+
 main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=css] .filled {
   background: linear-gradient(to right, #254DE3, #2964F0);
 }
-main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=css] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-3 .productdesigner-icon .icon-content [data-social=css]~.tooltip {
   background: linear-gradient(to right, #254DE3, #2964F0);
 }
+
 main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=sass] .filled {
   background-color: #E6659B;
 }
-main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=sass] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-4 .productdesigner-icon .icon-content [data-social=sass]~.tooltip {
   background-color: #E6659B;
 }
+
 main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content [data-social=js] .filled {
   background: linear-gradient(to right, #D3B72F, #fcd73b);
 }
-main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content [data-social=js] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-5 .productdesigner-icon .icon-content [data-social=js]~.tooltip {
   background: linear-gradient(to right, #D3B72F, #fcd73b);
 }
+
 main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content [data-social=ruby] .filled {
   background: linear-gradient(to right, #950B00, #E36848);
 }
-main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content [data-social=ruby] ~ .tooltip {
+
+main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-content [data-social=ruby]~.tooltip {
   background: linear-gradient(to right, #950B00, #E36848);
 }
 
@@ -1417,6 +1613,7 @@ nav {
   font-size: 24px;
   justify-content: space-between;
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -1424,31 +1621,37 @@ nav ul {
   margin: 0px;
   align-items: center;
 }
+
 nav li {
   margin: 0 16px;
 }
+
 nav .hamburger-menu {
   display: none;
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
 }
+
 nav .hamburger-menu span {
   width: 25px;
   height: 3px;
   background-color: #333;
   transition: 0.3s;
 }
+
 nav a {
   text-decoration: none;
   color: var(--text-color);
   transition: color 0.3s ease;
   padding: 0px 0px;
 }
+
 nav a img {
   width: 80px;
   height: auto;
 }
+
 nav .nav-container {
   display: flex;
   justify-content: space-between;
@@ -1457,48 +1660,62 @@ nav .nav-container {
   width: 100%;
   box-sizing: border-box;
 }
+
 nav .nav-container .navbar .nav-links .scroll-links {
   transition: color 0.3s ease;
 }
+
 nav .nav-container .navbar .nav-links .close-btn {
   display: none;
 }
+
 nav .navegacion-2 {
   display: flex;
 }
+
 nav .navegacion-2 .example-2 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 nav .navegacion-2 .example-2 .icon-content {
   margin: 0 10px;
   position: relative;
 }
+
 nav .navegacion-2 .example-2 .icon-content [data-social=linkedin] .filled {
   background-color: #0e76a8;
 }
-nav .navegacion-2 .example-2 .icon-content [data-social=linkedin] ~ .tooltip {
+
+nav .navegacion-2 .example-2 .icon-content [data-social=linkedin]~.tooltip {
   background-color: #0e76a8;
 }
+
 nav .navegacion-2 .example-2 .icon-content [data-social=pinterest] .filled {
   background-color: #bd081c;
 }
-nav .navegacion-2 .example-2 .icon-content [data-social=pinterest] ~ .tooltip {
+
+nav .navegacion-2 .example-2 .icon-content [data-social=pinterest]~.tooltip {
   background-color: #bd081c;
 }
+
 nav .navegacion-2 .example-2 .icon-content [data-social=behance] .filled {
   background-color: #053eff;
 }
-nav .navegacion-2 .example-2 .icon-content [data-social=behance] ~ .tooltip {
+
+nav .navegacion-2 .example-2 .icon-content [data-social=behance]~.tooltip {
   background-color: #053eff;
 }
+
 nav .navegacion-2 .example-2 .icon-content [data-social=instagram] .filled {
   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
 }
-nav .navegacion-2 .example-2 .icon-content [data-social=instagram] ~ .tooltip {
+
+nav .navegacion-2 .example-2 .icon-content [data-social=instagram]~.tooltip {
   background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
 }
+
 nav .navegacion-2 .example-2 .icon-content a {
   position: relative;
   overflow: hidden;
@@ -1509,9 +1726,10 @@ nav .navegacion-2 .example-2 .icon-content a {
   height: 50px;
   border-radius: 50%;
   color: #4d4d4d;
-  background-color: #fff;
+  background-color: var(--bg-color);
   transition: all 0.3s ease-in-out;
 }
+
 nav .navegacion-2 .example-2 .icon-content a .filled {
   position: absolute;
   top: auto;
@@ -1522,19 +1740,23 @@ nav .navegacion-2 .example-2 .icon-content a .filled {
   background-color: #000;
   transition: all 0.3s ease-in-out;
 }
+
 nav .navegacion-2 .example-2 .icon-content a svg {
   position: relative;
   z-index: 1;
   width: 30px;
   height: 30px;
 }
+
 nav .navegacion-2 .example-2 a:hover .filled {
   height: 100%;
 }
+
 nav .navegacion-2 .example-2 a:hover {
   box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
   color: white;
 }
+
 nav .navegacion-2 .example-2 .tooltip {
   position: absolute;
   top: -30px;
@@ -1548,6 +1770,7 @@ nav .navegacion-2 .example-2 .tooltip {
   font-size: 14px;
   transition: all 0.3s ease;
 }
+
 nav .navegacion-2 .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
@@ -1578,12 +1801,15 @@ footer {
   justify-content: space-between;
   color: white;
 }
+
 footer .right {
   text-align: right;
 }
+
 footer .left {
   text-align: left;
 }
+
 footer div h3 {
   font-family: "Sen", sans-serif;
   font-optical-sizing: auto;
@@ -1597,17 +1823,21 @@ footer div h3 {
   body.menu-open {
     overflow: hidden;
   }
+
   header nav {
     flex-direction: row;
   }
+
   header nav .hamburger-menu {
     display: flex;
     align-items: center;
     margin-left: 24px;
   }
+
   header nav .nav-container .navbar .nav-links.open {
     left: 0;
   }
+
   header nav .nav-container .navbar .nav-links {
     display: flex;
     flex-direction: column;
@@ -1616,12 +1846,13 @@ footer div h3 {
     left: -250px;
     height: 100%;
     width: 250px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: var(--bg-color);
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
     padding-top: 60px;
     transition: left 0.3s ease;
     z-index: 10;
   }
+
   header nav .nav-container .navbar .nav-links .close-btn {
     font-size: 30px;
     color: #333;
@@ -1632,44 +1863,57 @@ footer div h3 {
     z-index: 11;
     display: flex;
   }
+
   header nav .nav-container .navegacion-2 {
     display: none;
   }
+
   main .grid-container {
     grid-template-columns: 1fr;
     padding: 10px;
   }
+
   main .grid-container .section-audio {
     grid-template-columns: 1fr;
   }
+
   main .grid-container .section-audio h2 {
     font-size: 20px;
   }
+
   main .grid-container .section-product {
     grid-template-columns: 1fr;
   }
+
   main .grid-container .section-fam {
     grid-template-columns: 1fr;
   }
+
   main .grid-container .section-ux {
     grid-template-columns: 1fr;
   }
+
   main .grid-container .section-ux h2 {
     font-size: 20px;
   }
+
   main .grid-container .section-web {
     grid-template-columns: 1fr;
   }
+
   main .grid-container .section-web h2 {
     font-size: 20px;
   }
+
   main .grid-container .section-soy {
     grid-column: 2/12;
     grid-template-columns: 1fr;
   }
+
   main .grid-container .section-soy div h1 {
     font-size: 40px;
   }
+
   main .grid-container .contacto {
     grid-column: auto;
     display: flex;
@@ -1677,9 +1921,11 @@ footer div h3 {
     align-items: center;
     flex-direction: column;
   }
+
   main .grid-container .contacto h1 {
     font-size: 32px;
   }
+
   main .grid-container .contacto img {
     width: 50%;
     height: auto;
@@ -1688,48 +1934,60 @@ footer div h3 {
     flex-shrink: 0;
     grid: flex;
   }
+
   main .grid-container .programa1-6 {
     display: flex;
     flex-direction: column;
   }
+
   main .grid-container .form-container {
     grid-row-start: 2;
     grid-column: auto;
   }
+
   main .grid-container .form-container .contacto .form-box {
     transform: scale(100%);
     width: 80%;
   }
+
   main .grid-container .container-sobre-mi {
     grid-template-columns: 1fr;
     grid-column: 2/12;
   }
+
   footer {
     flex-direction: column;
   }
+
   footer div h3 {
     font-size: 16px;
   }
+
   footer .right {
     text-align: left;
     margin-top: 8px;
   }
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
   body.menu-open {
     overflow: hidden;
   }
+
   header nav {
     flex-direction: row;
   }
+
   header nav .hamburger-menu {
     display: flex;
     align-items: center;
     margin-left: 24px;
   }
+
   header nav .nav-container .navbar .nav-links.open {
     left: 0;
   }
+
   header nav .nav-container .navbar .nav-links {
     display: flex;
     flex-direction: column;
@@ -1738,12 +1996,13 @@ footer div h3 {
     left: -250px;
     height: 100%;
     width: 250px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: var(--bg-color);
     box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
     padding-top: 60px;
     transition: left 0.3s ease;
     z-index: 10;
   }
+
   header nav .nav-container .navbar .nav-links .close-btn {
     font-size: 30px;
     color: #333;
@@ -1754,54 +2013,69 @@ footer div h3 {
     z-index: 11;
     display: flex;
   }
+
   header nav .nav-container .navegacion-2 {
     display: none;
   }
+
   main .grid-container {
     grid-template-columns: 1fr;
     padding: 10px;
   }
+
   main .grid-container .section-audio {
     grid-template-columns: 2fr 1fr;
     grid-column: 2/12;
   }
+
   main .grid-container .section-audio h2 {
     font-size: 20px;
   }
+
   main .grid-container .section-ux {
     grid-template-columns: 2fr 1fr;
     grid-column: 2/12;
   }
+
   main .grid-container .section-ux h2 {
     font-size: 20px;
   }
+
   main .grid-container .section-product {
     grid-template-columns: 1fr 1fr;
   }
+
   main .grid-container .section-fam {
     grid-template-columns: 1fr 2fr;
   }
+
   main .grid-container .section-web {
     grid-template-columns: 2fr 1fr;
     grid-column: 2/12;
   }
+
   main .grid-container .section-web h2 {
     font-size: 20px;
   }
+
   main .grid-container .section-soy {
     grid-template-columns: 1fr 1fr;
     grid-column: 2/12;
   }
+
   main .grid-container .section-soy div h1 {
     font-size: 48px;
   }
+
   main .grid-container .contacto {
     grid-template-columns: 1fr;
     grid-column: 2/11;
   }
+
   main .grid-container .contacto h1 {
     font-size: 40px;
   }
+
   main .grid-container .contacto img {
     width: 50%;
     height: auto;
@@ -1809,27 +2083,34 @@ footer div h3 {
     align-items: center;
     flex-shrink: 0;
   }
+
   main .grid-container .programa1-6 {
     display: flex;
     flex-direction: column;
   }
+
   main .grid-container .form-container {
     grid-row-start: 2;
     grid-template-columns: 1fr;
   }
+
   main .grid-container .form-container .form-box {
     transform: scale(80%);
   }
+
   main .grid-container .container-sobre-mi {
     grid-template-columns: 1fr;
     grid-column: 2/12;
   }
+
   footer {
     flex-direction: column;
   }
+
   footer div h3 {
     font-size: 16px;
   }
+
   footer .right {
     text-align: left;
     margin-top: 8px;
@@ -1856,5 +2137,5 @@ html.dark-mode {
 }
 
 html.dark-mode nav a img {
- filter: invert(1)
+  filter: invert(1)
 }
