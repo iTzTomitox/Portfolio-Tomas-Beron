@@ -228,7 +228,7 @@ main .grid-container .section-soy .texto-proyecto .button-contactame:hover {
   color: #e8e8e8;
 }
 main .grid-container .section-soy .tomas {
-  color: #000;
+  color: var(--text-color);
   font-family: Sen;
   font-size: 56px;
   font-style: normal;
@@ -1441,7 +1441,8 @@ nav .hamburger-menu span {
 }
 nav a {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
+  transition: color 0.3s ease;
   padding: 0px 0px;
 }
 nav a img {
@@ -1844,13 +1845,16 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-
 :root {
   --bg-color: #ffffff;
-  --text-color: #000000;
+  --text-color: #111;
 }
 
 html.dark-mode {
   --bg-color: #121212;
-  --text-color: #ffffff;
+  --text-color: #fff;
+}
+
+html.dark-mode nav a img {
+ filter: invert(1)
 }
