@@ -1594,11 +1594,12 @@ main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-conten
   box-sizing: border-box;
 }
 
-body {
+body {  
   font-family: "Sen", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
+
 }
 
 header {
@@ -2126,16 +2127,51 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Variables base (modo claro) */
 :root {
   --bg-color: #ffffff;
   --text-color: #111;
 }
 
+/* Variables para modo oscuro */
 html.dark-mode {
   --bg-color: #121212;
   --text-color: #fff;
 }
 
+/* Logo claro sobre fondo oscuro */
 html.dark-mode nav a img {
-  filter: invert(1)
+  filter: invert(1);
+}
+
+/* Link activo */
+.nav-links a.active {
+  color: black ;
+  border-bottom: 2px solid black;
+}
+
+.nav-links li a:hover{
+  color: #707070;
+  border-bottom: 2px solid #707070;
+}
+
+html.dark-mode .nav-links a.active {
+  color: white;
+  border-bottom: 2px solid white;
+  animation-direction: normal;
+}
+
+
+#noise {
+  display: none;
+}
+
+html.dark-mode #noise {
+  display: block;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
 }

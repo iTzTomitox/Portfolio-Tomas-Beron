@@ -26,7 +26,6 @@
         <nav>
 
             <a href="../index.html"><img class="tomixlogo" src="../assent/logo-tomix.png" alt="TomixLogo"></a>
-
             <div class="hamburger-menu" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -36,7 +35,7 @@
                 <div class="navbar">
                     <ul class="nav-links">
                         <li class="underline-sobre-mi"><a href="../index.html" class="scroll-link">Sobre Mi</a></li>
-                        <li class="underline-proyectos"><a href="../pages/proyectos.html">Proyectos</a></li>
+                        <li class="underline-proyectos"><a class="active" href="../pages/proyectos.html">Proyectos</a></li>
                         <li class="underline-contacto"><a href="../pages/contacto.html">Contacto</a></li>
                         <li><span class="close-btn" onclick="toggleMenu()">X</span></li>
                         <li><label for= "dark-mode" class="checkbox-wrapper dark-mode-button">
@@ -54,6 +53,7 @@
 
                 <div class="navegacion-2">
                     <ul class="example-2">
+                        
                         <li class="icon-content">
                             <a data-social="linkedin" aria-label="Linkedin"
                                 href="https://www.linkedin.com/in/tomas-beron/" target="_blank">
@@ -190,6 +190,53 @@
 
    <script src="../script/modooscuro.js"></script>
 
+<script>
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    if (link.href === window.location.href) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+<canvas id="noise"></canvas>
+
+<script>
+  const canvas = document.getElementById('noise');
+  const ctx = canvas.getContext('2d');
+  let width, height;
+
+  function resize() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+
+  function generateDarkNoise() {
+    const imageData = ctx.createImageData(width, height);
+    const buffer = imageData.data;
+
+    for (let i = 0; i < buffer.length; i += 4) {
+      const value = Math.floor(Math.random() * 80); // gris oscuro
+      buffer[i] = value;
+      buffer[i + 1] = value;
+      buffer[i + 2] = value;
+      buffer[i + 3] = 60; // transparencia
+    }
+
+    ctx.putImageData(imageData, 0, 0);
+  }
+
+  function loop() {
+    generateDarkNoise();
+    requestAnimationFrame(loop);
+  }
+
+  loop();
+</script>
 
 </body>
 

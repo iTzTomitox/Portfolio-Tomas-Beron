@@ -35,7 +35,7 @@
                 <div class="navbar">
                     <ul class="nav-links">
                         <li class="underline-sobre-mi"><a href="../index.html">Sobre Mi</a></li>
-                        <li class="underline-proyectos"><a href="./proyectos.html">Proyectos</a></li>
+                        <li class="underline-proyectos"><a class="active" href="./proyectos.html">Proyectos</a></li>
                         <li class="underline-contacto"><a href="./contacto.html">Contacto</a></li>
                         <li><span class="close-btn" onclick="toggleMenu()">X</span></li>
                         <li><label for= "dark-mode" class="checkbox-wrapper dark-mode-button">
@@ -216,6 +216,46 @@
     <script src="../script/formulario.js"></script>
 
    <script src="../script/modooscuro.js"></script>
+
+<canvas id="noise"></canvas>
+
+<script>
+  const canvas = document.getElementById('noise');
+  const ctx = canvas.getContext('2d');
+  let width, height;
+
+  function resize() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+
+  function generateDarkNoise() {
+    const imageData = ctx.createImageData(width, height);
+    const buffer = imageData.data;
+
+    for (let i = 0; i < buffer.length; i += 4) {
+      const value = Math.floor(Math.random() * 80); // gris oscuro
+      buffer[i] = value;
+      buffer[i + 1] = value;
+      buffer[i + 2] = value;
+      buffer[i + 3] = 60; // transparencia
+    }
+
+    ctx.putImageData(imageData, 0, 0);
+  }
+
+  function loop() {
+    generateDarkNoise();
+    requestAnimationFrame(loop);
+  }
+
+  loop();
+</script>
 
 </body>
 
