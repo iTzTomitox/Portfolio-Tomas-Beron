@@ -1594,7 +1594,7 @@ main .grid-container .programa1-6 .programa-6 .productdesigner-icon .icon-conten
   box-sizing: border-box;
 }
 
-body {  
+body {
   font-family: "Sen", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -2146,11 +2146,11 @@ html.dark-mode nav a img {
 
 /* Link activo */
 .nav-links a.active {
-  color: black ;
+  color: black;
   border-bottom: 2px solid black;
 }
 
-.nav-links li a:hover{
+.nav-links li a:hover {
   color: #707070;
   border-bottom: 2px solid #707070;
 }
@@ -2169,7 +2169,8 @@ html.dark-mode .nav-links a.active {
 html.dark-mode #noise {
   display: block;
   position: fixed;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   pointer-events: none;

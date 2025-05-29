@@ -38,8 +38,9 @@
                         <li class="underline-proyectos"><a class="active" href="./proyectos.html">Proyectos</a></li>
                         <li class="underline-contacto"><a href="./contacto.html">Contacto</a></li>
                         <li><span class="close-btn" onclick="toggleMenu()">X</span></li>
-                        <li><label for= "dark-mode" class="checkbox-wrapper dark-mode-button">
-                                <input id="dark-mode" type="checkbox" onclick="document.documentElement.classList.toggle('dark-mode')" />
+                        <li><label for="dark-mode" class="checkbox-wrapper dark-mode-button">
+                                <input id="dark-mode" type="checkbox"
+                                    onclick="document.documentElement.classList.toggle('dark-mode')" />
                                 <div class="checkmark">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
                                         <path d="M20 6L9 17L4 12" stroke-width="3" stroke-linecap="round"
@@ -113,35 +114,45 @@
                 <div class="imagen-proyecto"><img src="../assent/dk-app.jpg" alt=""></div>
                 <div class="texto-proyecto">
                     <h2>Product Designer</h2>
-                    <p>A lo largo de mi trayectoria como Product Designer, he tenido la oportunidad de diseñar experiencias digitales centradas en el usuario, aplicando metodologías y principios que garantizan interfaces intuitivas y funcionales. Mi trabajo combina investigación, diseño y prototipado para crear soluciones que resuelvan problemas reales de los usuarios.</p>
-                    <p>Mi objetivo como Product Designer es mejorar la experiencia del usuario a través de diseños innovadores, funcionales y alineados con las necesidades del negocio.</p>
+                    <p>A lo largo de mi trayectoria como Product Designer, he tenido la oportunidad de diseñar
+                        experiencias digitales centradas en el usuario, aplicando metodologías y principios que
+                        garantizan interfaces intuitivas y funcionales. Mi trabajo combina investigación, diseño y
+                        prototipado para crear soluciones que resuelvan problemas reales de los usuarios.</p>
+                    <p>Mi objetivo como Product Designer es mejorar la experiencia del usuario a través de diseños
+                        innovadores, funcionales y alineados con las necesidades del negocio.</p>
                 </div>
             </section>
 
             <section class="section-web-web">
                 <div class="texto-proyecto">
                     <h2>Portafolio UX/UI</h2>
-                    <p>Para mi portafolio, diseñé y estructuré una experiencia que refleje mi enfoque profesional. Apliqué principios de usabilidad y diseño centrado en el usuario, asegurando que cada detalle representara mi identidad como diseñador.</p>
+                    <p>Para mi portafolio, diseñé y estructuré una experiencia que refleje mi enfoque profesional.
+                        Apliqué principios de usabilidad y diseño centrado en el usuario, asegurando que cada detalle
+                        representara mi identidad como diseñador.</p>
                     <p>Prototipado: Utilicé Figma para desarrollar wireframes y prototipos de alta fidelidad.
-                        </p>
-                        <p>Pruebas: Llevé a cabo test de usuarios para validar las decisiones de diseño y ajustar elementos clave según el feedback recibido.</p>
+                    </p>
+                    <p>Pruebas: Llevé a cabo test de usuarios para validar las decisiones de diseño y ajustar elementos
+                        clave según el feedback recibido.</p>
                 </div>
             </section>
             <section class="section-fam">
                 <div class="texto-proyecto">
                     <h2>Rediseño de Compra Gamer</h2>
-                    <p>Como parte de un proyecto académico, llevé a cabo el rediseño de Compra Gamer, un sitio de e-commerce especializado en hardware y accesorios para gaming.</p>
+                    <p>Como parte de un proyecto académico, llevé a cabo el rediseño de Compra Gamer, un sitio de
+                        e-commerce especializado en hardware y accesorios para gaming.</p>
                     <h3>Metodologías aplicadas:</h3>
-                    <p>- Investigación con test de usabilidad para identificar los puntos de mejora en la experiencia actual.</p>
+                    <p>- Investigación con test de usabilidad para identificar los puntos de mejora en la experiencia
+                        actual.</p>
                     <p>- Implementación de Atomic Design para garantizar consistencia en el diseño de componentes.</p>
                     <p>- Realización de prototipos interactivos en Figma para visualizar la propuesta final.</p>
                     <h4>Resultado</h4>
-                    <p>El diseño final se centró en mejorar la navegación, simplificar el proceso de compra y aumentar la satisfacción del usuario.</p>
+                    <p>El diseño final se centró en mejorar la navegación, simplificar el proceso de compra y aumentar
+                        la satisfacción del usuario.</p>
                 </div>
                 <div class="imagen-proyecto">
                     <img src="../assent/pic-ux.jpg" alt="">
                 </div>
-            
+
 
 
 
@@ -215,47 +226,47 @@
 
     <script src="../script/formulario.js"></script>
 
-   <script src="../script/modooscuro.js"></script>
+    <script src="../script/modooscuro.js"></script>
 
-<canvas id="noise"></canvas>
+    <canvas id="noise"></canvas>
 
-<script>
-  const canvas = document.getElementById('noise');
-  const ctx = canvas.getContext('2d');
-  let width, height;
+    <script>
+        const canvas = document.getElementById('noise');
+        const ctx = canvas.getContext('2d');
+        let width, height;
 
-  function resize() {
-    width = window.innerWidth;
-    height = window.innerHeight;
-    canvas.width = width;
-    canvas.height = height;
-  }
+        function resize() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+        }
 
-  window.addEventListener('resize', resize);
-  resize();
+        window.addEventListener('resize', resize);
+        resize();
 
-  function generateDarkNoise() {
-    const imageData = ctx.createImageData(width, height);
-    const buffer = imageData.data;
+        function generateDarkNoise() {
+            const imageData = ctx.createImageData(width, height);
+            const buffer = imageData.data;
 
-    for (let i = 0; i < buffer.length; i += 4) {
-      const value = Math.floor(Math.random() * 80); // gris oscuro
-      buffer[i] = value;
-      buffer[i + 1] = value;
-      buffer[i + 2] = value;
-      buffer[i + 3] = 60; // transparencia
-    }
+            for (let i = 0; i < buffer.length; i += 4) {
+                const value = Math.floor(Math.random() * 80); // gris oscuro
+                buffer[i] = value;
+                buffer[i + 1] = value;
+                buffer[i + 2] = value;
+                buffer[i + 3] = 60; // transparencia
+            }
 
-    ctx.putImageData(imageData, 0, 0);
-  }
+            ctx.putImageData(imageData, 0, 0);
+        }
 
-  function loop() {
-    generateDarkNoise();
-    requestAnimationFrame(loop);
-  }
+        function loop() {
+            generateDarkNoise();
+            requestAnimationFrame(loop);
+        }
 
-  loop();
-</script>
+        loop();
+    </script>
 
 </body>
 

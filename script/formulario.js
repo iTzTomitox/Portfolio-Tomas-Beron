@@ -51,8 +51,8 @@ document.addEventListener('click', (event) => {
 function toggleMenu() {
   const navLinks = document.querySelector('.nav-links');
   const body = document.querySelector('body');
-  
+
   navLinks.classList.toggle('open');
-  
+
   body.classList.toggle('menu-open');
 }
