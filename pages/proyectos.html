@@ -20,9 +20,13 @@
 </head>
 
 <body>
+
+    <div id="loader">
+        <img src="../assent/logo-tomix.png" alt="Logo de Tomás Berón" class="loader-logo" />
+        <p class="loader-text">Portfolio de Tomás Berón</p>
+    </div>
+
     <header>
-
-
         <nav>
 
             <a href="#" id="logo-tomix">
@@ -246,6 +250,19 @@
 
         loop();
     </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            loader.classList.add("fade-out");
+
+            // Opcional: eliminar el loader del DOM después de desvanecerse
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500); // tiempo en ms que coincide con el transition
+        });
+    </script>
+
 </body>
 
 </html>
