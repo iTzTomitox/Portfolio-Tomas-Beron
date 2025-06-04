@@ -25,8 +25,9 @@
 
         <nav>
 
-            <a href="./index.html"><img class="tomixlogo" src="./assent/logo-tomix.png" alt="TomixLogo"></a>
-
+            <a href="#" id="logo-tomix">
+                <img class="tomixlogo" src="../assent/logo-tomix.png" alt="TomixLogo">
+            </a>
 
             <div class="hamburger-menu" onclick="toggleMenu()">
                 <span></span>
@@ -42,19 +43,7 @@
                         <li class="underline-proyectos"><a href="./pages/proyectos.html">Proyectos</a></li>
                         <li class="underline-contacto"><a href="./pages/contacto.html">Contacto</a></li>
                         <li><span class="close-btn" onclick="toggleMenu()">X</span></li>
-                        <li><label for="dark-mode" class="checkbox-wrapper dark-mode-button">
-                                <input id="dark-mode" type="checkbox"
-                                    onclick="document.documentElement.classList.toggle('dark-mode')" />
-                                <div class="checkmark">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <path d="M20 6L9 17L4 12" stroke-width="3" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                    </svg>
-                                </div>
-                                <span class="label">Modo Oscuro</span>
-                            </label>
                     </ul>
-
                 </div>
 
 
@@ -239,7 +228,7 @@
 
                 <br>
 
-                <iframe width="100%" height="500"
+                <iframe data-aos="fade-down" width="100%" height="500" 
                     src="https://www.youtube-nocookie.com/embed/lqWOSiyk62g?si=ljCWIE0cYfDnYqnj"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -264,7 +253,7 @@
         </div>
 
 
-        
+
     </main>
 
     <footer>
@@ -291,57 +280,55 @@
         });
     </script>
 
-    <script src="./script/formulario.js"></script>
+    <script src="./script/formulario.js" defer></script>
 
-    <script src="./script/modooscuro.js"></script>
+    <script src="./script/modooscuro.js" defer></script>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 
-<canvas id="noise"></canvas>
+    <canvas id="noise"></canvas>
 
-<script>
-  const canvas = document.getElementById('noise');
-  const ctx = canvas.getContext('2d');
-  let width, height;
+    <script>
+        const canvas = document.getElementById('noise');
+        const ctx = canvas.getContext('2d');
+        let width, height;
 
-  function resize() {
-    width = window.innerWidth;
-    height = window.innerHeight;
-    canvas.width = width;
-    canvas.height = height;
-  }
+        function resize() {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+        }
 
-  window.addEventListener('resize', resize);
-  resize();
+        window.addEventListener('resize', resize);
+        resize();
 
-  function generateDarkNoise() {
-    const imageData = ctx.createImageData(width, height);
-    const buffer = imageData.data;
+        function generateDarkNoise() {
+            const imageData = ctx.createImageData(width, height);
+            const buffer = imageData.data;
 
-    for (let i = 0; i < buffer.length; i += 4) {
-      const value = Math.floor(Math.random() * 80); // gris oscuro
-      buffer[i] = value;
-      buffer[i + 1] = value;
-      buffer[i + 2] = value;
-      buffer[i + 3] = 60; // transparencia
-    }
+            for (let i = 0; i < buffer.length; i += 4) {
+                const value = Math.floor(Math.random() * 80); // gris oscuro
+                buffer[i] = value;
+                buffer[i + 1] = value;
+                buffer[i + 2] = value;
+                buffer[i + 3] = 60; // transparencia
+            }
 
-    ctx.putImageData(imageData, 0, 0);
-  }
+            ctx.putImageData(imageData, 0, 0);
+        }
 
-  function loop() {
-    generateDarkNoise();
-    requestAnimationFrame(loop);
-  }
+        function loop() {
+            generateDarkNoise();
+            requestAnimationFrame(loop);
+        }
 
-  loop();
-</script>
+        loop();
 
-
-
+    </script>
 
 </body>
 

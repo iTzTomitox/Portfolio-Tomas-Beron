@@ -20,11 +20,13 @@
 </head>
 
 <body>
+
     <header>
         <nav>
 
-            <a href="../index.html"><img class="tomixlogo" src="../assent/logo-tomix.png" alt="TomixLogo"></a>
-
+            <div input id="dark-mode">
+            <a href="#"><img class="tomixlogo" id="logo-tomix" src="../assent/logo-tomix.png" alt="TomixLogo"></a>
+</div>
 
             <div class="hamburger-menu" onclick="toggleMenu()">
                 <span></span>
@@ -39,17 +41,6 @@
                         <li class="underline-proyectos"><a class="active" href="./proyectos.html">Proyectos</a></li>
                         <li class="underline-contacto"><a href="./contacto.html">Contacto</a></li>
                         <li><span class="close-btn" onclick="toggleMenu()">X</span></li>
-                        <li><label for="dark-mode" class="checkbox-wrapper dark-mode-button">
-                                <input id="dark-mode" type="checkbox"
-                                    onclick="document.documentElement.classList.toggle('dark-mode')" />
-                                <div class="checkmark">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                                        <path d="M20 6L9 17L4 12" stroke-width="3" stroke-linecap="round"
-                                            stroke-linejoin="round"></path>
-                                    </svg>
-                                </div>
-                                <span class="label">Modo Oscuro</span>
-                            </label>
                     </ul>
                 </div>
                 <div class="navegacion-2">
@@ -139,7 +130,6 @@
                 </div>
             </section>
 
-            
 
             <section class="section-fam">
                 <div class="texto-proyecto">
@@ -156,7 +146,10 @@
                 </div>
 
             </section>
-
+            
+            <section class="container-education" data-aos="fade-down">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/qQbhC9TtcG4?si=AsoCupxzSis0t3xF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
             <section class="programas-utilizados">
                 <h2>Programas que utilizo</h2>
             </section>
@@ -177,40 +170,6 @@
                         </li>
                     </ul>
                     <h3>Premiere Pro</h3>
-                </div>
-
-                <div class="programa-2">
-                    <ul class="productdesigner-icon">
-                        <li class="icon-content">
-                            <a data-social="illustrator" aria-label="illustrator" href="">
-                                <div class="filled"></div>
-                                <svg viewBox="0 0 48 48" version="1.1">
-                                    <path fill="currentColor"
-                                        d="M19.4804 16.422H19.4093C19.048 17.8759 18.6866 19.7224 18.2855 21.1364L16.8345 26.3174H22.2345L20.7124 21.1364C20.2799 19.6854 19.8446 17.8759 19.4804 16.422Z M45.0581 0H2.93901C1.31444 0 0 1.31444 0 2.93901V45.061C0 46.6827 1.31444 48 2.93901 48H45.061C46.6827 48 48 46.6827 48 45.061V2.93901C48 1.31729 46.6827 0 45.0581 0ZM24.9176 36.7163L23.0312 30.4485H16.0408L14.2996 36.7163H8.57519L16.0408 12.2966H23.2845L30.861 36.7163H24.9176ZM39.2427 36.7163H33.7317V18.9997H39.2427V36.7163ZM36.4545 16.826C34.7161 16.826 33.5553 15.5913 33.5895 14.0691C33.5553 12.473 34.7161 11.2837 36.4943 11.2837C38.2668 11.2837 39.3907 12.4758 39.4248 14.0691C39.4248 15.5913 38.2668 16.826 36.4545 16.826Z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <div class="tooltip">40%</div>
-                        </li>
-                    </ul>
-                    <h3>Illustrator</h3>
-                </div>
-
-                <div class="programa-3">
-                    <ul class="productdesigner-icon">
-                        <li class="icon-content">
-                            <a data-social="photoshop" aria-label="photoshop" href="">
-                                <div class="filled"></div>
-                                <svg viewBox="0 0 48 48" version="1.1">
-                                    <path fill="currentColor"
-                                        d="M16.28 13.6891C15.0655 13.6891 14.2411 13.8073 13.8125 13.9282V21.7345C14.3236 21.8499 14.9473 21.8884 15.8101 21.8884C18.9892 21.8884 20.9511 20.2809 20.9511 17.5717C20.9483 15.1427 19.2612 13.6891 16.28 13.6891Z M45.0627 0.00549316H2.94007C1.31616 0.00549316 0 1.31891 0 2.93732V45.0572C0 46.6783 1.31616 47.9945 2.94007 47.9945H45.0627C46.6838 47.9945 48 46.6783 48 45.0572V2.94006C48 1.31891 46.6838 0.00549316 45.0627 0.00549316ZM24.4383 23.6964C22.4022 25.6198 19.377 26.4826 15.8516 26.4826C15.063 26.4826 14.3596 26.4441 13.8101 26.3644V35.8221H7.88322V9.72969C9.72694 9.4192 12.3153 9.18289 15.967 9.18289C19.6517 9.18289 22.284 9.88631 24.0453 11.3014C25.7407 12.6368 26.8755 14.835 26.8755 17.4233C26.8755 20.0117 26.01 22.2016 24.4383 23.6964ZM33.3711 36.2123C30.8542 36.2123 28.6203 35.6682 27.1668 34.8796L28.2246 30.6042C29.3237 31.2664 31.6016 32.0522 33.3711 32.0522C35.1709 32.0522 35.9183 31.4257 35.9183 30.442C35.9183 29.4638 35.3302 28.994 33.0963 28.2466C29.1341 26.914 27.6009 24.7542 27.6394 22.4791C27.6394 18.9126 30.7003 16.1978 35.4484 16.1978C37.685 16.1978 39.6854 16.7117 40.8614 17.2969L39.8035 21.4185C38.9408 20.9459 37.2949 20.3222 35.6435 20.3222C34.1954 20.3222 33.3739 20.9102 33.3739 21.8911C33.3739 22.7924 34.113 23.2622 36.4678 24.0893C40.1168 25.3423 41.65 27.1887 41.6857 30.0079C41.6857 33.5827 38.8556 36.2123 33.3711 36.2123Z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <div class="tooltip">60%</div>
-                        </li>
-                    </ul>
-                    <h3>Photoshop</h3>
                 </div>
 
                 <div class="programa-4">
@@ -275,9 +234,9 @@
         </div>
     </footer>
 
-    <script src="../script/formulario.js"></script>
+    <script src="../script/formulario.js" defer></script>
 
-    <script src="../script/modooscuro.js"></script>
+    <script src="../script/modooscuro.js" defer></script>
 
     <canvas id="noise"></canvas>
 

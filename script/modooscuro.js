@@ -1,20 +1,20 @@
-// Ejecuta al cargar la página
-window.addEventListener('DOMContentLoaded', () => {
-  const isDark = localStorage.getItem('dark-mode') === 'true';
-  const checkbox = document.getElementById('dark-mode');
 
-  if (isDark) {
-    document.documentElement.classList.add('dark-mode');
-    if (checkbox) checkbox.checked = true;
-  }
-});
+  window.addEventListener('DOMContentLoaded', () => {
+    const logo = document.getElementById('logo-tomix');
 
-// Escucha cambios en el checkbox
-const checkbox = document.getElementById('dark-mode');
-if (checkbox) {
-  checkbox.addEventListener('change', () => {
-    const isChecked = checkbox.checked;
-    document.documentElement.classList.toggle('dark-mode', isChecked);
-    localStorage.setItem('dark-mode', isChecked ? 'true' : 'false');
+    // 1. Verifica si estaba en modo oscuro y lo aplica
+    const isDarkSaved = localStorage.getItem('dark-mode') === 'true';
+    if (isDarkSaved) {
+      document.documentElement.classList.add('dark-mode');
+    }
+
+    // 2. Al hacer click en el logo, activa/desactiva modo oscuro y lo guarda
+    if (logo) {
+      logo.addEventListener('click', (e) => {
+        e.preventDefault(); // Evita que salte por el href="#"
+        const isNowDark = document.documentElement.classList.toggle('dark-mode');
+        localStorage.setItem('dark-mode', isNowDark ? 'true' : 'false');
+      });
+    }
   });
-}
+
