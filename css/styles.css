@@ -2491,7 +2491,7 @@ main .grid-container .section-product2 .texto-proyecto a .button-vermas .svgIcon
   display: block;
   width: 200px;
   height: 1600%;
-  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+  background: linear-gradient(90deg, transparent, #e05e1d, #ff8345, #ff8649, #fc671d, transparent);
   animation: rotation_481 5000ms infinite linear;
 }
 
