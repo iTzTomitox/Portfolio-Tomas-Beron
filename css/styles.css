@@ -2272,8 +2272,15 @@ main .grid-container .section-web2 .texto-proyecto a .button-vermas .svgIcon pat
 }
 
 @keyframes fadeIn {
-  from { opacity: 0.5; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+  from {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .loader-text {
@@ -2286,14 +2293,21 @@ main .grid-container .section-web2 .texto-proyecto a .button-vermas .svgIcon pat
 }
 
 @keyframes fadeInText {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .fade-out {
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.5s ease; 
+  transition: opacity 0.5s ease;
 }
 
 main .grid-container .section-web-iframe {
@@ -2400,23 +2414,6 @@ main .grid-container .section-product2 .texto-proyecto a .button-vermas .svgIcon
   margin-bottom: 60px;
 }
 
-.project__image img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.05);
-}
-
-.project__content h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.project__content p {
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-}
 
 
 .cards-container {
@@ -2427,30 +2424,30 @@ main .grid-container .section-product2 .texto-proyecto a .button-vermas .svgIcon
   margin-top: 20px;
 }
 
+
 .card {
   position: relative;
-  width: 300px;
-  height: 220px;
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  overflow: hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 0 5px #ffffff80;
+  width: 400px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 0;
+  perspective: 1000px;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.card__img {
+.content {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
 }
 
-.card:hover .card__img {
-  opacity: 0;
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
 .card__content {
@@ -2461,40 +2458,22 @@ main .grid-container .section-product2 .texto-proyecto a .button-vermas .svgIcon
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  background-color: black;
   transform: rotateX(-90deg);
   transform-origin: bottom;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
-.card:hover .card__content {
-  transform: rotateX(0deg);
-}
-
-.card__title {
-  margin: 0;
-  font-size: 22px;
-  color: #333;
-  font-weight: 700;
-}
-
-.card__description {
-  margin-top: 10px;
-  font-size: 14px;
-  color: #555;
-  line-height: 1.4;
-}
-
-.content {
+.front,
+.back {
+  background-color: #151515;
+  position: absolute;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 300ms;
-  box-shadow: 0px 0px 10px 1px #000000ee;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 .back {
@@ -2508,21 +2487,12 @@ main .grid-container .section-product2 .texto-proyecto a .button-vermas .svgIcon
 
 .back::before {
   position: absolute;
-  content: '';
+  content: ' ';
   display: block;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    #ff9966,
-    #ff9966,
-    #ff9966,
-    #ff9966,
-    transparent
-  );
-  animation: rotation_481 5s linear infinite;
-  z-index: 0;
+  width: 200px;
+  height: 1600%;
+  background: linear-gradient(90deg, transparent, #ff9966, #ff9966, #ff9966, #ff9966, transparent);
+  animation: rotation_481 5000ms infinite linear;
 }
 
 .back-content {
@@ -2539,13 +2509,36 @@ main .grid-container .section-product2 .texto-proyecto a .button-vermas .svgIcon
   gap: 30px;
 }
 
+
 @keyframes rotation_481 {
   0% {
     transform: rotateZ(0deg);
   }
 
-  100% {
+  0% {
     transform: rotateZ(360deg);
   }
 }
 
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.card__img {
+  width: 99%;
+  height: 99%;
+}
