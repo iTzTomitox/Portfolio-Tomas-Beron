@@ -1,0 +1,12 @@
+{
+  "name": "portfolio-tomas-beron",
+  "private": true,
+  "description": "Portfolio de Tomás Berón — Product Designer UX/UI",
+  "scripts": {
+    "css": "sass scss/main.scss css/styles.css --style=compressed --no-source-map",
+    "css:watch": "sass scss/main.scss css/styles.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-tomas-beron.vercel.app/sitemap.xml

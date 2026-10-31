@@ -1,245 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-AR" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diseño gráfico | Tomás Berón — Branding y piezas para redes</title>
+    <meta name="description" content="Diseño gráfico de Tomás Berón: identidad visual, portadas musicales, piezas para Meta Ads y Google Search y campañas gráficas como la de Le Papillon.">
+    <meta name="author" content="Tomás Berón">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://portfolio-tomas-beron.vercel.app/pages/disenografico.html">
+    <meta name="theme-color" content="#0b0b0c">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Tomás Berón — Portfolio">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:title" content="Diseño gráfico | Tomás Berón — Branding y piezas para redes">
+    <meta property="og:description" content="Diseño gráfico de Tomás Berón: identidad visual, portadas musicales, piezas para Meta Ads y Google Search y campañas gráficas como la de Le Papillon.">
+    <meta property="og:url" content="https://portfolio-tomas-beron.vercel.app/pages/disenografico.html">
+    <meta property="og:image" content="https://portfolio-tomas-beron.vercel.app/assets/img/og-tomas-beron.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Tomás Berón operando una cámara durante un evento">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Diseño gráfico | Tomás Berón — Branding y piezas para redes">
+    <meta name="twitter:description" content="Diseño gráfico de Tomás Berón: identidad visual, portadas musicales, piezas para Meta Ads y Google Search y campañas gráficas como la de Le Papillon.">
+    <meta name="twitter:image" content="https://portfolio-tomas-beron.vercel.app/assets/img/og-tomas-beron.jpg">
+
+    <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <script>(function () { var t; try { t = localStorage.getItem('theme'); } catch (e) {} document.documentElement.dataset.theme = t || 'dark'; document.documentElement.classList.add('js'); })();</script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
-    <link rel="icon" href="../assent/logo-tomix.png" type="image/png">
-    <meta name="description"
-        content="Conoce mi experiencia en desarrollo web, incluyendo diseño responsivo, optimización UX/UI y uso de tecnologías como HTML, CSS y JavaScript.">
-    <meta name="keywords" content="desarrollo web, diseño responsivo, UX/UI, HTML, CSS, JavaScript, portafolio web">
-    <meta property="og:image" content="https://itztomitox.github.io/Portfolio-Tomas-Beron/assent/pic-camara.jpg">
-    <meta property="og:url" content="https://itztomitox.github.io/Portfolio-Tomas-Beron/index.html">
-    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500&display=swap">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Desarrollo Web</title>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://portfolio-tomas-beron.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Trabajos", "item": "https://portfolio-tomas-beron.vercel.app/pages/proyectos.html"}, {"@type": "ListItem", "position": 3, "name": "Diseño gráfico", "item": "https://portfolio-tomas-beron.vercel.app/pages/disenografico.html"}]}</script>
 </head>
 
 <body>
-    <header>
-        <nav>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-            <div input id="dark-mode">
-            <a href="#"><img class="tomixlogo" id="logo-tomix" src="../assent/logo-tomix.png" alt="TomixLogo"></a>
-</div>
-
-            <div class="hamburger-menu" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div class="nav-container">
-                <div class="navbar">
-                    <ul class="nav-links">
-                        <li class="underline-sobre-mi"><a href="../index.html">Sobre Mi</a></li>
-                        <li class="underline-proyectos"><a class="active" href="./proyectos.html">Proyectos</a></li>
-                        <li class="underline-contacto"><a href="./contacto.html">Contacto</a></li>
-                        <li><span class="close-btn" onclick="toggleMenu()">X</span></li>
-                    </ul>
-                </div>
-
-                <div class="navegacion-2">
-
-                    <ul class="example-2">
-                        <li class="icon-content">
-                            <a data-social="linkedin" aria-label="Linkedin"
-                                href="https://www.linkedin.com/in/tomas-beron/" target="_blank">
-                                <div class="filled"></div>
-
-                                <svg viewBox="0 0 40 40" version="1.1">
-
-
-                                    <path fill="currentColor"
-                                        d="M31.6667 5C32.5507 5 33.3986 5.35119 34.0237 5.97631C34.6488 6.60143 35 7.44928 35 8.33333V31.6667C35 32.5507 34.6488 33.3986 34.0237 34.0237C33.3986 34.6488 32.5507 35 31.6667 35H8.33333C7.44928 35 6.60143 34.6488 5.97631 34.0237C5.35119 33.3986 5 32.5507 5 31.6667V8.33333C5 7.44928 5.35119 6.60143 5.97631 5.97631C6.60143 5.35119 7.44928 5 8.33333 5H31.6667ZM30.8333 30.8333V22C30.8333 20.559 30.2609 19.177 29.2419 18.1581C28.223 17.1391 26.841 16.5667 25.4 16.5667C23.9833 16.5667 22.3333 17.4333 21.5333 18.7333V16.8833H16.8833V30.8333H21.5333V22.6167C21.5333 21.3333 22.5667 20.2833 23.85 20.2833C24.4688 20.2833 25.0623 20.5292 25.4999 20.9668C25.9375 21.4043 26.1833 21.9978 26.1833 22.6167V30.8333H30.8333ZM11.4667 14.2667C12.2093 14.2667 12.9215 13.9717 13.4466 13.4466C13.9717 12.9215 14.2667 12.2093 14.2667 11.4667C14.2667 9.91667 13.0167 8.65 11.4667 8.65C10.7196 8.65 10.0032 8.94675 9.47498 9.47498C8.94675 10.0032 8.65 10.7196 8.65 11.4667C8.65 13.0167 9.91667 14.2667 11.4667 14.2667ZM13.7833 30.8333V16.8833H9.16667V30.8333H13.7833Z">
-                                    </path>
-                                </svg>
-                            </a>
-
-                        </li>
-                        <li class="icon-content">
-                            <a data-social="pinterest" aria-label="Pinterest" href="https://pin.it/3CI0PeYRZ"
-                                target="_blank">
-                                <div class="filled"></div>
-                                <svg xml:space="preserve" viewBox="0 0 100 100" version="1.1">
-                                    <path fill="currentColor"
-                                        d="M83,17.8C74.5,8.9,63.4,4.3,50,4.1C37.7,4.2,26.8,8.6,17.9,17.3C8.9,26,4.3,37,4.1,50c0,0,0,0,0,0c0,9.1,2.5,17.4,7.4,24.9  c4.9,7.4,11.6,13.2,20.1,17.1c0.3,0.1,0.7,0.1,1-0.1c0.3-0.2,0.5-0.5,0.5-0.8l0-4.9c0.1-2.1,0.7-5.3,1.7-9.5c1-4,1.7-6.7,1.9-7.6  c0.7-3,1.7-7.2,3-12.6c0.1-0.2,0-0.5-0.1-0.7c-0.4-0.8-1-2.6-1.5-6.6c0.1-2.7,0.8-5.2,2.1-7.3c1.2-2,3.1-3.1,5.7-3.5  c2,0.1,4.7,0.8,5.1,5.9c-0.1,1.8-0.8,4.5-1.9,8.1c-1.2,3.8-1.9,6.3-2.1,7.6c-0.7,2.5-0.2,4.8,1.5,6.8c1.6,1.9,3.8,2.9,6.5,3.1  c4.3-0.1,8.1-2.6,11.2-7.5c1.7-3,2.9-6.3,3.5-9.7c0.7-3.4,0.7-7.1,0-10.8c-0.7-3.8-2.2-7.1-4.5-9.8c0,0-0.1-0.1-0.1-0.1  c-4.3-3.7-9.5-5.3-15.6-5c-6,0.4-11.3,2.6-15.9,6.6c-2.9,3.2-4.8,7.1-5.7,11.6c-0.9,4.6,0,9.1,2.6,13.3c0.3,0.5,0.5,0.8,0.6,1  c0,0.3,0,1-0.5,2.8c-0.5,1.8-0.9,2.2-0.9,2.2c0,0-0.1,0-0.1,0.1c0,0-0.2,0-0.4-0.1c-2.2-1-3.9-2.4-5.2-4.2c-1.3-1.9-2.1-4-2.5-6.3  c-0.3-2.5-0.4-5-0.3-7.5c0.2-2.5,0.7-5.1,1.4-7.7c3-6.9,8.5-11.9,16.3-14.8c7.8-2.9,16-3.2,24.3-0.8c6.5,2.8,11,7.4,13.6,13.7  c2.5,6.4,2.8,13.4,0.8,20.8c-2.2,7.1-6.4,12.4-12.1,15.7c-5.6,2.8-10.8,3-15.7,0.7c-1.8-1.1-3.1-2.3-3.9-3.5c-0.2-0.3-0.6-0.5-1-0.5  c-0.4,0.1-0.7,0.3-0.8,0.7c-0.7,2.7-1.3,4.7-1.6,6.2c-1.4,5.4-2.6,9.2-3.4,11c-0.8,1.6-1.6,3.1-2.4,4.3c-0.2,0.3-0.2,0.6-0.1,0.9  s0.3,0.5,0.6,0.6c4.3,1.3,8.7,2,13,2c12.4-0.1,23.2-4.6,32.1-13.4C91.1,73.9,95.8,62.9,96,50C95.9,37.5,91.5,26.7,83,17.8z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="icon-content">
-                            <a data-social="behance" href="https://www.behance.net/tomasberon" target="_blank">
-                                <div class="filled"></div>
-                                <svg viewBox="0 0 40 40" version="1.1">
-                                    <path fill="currentColor"
-                                        d="M26.0972 18.446C25.4395 18.446 24.9315 18.6353 24.571 19.0072C24.2079 19.3782 23.9818 19.8831 23.8892 20.5219H28.2973C28.2495 19.8418 28.0225 19.3272 27.6137 18.9756C27.208 18.623 26.7014 18.446 26.0972 18.446Z M16.4858 18.1945C16.8555 17.9693 17.0399 17.5689 17.0399 16.9937C17.0399 16.3584 16.7958 15.9364 16.3063 15.7336C15.8856 15.5927 15.3469 15.5198 14.694 15.5198H12.1519V18.5331H15.0422C15.6358 18.5331 16.1162 18.4202 16.4858 18.1945Z M16.4494 21.0261C16.1258 20.8763 15.6691 20.7999 15.0834 20.7947H12.1514V24.4349H15.0378C15.6309 24.4349 16.0898 24.3572 16.4213 24.1952C17.0188 23.8975 17.3183 23.3307 17.3183 22.4895C17.3183 21.7799 17.028 21.2895 16.4494 21.0261Z M19.9775 0.219727C9.06552 0.219727 0.219727 9.06552 0.219727 19.9775C0.219727 30.8896 9.06552 39.7354 19.9775 39.7354C30.8896 39.7354 39.7354 30.8896 39.7354 19.9775C39.7354 9.06552 30.8896 0.219727 19.9775 0.219727ZM23.3254 13.7143H28.8264V15.0807H23.3254V13.7143ZM19.589 24.8639C19.3304 25.2889 19.009 25.6476 18.6226 25.9369C18.1879 26.2711 17.6729 26.5003 17.081 26.6228C16.4874 26.7453 15.8446 26.8072 15.1522 26.8072H9.00098V13.1479H15.5979C17.2606 13.1751 18.4395 13.6568 19.1359 14.603C19.5534 15.1834 19.7606 15.8793 19.7606 16.689C19.7606 17.5241 19.5512 18.1923 19.1293 18.6999C18.8948 18.9844 18.548 19.2434 18.0891 19.477C18.7842 19.7312 19.3115 20.1321 19.6641 20.6836C20.0188 21.2333 20.1962 21.9006 20.1962 22.6844C20.1958 23.4949 19.996 24.222 19.589 24.8639ZM30.9515 22.2097H23.8277C23.8668 23.1932 24.2066 23.8808 24.8503 24.2742C25.2384 24.521 25.7091 24.6417 26.2605 24.6417C26.8418 24.6417 27.3156 24.4946 27.68 24.1925C27.8789 24.0323 28.0541 23.8066 28.2056 23.5212H30.8167C30.7482 24.1021 30.4338 24.6909 29.8687 25.2898C28.9933 26.2412 27.7656 26.718 26.189 26.718C24.8863 26.718 23.7386 26.3159 22.7423 25.5141C21.7492 24.7098 21.2504 23.4049 21.2504 21.5946C21.2504 19.8972 21.6982 18.598 22.5966 17.6935C23.4984 16.7873 24.6623 16.3364 26.0968 16.3364C26.9472 16.3364 27.7138 16.4883 28.3974 16.7939C29.0793 17.0999 29.6426 17.5811 30.0865 18.2428C30.4883 18.8254 30.7464 19.4994 30.8667 20.2664C30.9335 20.7139 30.9638 21.3623 30.9515 22.2097Z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="icon-content">
-                            <a data-social="instagram" href="https://www.instagram.com/tomix_visuals/" target="_blank">
-                                <div class="filled"></div>
-                                <svg viewBox="0 0 40 40" version="1.1">
-                                    <path fill="currentColor"
-                                        d="M13.0002 3.33325H27.0002C32.3335 3.33325 36.6668 7.66659 36.6668 12.9999V26.9999C36.6668 29.5637 35.6484 32.0224 33.8355 33.8353C32.0227 35.6481 29.5639 36.6666 27.0002 36.6666H13.0002C7.66683 36.6666 3.3335 32.3333 3.3335 26.9999V12.9999C3.3335 10.4362 4.35195 7.9774 6.1648 6.16455C7.97765 4.3517 10.4364 3.33325 13.0002 3.33325ZM12.6668 6.66659C11.0755 6.66659 9.54941 7.29873 8.42419 8.42394C7.29897 9.54916 6.66683 11.0753 6.66683 12.6666V27.3333C6.66683 30.6499 9.35016 33.3333 12.6668 33.3333H27.3335C28.9248 33.3333 30.4509 32.7011 31.5761 31.5759C32.7014 30.4507 33.3335 28.9245 33.3335 27.3333V12.6666C33.3335 9.34992 30.6502 6.66659 27.3335 6.66659H12.6668ZM28.7502 9.16658C29.3027 9.16658 29.8326 9.38608 30.2233 9.77678C30.614 10.1675 30.8335 10.6974 30.8335 11.2499C30.8335 11.8025 30.614 12.3324 30.2233 12.7231C29.8326 13.1138 29.3027 13.3333 28.7502 13.3333C28.1976 13.3333 27.6677 13.1138 27.277 12.7231C26.8863 12.3324 26.6668 11.8025 26.6668 11.2499C26.6668 10.6974 26.8863 10.1675 27.277 9.77678C27.6677 9.38608 28.1976 9.16658 28.7502 9.16658ZM20.0002 11.6666C22.2103 11.6666 24.3299 12.5446 25.8927 14.1074C27.4555 15.6702 28.3335 17.7898 28.3335 19.9999C28.3335 22.2101 27.4555 24.3297 25.8927 25.8925C24.3299 27.4553 22.2103 28.3333 20.0002 28.3333C17.79 28.3333 15.6704 27.4553 14.1076 25.8925C12.5448 24.3297 11.6668 22.2101 11.6668 19.9999C11.6668 17.7898 12.5448 15.6702 14.1076 14.1074C15.6704 12.5446 17.79 11.6666 20.0002 11.6666ZM20.0002 14.9999C18.6741 14.9999 17.4023 15.5267 16.4646 16.4644C15.5269 17.4021 15.0002 18.6738 15.0002 19.9999C15.0002 21.326 15.5269 22.5978 16.4646 23.5355C17.4023 24.4731 18.6741 24.9999 20.0002 24.9999C21.3262 24.9999 22.598 24.4731 23.5357 23.5355C24.4734 22.5978 25.0002 21.326 25.0002 19.9999C25.0002 18.6738 24.4734 17.4021 23.5357 16.4644C22.598 15.5267 21.3262 14.9999 20.0002 14.9999Z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+    <header class="site-header">
+        <nav class="nav" aria-label="Principal">
+            <a class="nav__brand" href="../index.html">
+                <img src="../assets/img/logo-tomix-96.png" width="34" height="34" alt="Logo de Tomix Visuals">
+                <span>Tomás Berón</span>
+            </a>
+            <ul class="nav__links" id="menu">
+                <li><a href="../pages/proyectos.html" aria-current="page">Trabajos</a></li>
+                <li><a href="../index.html#sobre-mi">Sobre mí</a></li>
+                <li><a href="../index.html#trayectoria">Trayectoria</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+            </ul>
+            <div class="nav__actions">
+                <button class="icon-btn theme-toggle" type="button" aria-label="Cambiar tema claro u oscuro"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+                <a class="btn btn--primary btn--sm" href="../pages/contacto.html">Hablemos</a>
+                <button class="icon-btn nav__menu-btn" type="button" aria-label="Abrir menú" aria-controls="menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
             </div>
         </nav>
-        <hr>
     </header>
 
-    <main>
-        <div class="grid-container">
-            <section class="section-audio">
-                <div class="texto-proyecto">
-                    <h2>Diseño Grafico</h2>
-                    <p>Diseño desde los 16 años, cuando empecé de forma autodidacta haciendo tutoriales y dando mis primeros pasos con encargos simples. Con el tiempo decidí profundizar mis conocimientos y estudié la carrera de Desarrollo UX/UI, donde una de las materias me permitió perfeccionar mis habilidades en Photoshop e Illustrator. Fue ahí donde nació uno de los proyectos más importantes para mí: el branding de mi querida marca Tomix Visuals.</p>
-                </div>
-                <div class="imagen-proyecto"><img src="../assent/Gif.gif" alt=""></div>
-            </section>
-
-            <section class="section-web-web">
-                <div class="texto-proyecto">
-                    <p>Lo que más disfruto del diseño es crear piezas que comuniquen con fuerza visual: branding, portadas y placas publicitarias son mis favoritos. El proyecto de Tomix Visuals es uno de los que más orgullo me genera, no solo por el diseño del logo y la elección de colores y tipografía, sino por lo que representa: el inicio de una nueva etapa con una estética y una visión mucho más clara.</p>
-                    <p>Además, suelo integrar mis conocimientos de diseño con mis producciones audiovisuales, creando portadas para reels, piezas gráficas animadas y material promocional para redes.</p>
-                </div>
-                <div class="imagen-proyecto"><img src="" alt=""></div>
-            </section>
-            
-            <section class="section-fam">
-                <div class="texto-proyecto">
-                    <p>Trabajo con herramientas como Photoshop, Illustrator, Canva, Figma y Lightroom, y mi experiencia incluye el diseño de placas publicitarias para redes sociales, portadas, campañas gráficas (como la que realicé para una peluquería con modelos reales), y logotipos e identidad visual para clientes individuales.</p>
-                </div>
-
-                <div class="imagen-proyecto">
-                    <img src="" alt="">
-                </div>
-</section>
-
-            <section class="programas-utilizados">
-                <h2>Lenguajes Materizados</h2>
-            </section>
-
-            <Section class="programa1-6">
-
-                <div class="programa-2">
-                    <ul class="productdesigner-icon">
-                        <li class="icon-content">
-                            <a data-social="illustrator" aria-label="illustrator" href="">
-                                <div class="filled"></div>
-                                <svg viewBox="0 0 48 48" version="1.1">
-                                    <path fill="currentColor"
-                                        d="M19.4804 16.422H19.4093C19.048 17.8759 18.6866 19.7224 18.2855 21.1364L16.8345 26.3174H22.2345L20.7124 21.1364C20.2799 19.6854 19.8446 17.8759 19.4804 16.422Z M45.0581 0H2.93901C1.31444 0 0 1.31444 0 2.93901V45.061C0 46.6827 1.31444 48 2.93901 48H45.061C46.6827 48 48 46.6827 48 45.061V2.93901C48 1.31729 46.6827 0 45.0581 0ZM24.9176 36.7163L23.0312 30.4485H16.0408L14.2996 36.7163H8.57519L16.0408 12.2966H23.2845L30.861 36.7163H24.9176ZM39.2427 36.7163H33.7317V18.9997H39.2427V36.7163ZM36.4545 16.826C34.7161 16.826 33.5553 15.5913 33.5895 14.0691C33.5553 12.473 34.7161 11.2837 36.4943 11.2837C38.2668 11.2837 39.3907 12.4758 39.4248 14.0691C39.4248 15.5913 38.2668 16.826 36.4545 16.826Z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <div class="tooltip">40%</div>
-                        </li>
-                    </ul>
-                    <h3>Illustrator</h3>
-                </div>
-
-                <div class="programa-3">
-                    <ul class="productdesigner-icon">
-                        <li class="icon-content">
-                            <a data-social="photoshop" aria-label="photoshop" href="">
-                                <div class="filled"></div>
-                                <svg viewBox="0 0 48 48" version="1.1">
-                                    <path fill="currentColor"
-                                        d="M16.28 13.6891C15.0655 13.6891 14.2411 13.8073 13.8125 13.9282V21.7345C14.3236 21.8499 14.9473 21.8884 15.8101 21.8884C18.9892 21.8884 20.9511 20.2809 20.9511 17.5717C20.9483 15.1427 19.2612 13.6891 16.28 13.6891Z M45.0627 0.00549316H2.94007C1.31616 0.00549316 0 1.31891 0 2.93732V45.0572C0 46.6783 1.31616 47.9945 2.94007 47.9945H45.0627C46.6838 47.9945 48 46.6783 48 45.0572V2.94006C48 1.31891 46.6838 0.00549316 45.0627 0.00549316ZM24.4383 23.6964C22.4022 25.6198 19.377 26.4826 15.8516 26.4826C15.063 26.4826 14.3596 26.4441 13.8101 26.3644V35.8221H7.88322V9.72969C9.72694 9.4192 12.3153 9.18289 15.967 9.18289C19.6517 9.18289 22.284 9.88631 24.0453 11.3014C25.7407 12.6368 26.8755 14.835 26.8755 17.4233C26.8755 20.0117 26.01 22.2016 24.4383 23.6964ZM33.3711 36.2123C30.8542 36.2123 28.6203 35.6682 27.1668 34.8796L28.2246 30.6042C29.3237 31.2664 31.6016 32.0522 33.3711 32.0522C35.1709 32.0522 35.9183 31.4257 35.9183 30.442C35.9183 29.4638 35.3302 28.994 33.0963 28.2466C29.1341 26.914 27.6009 24.7542 27.6394 22.4791C27.6394 18.9126 30.7003 16.1978 35.4484 16.1978C37.685 16.1978 39.6854 16.7117 40.8614 17.2969L39.8035 21.4185C38.9408 20.9459 37.2949 20.3222 35.6435 20.3222C34.1954 20.3222 33.3739 20.9102 33.3739 21.8911C33.3739 22.7924 34.113 23.2622 36.4678 24.0893C40.1168 25.3423 41.65 27.1887 41.6857 30.0079C41.6857 33.5827 38.8556 36.2123 33.3711 36.2123Z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <div class="tooltip">60%</div>
-                        </li>
-                    </ul>
-                    <h3>Photoshop</h3>
-                </div>
-
-                <div class="programa-4">
-                    <ul class="productdesigner-icon">
-                        <li class="icon-content">
-                            <a data-social="lightroom" aria-label="lightroom" href="">
-                                <div class="filled"></div>
-                                <svg viewBox="0 0 49 48" version="1.1">
-                                    <path fill="currentColor"
-                                        d="M40.5 0H8.5C4.08172 0 0.5 3.58172 0.5 8V40C0.5 44.4183 4.08172 48 8.5 48H40.5C44.9183 48 48.5 44.4183 48.5 40V8C48.5 3.58172 44.9183 0 40.5 0Z M24.998 34.6156H13.288C13.0768 34.6156 13 34.5005 13 34.2509V13.288C13 13.0768 13.0768 13 13.2688 13H16.897C17.0313 13 17.1081 13.0768 17.1081 13.2304V30.4499H25.6315C25.8235 30.4499 25.8811 30.5459 25.8427 30.7379L25.3052 34.3085C25.286 34.4237 25.2476 34.5196 25.19 34.558C25.1324 34.5964 25.0556 34.6156 24.998 34.6156ZM27.9159 18.2023H31.1602C31.3522 18.2023 31.4674 18.2983 31.5441 18.5287C31.6017 18.6631 31.6593 18.8358 31.6785 19.0086C31.7169 19.2198 31.7361 19.4309 31.7553 19.6421C31.7745 19.8725 31.7745 20.122 31.7745 20.3716C32.312 19.6805 32.9839 19.0662 33.7518 18.6055C34.5772 18.1064 35.5371 17.8376 36.4969 17.876C36.6889 17.876 36.7657 17.972 36.7657 18.1639V22.1569C36.7657 22.3297 36.6697 22.3872 36.4777 22.3872C35.825 22.3489 35.1723 22.3872 34.5388 22.5216C34.0013 22.6368 33.5022 22.8288 33.0031 23.0783C32.6384 23.2703 32.2928 23.5391 32.0049 23.8462V34.3085C32.0049 34.5196 31.9281 34.5964 31.7553 34.5964H28.1847C27.9735 34.5964 27.8967 34.5004 27.8967 34.2701V22.9056C27.8967 22.4064 27.8967 21.9073 27.8775 21.3698C27.8775 20.8323 27.8583 20.2948 27.8392 19.7765C27.82 19.3158 27.7816 18.8742 27.724 18.4135C27.724 18.3559 27.724 18.2983 27.7624 18.2215C27.82 18.2023 27.8583 18.1831 27.9159 18.2023Z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <div class="tooltip">70%</div>
-                        </li>
-                    </ul>
-                    <h3>Lightroom</h3>
-                </div>
-
+    <main id="contenido">
+        <section class="page-hero container">
+            <nav aria-label="Ruta de navegación">
+                <ol class="breadcrumb mono">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/proyectos.html">Trabajos</a></li>
+                    <li><span aria-current="page">Diseño gráfico</span></li>
+                </ol>
+            </nav>
+            <span class="eyebrow">Área 04 — Gráfica</span>
+            <h1>Diseño <span class="serif">gráfico</span></h1>
+            <p class="page-hero__lead">Diseño desde los 16 años. Empecé de forma autodidacta con tutoriales y encargos simples, y hoy creo piezas que comunican con fuerza visual.</p>
+            <dl class="meta-list">
+                <div><dt class="mono">Rol</dt><dd>Diseñador gráfico freelance</dd></div>
+                <div><dt class="mono">Especialidad</dt><dd>Identidad visual y piezas para campañas</dd></div>
+                <div><dt class="mono">Herramientas</dt><dd>Photoshop, Illustrator, Figma</dd></div>
+            </dl>
+        </section>
+        <div class="container">
+            <figure class="cover reveal"><img src="../assets/img/tomix-visuals-branding.webp" width="800" height="457" alt="Logo animado de Tomix Visuals: Diseño, Marketing y Publicidad" fetchpriority="high"></figure>
         </div>
-        </Section>
+        <section class="container split">
+            <header class="reveal"><h2>Cómo empecé</h2></header>
+            <div class="prose reveal">
+                <p>Con el tiempo decidí profundizar y estudié la carrera de Desarrollo UX/UI, donde una de las materias me permitió perfeccionar Photoshop e Illustrator. Ahí nació uno de los proyectos más importantes para mí: el branding de mi marca, Tomix Visuals.</p>
+            </div>
+        </section>
+        <section class="container split">
+            <header class="reveal"><h2>Tomix Visuals</h2></header>
+            <div class="prose reveal">
+                <p>Es uno de los proyectos que más orgullo me dan. No solo por el diseño del logo y la elección de colores y tipografía, sino por lo que representa: el inicio de una nueva etapa, con una estética y una visión mucho más claras.</p>
+            </div>
+        </section>
+        <section class="container split">
+            <header class="reveal"><h2>Qué hago</h2></header>
+            <div class="prose reveal">
+                <p>Disfruto crear piezas que comuniquen con fuerza visual. Mis favoritas son el branding, las portadas y las placas publicitarias.</p>
+                <ul>
+                    <li>Identidad visual para clientes de distintos rubros: logotipos, portadas musicales, indumentaria y piezas publicitarias.</li>
+                    <li>Piezas para campañas de Google Search, anuncios de Meta y contenido de Instagram, hoy en Alpha Efficiency.</li>
+                    <li>La campaña de la peluquería <a class="text-link" href="https://www.instagram.com/reel/CjLiWywABWL/" target="_blank" rel="noopener">Le Papillon</a>, que dirigí coordinando a la modelo y la maquilladora.</li>
+                    <li>Piezas gráficas y contenido audiovisual para las redes de Le Papillon Adrogué (2022).</li>
+                </ul>
+                <p>También integro el diseño con mis producciones audiovisuales: piezas gráficas animadas y material promocional para redes.</p>
+                <figure class="cover"><img src="../assets/img/le-papillon-campana-800.webp" srcset="../assets/img/le-papillon-campana-800.webp 800w, ../assets/img/le-papillon-campana-1080.webp 1080w" sizes="(max-width: 800px) 100vw, 680px" width="1080" height="1080" alt="Producto capilar fotografiado sobre tela violeta para la campaña de Le Papillon" loading="lazy" decoding="async"><figcaption>Campaña para la peluquería Le Papillon.</figcaption></figure>
+            </div>
+        </section>
+        <section class="container section">
+            <div class="section-head reveal"><h2>Proyectos</h2></div>
+            <div class="work-grid">
+                <a class="work-card reveal" href="disenografico.html">
+                    <div class="work-card__meta mono"><span>Diseño gráfico</span><span>Branding</span></div>
+                    <div class="work-card__media"><img src="../assets/img/tomix-visuals-branding.webp" width="800" height="457" alt="Logo animado de Tomix Visuals" loading="lazy" decoding="async"></div>
+                    <div class="work-card__body">
+                        <h3>Tomix Visuals</h3>
+                        <p>Branding de mi marca: logo, paleta de colores y tipografía.</p>
+                    </div>
+                </a>
+                <a class="work-card reveal" href="https://www.instagram.com/reel/CjLiWywABWL/" target="_blank" rel="noopener">
+                    <div class="work-card__meta mono"><span>Diseño gráfico</span><span>Campaña</span></div>
+                    <div class="work-card__media"><img src="../assets/img/le-papillon-campana-800.webp" srcset="../assets/img/le-papillon-campana-800.webp 800w, ../assets/img/le-papillon-campana-1080.webp 1080w" sizes="(max-width: 700px) 100vw, 50vw" width="1080" height="1080" alt="Producto de la peluquería Le Papillon fotografiado sobre tela" loading="lazy" decoding="async"></div>
+                    <div class="work-card__body">
+                        <h3>Le Papillon</h3>
+                        <p>Campaña publicitaria para una peluquería: dirección y coordinación de modelo y maquilladora.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="container section">
+            <div class="section-head reveal"><h2>Herramientas</h2><p>Las que uso en esta área en el día a día.</p></div>
+            <div class="reveal">
+                <ul class="tools" aria-label="Herramientas">
+                    <li class="tool"><svg aria-hidden="true"><use href="../assets/icons/sprite.svg#i-photoshop"/></svg>Photoshop</li>
+                    <li class="tool"><svg aria-hidden="true"><use href="../assets/icons/sprite.svg#i-illustrator"/></svg>Illustrator</li>
+                    <li class="tool"><svg aria-hidden="true"><use href="../assets/icons/sprite.svg#i-after-effects"/></svg>After Effects</li>
+                    <li class="tool"><svg aria-hidden="true"><use href="../assets/icons/sprite.svg#i-lightroom"/></svg>Lightroom</li>
+                    <li class="tool"><svg aria-hidden="true"><use href="../assets/icons/sprite.svg#i-figma"/></svg>Figma</li>
+                </ul>
+            </div>
+        </section>
 
+        <section class="container section">
+            <a class="next-area reveal" href="productdesigner.html">
+                <span><span class="mono muted">Siguiente área</span><strong>Product Design UX/UI</strong></span>
+                <span class="btn">Ver área <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+        </section>
+
+        <section class="container section" aria-labelledby="cta-title">
+            <div class="cta reveal">
+                <h2 id="cta-title">Hagamos algo <span class="serif">que se note.</span></h2>
+                <p>¿Tenés un sitio, un producto o una campaña en mente? Contame qué necesitás y lo pensamos juntos. Trabajo en remoto, en español o en inglés.</p>
+                <div class="btn-row">
+                    <a class="btn btn--primary" href="../pages/contacto.html">Escribime <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    <a class="btn" href="../pages/proyectos.html">Ver trabajos</a>
+                </div>
+                <a class="cta__mail text-link" href="mailto:wikipediatomitob@gmail.com">wikipediatomitob@gmail.com</a>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/tomas-beron/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg aria-hidden="true"><use href="../assets/icons/sprite.svg#i-linkedin"/></svg></a>
+                    <a href="https://www.instagram.com/tomix_visuals/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="../assets/icons/sprite.svg#i-instagram"/></svg></a>
+                    <a href="https://www.behance.net/tomasberon" target="_blank" rel="noopener" aria-label="Behance"><svg aria-hidden="true"><use href="../assets/icons/sprite.svg#i-behance"/></svg></a>
+                    <a href="https://pin.it/3CI0PeYRZ" target="_blank" rel="noopener" aria-label="Pinterest"><svg aria-hidden="true"><use href="../assets/icons/sprite.svg#i-pinterest"/></svg></a>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <div class="left">
-            <h3>© 2025 Tomix Visuals</h3>
-        </div>
-        <div class="right">
-            <h3>tomasnahuel2004@outlook.com</h3>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__grid">
+                <div>
+                    <div class="site-footer__brand">Tomix Visuals</div>
+                    <p>Tomás Berón — Diseñador UX/UI en Provincia de Buenos Aires, Argentina. Sitios web, sistemas de diseño, diseño gráfico y audiovisual.</p>
+                </div>
+                <div>
+                    <h2>Explorar</h2>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../pages/proyectos.html">Trabajos</a></li>
+                        <li><a href="../pages/productdesigner.html">Product Design UX/UI</a></li>
+                        <li><a href="../pages/productoraudiovisual.html">Producción audiovisual</a></li>
+                        <li><a href="../pages/desarrolloweb.html">Desarrollo web</a></li>
+                        <li><a href="../pages/disenografico.html">Diseño gráfico</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Redes</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/tomas-beron/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/tomix_visuals/" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://www.behance.net/tomasberon" target="_blank" rel="noopener">Behance</a></li>
+                        <li><a href="https://pin.it/3CI0PeYRZ" target="_blank" rel="noopener">Pinterest</a></li>
+                        <li><a href="mailto:wikipediatomitob@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <span>© <span data-year>2026</span> Tomix Visuals · Tomás Berón</span>
+                <a href="#contenido">Volver arriba ↑</a>
+            </div>
         </div>
     </footer>
 
-    <script src="../script/formulario.js"></script>
-
-    <script src="../script/modooscuro.js"></script>
-
-    <canvas id="noise"></canvas>
-
-    <script>
-        const canvas = document.getElementById('noise');
-        const ctx = canvas.getContext('2d');
-        let width, height;
-
-        function resize() {
-            width = window.innerWidth;
-            height = window.innerHeight;
-            canvas.width = width;
-            canvas.height = height;
-        }
-
-        window.addEventListener('resize', resize);
-        resize();
-
-        function generateDarkNoise() {
-            const imageData = ctx.createImageData(width, height);
-            const buffer = imageData.data;
-
-            for (let i = 0; i < buffer.length; i += 4) {
-                const value = Math.floor(Math.random() * 80); // gris oscuro
-                buffer[i] = value;
-                buffer[i + 1] = value;
-                buffer[i + 2] = value;
-                buffer[i + 3] = 60; // transparencia
-            }
-
-            ctx.putImageData(imageData, 0, 0);
-        }
-
-        function loop() {
-            generateDarkNoise();
-            requestAnimationFrame(loop);
-        }
-
-        loop();
-    </script>
-
+    <script src="../script/main.js" defer></script>
 </body>
 
 </html>

@@ -1,0 +1,60 @@
+// Tokens de diseño: colores, tipografía y espaciado.
+// El tema oscuro es el predeterminado; el claro se activa con [data-theme="light"].
+
+:root {
+  --bg: #0b0b0c;
+  --bg-2: #111113;
+  --surface: #161618;
+  --surface-2: #1e1e21;
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.18);
+  --text: #f3f1ec;
+  --muted: #a6a39b;
+  --accent: #ff6a2b;
+  --accent-ink: #160a04;
+  --glow-1: rgba(255, 106, 43, 0.22);
+  --glow-2: rgba(150, 70, 200, 0.2);
+  --logo-filter: invert(1);
+  --shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.6);
+
+  // Colores de etiquetas (iguales en ambos temas)
+  --c-yellow: #f2c230;
+  --c-pink: #ec3f78;
+  --c-cyan: #42c6ea;
+  --c-green: #46d17f;
+  --c-violet: #a685ff;
+  --tag-ink: #111111;
+
+  --f-sans: "Inter Tight", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --f-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --radius-sm: 10px;
+  --radius: 18px;
+  --radius-lg: 28px;
+  --container: 1200px;
+  --gutter: clamp(16px, 4vw, 32px);
+  --section: clamp(72px, 11vw, 140px);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  --bg: #f4f3ef;
+  --bg-2: #ebeae5;
+  --surface: #ffffff;
+  --surface-2: #f1f0ec;
+  --line: rgba(0, 0, 0, 0.08);
+  --line-strong: rgba(0, 0, 0, 0.16);
+  --text: #131313;
+  --muted: #5d5b56;
+  --accent: #c63d0a;
+  --accent-ink: #ffffff;
+  --glow-1: rgba(255, 106, 43, 0.16);
+  --glow-2: rgba(150, 70, 200, 0.1);
+  --logo-filter: none;
+  --shadow: 0 20px 50px -24px rgba(0, 0, 0, 0.25);
+
+  color-scheme: light;
+}
