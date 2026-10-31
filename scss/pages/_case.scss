@@ -165,6 +165,14 @@
   figure {
     margin-top: 2em;
   }
+
+  code {
+    padding: 2px 6px;
+    border-radius: 6px;
+    background: var(--surface-2);
+    font-family: var(--f-mono);
+    font-size: 0.85em;
+  }
 }
 
 .facts {
