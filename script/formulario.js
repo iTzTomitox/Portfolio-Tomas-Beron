@@ -1,58 +1,38 @@
-const form = document.querySelector('.form-container > form')
+// Envío del formulario de contacto con EmailJS.
+const form = document.querySelector('#contact-form');
 
-form.addEventListener('submit', e => {
-  e.preventDefault()
+if (form) {
+  const status = form.querySelector('.form__status');
+  const button = form.querySelector('button[type="submit"]');
 
-  const formData = new FormData(form)
-  formData.append('service_id', 'service_8xhkjyf');
-  formData.append('template_id', 'template_jg6mq2b');
-  formData.append('user_id', 'QcosC0SXinEk-FNmm');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
-  fetch('https://api.emailjs.com/api/v1.0/email/send-form', {
-    method: 'POST',
-    body: formData
-  }).then(res => {
-    alert('Email enviado exitosamente!')
-    form[0].value = ''
-    form[1].value = ''
-    form[2].value = ''
-  }).catch(err => {
-    alert('Oops... Something went wrong...')
-  })
-})
+    const formData = new FormData(form);
+    formData.append('service_id', 'service_8xhkjyf');
+    formData.append('template_id', 'template_jg6mq2b');
+    formData.append('user_id', 'QcosC0SXinEk-FNmm');
 
-function toggleMenu() {
-  const navLinks = document.querySelector('.nav-links');
-  navLinks.classList.toggle('open');
-}
+    button.disabled = true;
+    button.textContent = 'Enviando…';
+    status.className = 'form__status';
+    status.textContent = '';
 
-const menu = document.querySelector('.nav-links');
-const menuButton = document.querySelector('.hamburger-menu');
-
-menuButton.addEventListener('click', () => {
-  menu.classList.toggle('open');
-});
-
-// Cerrar el menú cuando se hace clic en un enlace del menú
-const navLinks = document.querySelectorAll('.nav-links a');
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    menu.classList.remove('open');
+    try {
+      const res = await fetch('https://api.emailjs.com/api/v1.0/email/send-form', {
+        method: 'POST',
+        body: formData
+      });
+      if (!res.ok) throw new Error(res.status);
+      form.reset();
+      status.classList.add('is-ok');
+      status.textContent = '¡Gracias! Tu mensaje se envió correctamente. Te respondo a la brevedad.';
+    } catch (err) {
+      status.classList.add('is-error');
+      status.textContent = 'No se pudo enviar el mensaje. Probá de nuevo o escribime a tomasnahuel2004@outlook.com.';
+    } finally {
+      button.disabled = false;
+      button.textContent = 'Enviar mensaje';
+    }
   });
-});
-
-// Cerrar el menú al hacer clic fuera de él
-document.addEventListener('click', (event) => {
-  if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
-    menu.classList.remove('open');
-  }
-});
-
-function toggleMenu() {
-  const navLinks = document.querySelector('.nav-links');
-  const body = document.querySelector('body');
-
-  navLinks.classList.toggle('open');
-
-  body.classList.toggle('menu-open');
 }
