@@ -46,10 +46,12 @@ sitemap.xml, robots.txt SEO
 
 ### Editar estilos
 
+El sitio se publica tal cual (sin paso de build en Vercel), así que después de editar `scss/` hay que compilar y commitear `css/styles.css`.
+
 ```bash
 npm install
-npm run watch   # recompila css/styles.css mientras editás scss/
-npm run build   # versión final minificada
+npm run css:watch   # recompila css/styles.css mientras editás scss/
+npm run css         # versión final minificada
 ```
 
 ### Agregar una imagen
