@@ -29,7 +29,7 @@
 
 ## Sobre este sitio
 
-Portfolio estático publicado con GitHub Pages: HTML, Sass y JavaScript sin frameworks.
+Portfolio estático publicado en Vercel (https://portfolio-tomas-beron.vercel.app): HTML, Sass y JavaScript sin frameworks.
 
 ```
 index.html              Portada

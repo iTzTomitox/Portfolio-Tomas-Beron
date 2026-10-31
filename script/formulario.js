@@ -29,7 +29,7 @@ if (form) {
       status.textContent = '¡Gracias! Tu mensaje se envió correctamente. Te respondo a la brevedad.';
     } catch (err) {
       status.classList.add('is-error');
-      status.textContent = 'No se pudo enviar el mensaje. Probá de nuevo o escribime a tomasnahuel2004@outlook.com.';
+      status.textContent = 'No se pudo enviar el mensaje. Probá de nuevo o escribime a wikipediatomitob@gmail.com.';
     } finally {
       button.disabled = false;
       button.textContent = 'Enviar mensaje';
