@@ -88,6 +88,14 @@
   }
 }
 
+// Botón de idioma (EN / ES)
+.lang-btn {
+  font-family: var(--f-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
 // El ícono cambia según el tema activo
 .theme-toggle .i-sun {
   display: none;

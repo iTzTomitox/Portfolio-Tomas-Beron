@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Full Stack Development | Tomás Berón — React, Node.js and MongoDB</title>
+    <meta name="description" content="Full stack work by Tomás Berón: Federico Villarino&#x27;s portfolio, Kairo, a React e-commerce and a Node.js and MongoDB API.">
+    <meta name="author" content="Tomás Berón">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://portfolio-tomas-beron.vercel.app/en/pages/desarrolloweb.html">
+    <link rel="alternate" hreflang="es" href="https://portfolio-tomas-beron.vercel.app/pages/desarrolloweb.html">
+    <link rel="alternate" hreflang="en" href="https://portfolio-tomas-beron.vercel.app/en/pages/desarrolloweb.html">
+    <link rel="alternate" hreflang="x-default" href="https://portfolio-tomas-beron.vercel.app/pages/desarrolloweb.html">
+    <meta name="theme-color" content="#0b0b0c">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Tomás Berón — Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_AR">
+    <meta property="og:title" content="Full Stack Development | Tomás Berón — React, Node.js and MongoDB">
+    <meta property="og:description" content="Full stack work by Tomás Berón: Federico Villarino&#x27;s portfolio, Kairo, a React e-commerce and a Node.js and MongoDB API.">
+    <meta property="og:url" content="https://portfolio-tomas-beron.vercel.app/en/pages/desarrolloweb.html">
+    <meta property="og:image" content="https://portfolio-tomas-beron.vercel.app/assets/img/og-tomas-beron.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Tomás Berón operating a camera during an event">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Full Stack Development | Tomás Berón — React, Node.js and MongoDB">
+    <meta name="twitter:description" content="Full stack work by Tomás Berón: Federico Villarino&#x27;s portfolio, Kairo, a React e-commerce and a Node.js and MongoDB API.">
+    <meta name="twitter:image" content="https://portfolio-tomas-beron.vercel.app/assets/img/og-tomas-beron.jpg">
+
+    <link rel="icon" href="../../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="../../site.webmanifest">
+
+    <script>(function () { var t; try { t = localStorage.getItem('theme'); } catch (e) {} document.documentElement.dataset.theme = t || 'dark'; document.documentElement.classList.add('js'); })();</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500&display=swap">
+    <link rel="stylesheet" href="../../css/styles.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://portfolio-tomas-beron.vercel.app/en/"}, {"@type": "ListItem", "position": 2, "name": "Work", "item": "https://portfolio-tomas-beron.vercel.app/en/pages/proyectos.html"}, {"@type": "ListItem", "position": 3, "name": "Full Stack Development", "item": "https://portfolio-tomas-beron.vercel.app/en/pages/desarrolloweb.html"}]}</script>
+</head>
+
+<body>
+    <a class="skip-link" href="#contenido">Skip to content</a>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main">
+            <a class="nav__brand" href="../index.html">
+                <img src="../../assets/img/logo-tomix-96.png" width="34" height="34" alt="Tomix Visuals logo">
+                <span>Tomás Berón</span>
+            </a>
+            <ul class="nav__links" id="menu">
+                <li><a href="../pages/proyectos.html" aria-current="page">Work</a></li>
+                <li><a href="../index.html#sobre-mi">About</a></li>
+                <li><a href="../index.html#trayectoria">Background</a></li>
+                <li><a href="../pages/contacto.html">Contact</a></li>
+            </ul>
+            <div class="nav__actions">
+                <a class="icon-btn lang-btn" href="../../pages/desarrolloweb.html" hreflang="es" lang="es" aria-label="Ver esta página en español">ES</a>
+                <button class="icon-btn theme-toggle" type="button" aria-label="Toggle light or dark theme"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+                <a class="btn btn--primary btn--sm" href="../pages/contacto.html">Let's talk</a>
+                <button class="icon-btn nav__menu-btn" type="button" aria-label="Open menu" aria-controls="menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section class="page-hero container">
+            <nav aria-label="Breadcrumb">
+                <ol class="breadcrumb mono">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/proyectos.html">Work</a></li>
+                    <li><span aria-current="page">Full Stack Development</span></li>
+                </ol>
+            </nav>
+            <span class="eyebrow">Area 03 — Full Stack</span>
+            <h1>Full Stack <span class="serif">Development</span></h1>
+            <p class="page-hero__lead">My interest in web development grew naturally out of UX/UI design: turning my ideas into code helps me work better with other developers.</p>
+            <dl class="meta-list">
+                <div><dt class="mono">Role</dt><dd>Full stack design and development</dd></div>
+                <div><dt class="mono">Education</dt><dd>Full Stack Development — CoderHouse (in progress)</dd></div>
+                <div><dt class="mono">Technologies</dt><dd>JavaScript, React, Node.js, MongoDB</dd></div>
+            </dl>
+        </section>
+        <div class="container">
+            <figure class="cover reveal"><img src="../../assets/img/kairo-web-800.webp" srcset="../../assets/img/kairo-web-800.webp 800w, ../../assets/img/kairo-web-1600.webp 1600w" sizes="100vw" width="1600" height="1000" alt="Kairo Creative Studio homepage" fetchpriority="high"></figure>
+        </div>
+        <section class="container section">
+            <div class="section-head reveal"><h2>Projects</h2><p>From Figma designs to React front-ends and Node.js backends. Tomix Visuals, a group project to present services and team, is on the way.</p></div>
+            <div class="work-grid work-grid--3">
+                <a class="work-card reveal" href="desarrolloweb.html#federico-villarino">
+                    <div class="work-card__meta mono"><span>Web design and development</span><span>Client</span></div>
+                    <div class="work-card__media"><img src="../../assets/img/federico-villarino-landing-800.webp" srcset="../../assets/img/federico-villarino-landing-800.webp 800w, ../../assets/img/federico-villarino-landing-1600.webp 1600w" sizes="(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw" width="1600" height="1046" alt="Federico Villarino&#x27;s portfolio homepage in a browser" loading="lazy" decoding="async"></div>
+                    <div class="work-card__body">
+                        <h3>Federico Villarino</h3>
+                        <p>A one-page portfolio for an independent audiovisual technician: his first online presence.</p>
+                    </div>
+                </a>
+                <a class="work-card reveal" href="desarrolloweb.html#kairo">
+                    <div class="work-card__meta mono"><span>Web design and development</span><span>Escuela Da Vinci</span></div>
+                    <div class="work-card__media"><img src="../../assets/img/kairo-web-800.webp" srcset="../../assets/img/kairo-web-800.webp 800w, ../../assets/img/kairo-web-1600.webp 1600w" sizes="(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw" width="1600" height="1000" alt="Kairo Creative Studio homepage" loading="lazy" decoding="async"></div>
+                    <div class="work-card__body">
+                        <h3>Kairo Creative Studio</h3>
+                        <p>Website for a fictional creative studio, designed in Figma and coded faithfully to the design.</p>
+                    </div>
+                </a>
+                <a class="work-card reveal" href="desarrolloweb.html#donramon">
+                    <div class="work-card__meta mono"><span>Web development</span><span>React</span></div>
+                    <div class="work-card__media"><img src="../../assets/img/donramon-ecommerce-800.webp" srcset="../../assets/img/donramon-ecommerce-800.webp 800w, ../../assets/img/donramon-ecommerce-1600.webp 1600w" sizes="(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw" width="1600" height="826" alt="Product page in the DonRamón online store" loading="lazy" decoding="async"></div>
+                    <div class="work-card__body">
+                        <h3>DonRamón</h3>
+                        <p>A coffee shop e-commerce in React: catalog, persistent cart and checkout with Firebase.</p>
+                    </div>
+                </a>
+                <a class="work-card reveal" href="desarrolloweb.html#ecommerce-backend">
+                    <div class="work-card__meta mono"><span>Web development</span><span>API</span></div>
+                    <div class="work-card__media"><img src="../../assets/img/ecommerce-backend-api-800.webp" srcset="../../assets/img/ecommerce-backend-api-800.webp 800w, ../../assets/img/ecommerce-backend-api-1600.webp 1600w" sizes="(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw" width="1600" height="1000" alt="Product and cart API endpoints of the e-commerce backend" loading="lazy" decoding="async"></div>
+                    <div class="work-card__body">
+                        <h3>E-commerce backend</h3>
+                        <p>REST API in Node.js, Express and MongoDB, with Handlebars views and real-time updates.</p>
+                    </div>
+                </a>
+                <a class="work-card reveal" href="https://asenware.com.ar" target="_blank" rel="noopener">
+                    <div class="work-card__meta mono"><span>Web development</span><span>Website</span></div>
+                    <div class="work-card__media"><img src="../../assets/img/asenware-web-800.webp" srcset="../../assets/img/asenware-web-800.webp 800w, ../../assets/img/asenware-web-1600.webp 1600w" sizes="(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw" width="1600" height="831" alt="ASENWARE homepage" loading="lazy" decoding="async"></div>
+                    <div class="work-card__body">
+                        <h3>ASENWARE</h3>
+                        <p>Design and development of the website for this international fire alarm company's launch in Argentina.</p>
+                    </div>
+                </a>
+                <a class="work-card reveal" href="https://nimatsolutions.com.ar" target="_blank" rel="noopener">
+                    <div class="work-card__meta mono"><span>Web development</span><span>Website</span></div>
+                    <div class="work-card__media"><img src="../../assets/img/nimat-solutions-web-800.webp" srcset="../../assets/img/nimat-solutions-web-800.webp 800w, ../../assets/img/nimat-solutions-web-1600.webp 1600w" sizes="(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 33vw" width="1600" height="830" alt="Nimat Solutions homepage" loading="lazy" decoding="async"></div>
+                    <div class="work-card__body">
+                        <h3>Nimat Solutions</h3>
+                        <p>Full site redesign, navigation improvements and a custom ticketing system.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="container split" id="federico-villarino">
+            <header class="reveal"><h2>Federico Villarino</h2></header>
+            <div class="prose reveal">
+                <dl class="facts">
+                    <div><dt class="mono">Client</dt><dd>Federico Villarino — sound, editing and photography</dd></div>
+                    <div><dt class="mono">Role</dt><dd>Figma design and development</dd></div>
+                    <div><dt class="mono">Stack</dt><dd>HTML, CSS, responsive from 320 px</dd></div>
+                </dl>
+                <p>Federico works independently in location sound, editing and photography, and had no online presence at all: this portfolio is his first calling card. The challenge was to make someone just starting out on his own look as solid as the work he was already delivering.</p>
+                <p>I designed and built a one-page site that organizes his material into five blocks: services, work, a personal note, client reviews and contact.</p>
+                <h3>Decisions</h3>
+                <ul>
+                    <li><strong>The work before the words.</strong> On a dark base, the audiovisual pieces stand out and draw attention on their own: visitors see the work before reading a single line about it.</li>
+                    <li><strong>Video without weighing down the page.</strong> The short films show a still cover and play a loop on hover.</li>
+                    <li><strong>From Figma to code, by hand.</strong> Hand-coded in HTML and CSS, responsive from 320 px, with the logo designed for the project.</li>
+                </ul>
+                <figure class="cover"><img src="../../assets/img/federico-villarino-mockups-800.webp" srcset="../../assets/img/federico-villarino-mockups-800.webp 800w, ../../assets/img/federico-villarino-mockups-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 680px" width="1600" height="1504" alt="Federico Villarino&#x27;s site on laptop, phone and tablet: home, services and contact" loading="lazy" decoding="async"><figcaption>Home, services and contact across devices.</figcaption></figure>
+                <figure class="cover"><img src="../../assets/img/federico-villarino-dispositivos-800.webp" srcset="../../assets/img/federico-villarino-dispositivos-800.webp 800w, ../../assets/img/federico-villarino-dispositivos-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 680px" width="1600" height="950" alt="Work and about sections of Federico Villarino&#x27;s site on tablet and phone" loading="lazy" decoding="async"><figcaption>Work, about and the full responsive version.</figcaption></figure>
+                <div class="chip-links">
+                    <a href="https://federico-villarino-portfolio.vercel.app" target="_blank" rel="noopener">View live</a>
+                    <a href="https://www.behance.net/gallery/257649089/Portfolio-audiovisual-Diseno-y-desarrollo-web" target="_blank" rel="noopener">View on Behance</a>
+                    <a href="https://github.com/iTzTomitox/FedericoVillarinoPortfolio" target="_blank" rel="noopener">Code on GitHub</a>
+                </div>
+            </div>
+        </section>
+        <section class="container split" id="kairo">
+            <header class="reveal"><h2>Kairo Creative Studio</h2></header>
+            <div class="prose reveal">
+                <dl class="facts">
+                    <div><dt class="mono">Context</dt><dd>Final project — Escuela Da Vinci</dd></div>
+                    <div><dt class="mono">Role</dt><dd>Figma design and full implementation</dd></div>
+                    <div><dt class="mono">Stack</dt><dd>HTML5, CSS3, JavaScript</dd></div>
+                </dl>
+                <p>Kairo is a fictional creative studio, invented for my final project at Escuela Da Vinci. The project brings two courses together: the identity and interfaces came from Graphic Design I, and the build from the development course. The pieces in Kairo's portfolio are real work of mine.</p>
+                <p>I set out to make the browser version indistinguishable from the mockup, and that fidelity was the hardest part of the project.</p>
+                <h3>What I learned</h3>
+                <ul>
+                    <li><strong>The width changed halfway through.</strong> I designed at 1920 px and the brief later set a 1300 px container: I reworked proportions, margins and breakpoints without losing the visual rhythm. A layout decision made on the canvas is never neutral.</li>
+                    <li><strong>Coding works as a design audit.</strong> Turning the mockup into HTML surfaced typos, missing subheadings and sections that needed their own <code>article</code>.</li>
+                    <li>Semantic HTML, a single stylesheet with CSS variables in <code>:root</code>, CSS3 animations and Lucide SVG icons.</li>
+                </ul>
+                <figure class="cover"><img src="../../assets/img/kairo-figma-vs-codigo-800.webp" srcset="../../assets/img/kairo-figma-vs-codigo-800.webp 800w, ../../assets/img/kairo-figma-vs-codigo-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 680px" width="1600" height="1000" alt="Kairo&#x27;s Figma design on the left compared with the built site on the right" loading="lazy" decoding="async"><figcaption>Left, the Figma design; right, the built site.</figcaption></figure>
+                <div class="chip-links">
+                    <a href="https://kairo-roan.vercel.app" target="_blank" rel="noopener">View live</a>
+                    <a href="https://www.figma.com/design/mWvzCcdDdTe7TSaPTA11KG/KAIRO-Creative-Studio" target="_blank" rel="noopener">Figma design</a>
+                    <a href="https://github.com/iTzTomitox/Kairo" target="_blank" rel="noopener">Code on GitHub</a>
+                </div>
+            </div>
+        </section>
+        <section class="container split" id="donramon">
+            <header class="reveal"><h2>DonRamón</h2></header>
+            <div class="prose reveal">
+                <dl class="facts">
+                    <div><dt class="mono">Context</dt><dd>React JS final project — CoderHouse</dd></div>
+                    <div><dt class="mono">Role</dt><dd>Interface design and implementation</dd></div>
+                    <div><dt class="mono">Stack</dt><dd>React 19, Vite, React Router, Firebase</dd></div>
+                </dl>
+                <p>An online store for a coffee shop: catalog with category filters, product pages, a persistent cart and a checkout that creates the order in Firestore.</p>
+                <p>Design wasn't part of the brief, but I built my own interface because an e-commerce that can't be understood at a glance doesn't do its job, however well the code works.</p>
+                <h3>Decisions</h3>
+                <ul>
+                    <li><strong>The cart lives in a Context</strong>, not in props: the header, catalog, product page and checkout all use it.</li>
+                    <li><strong>The cart is saved in <code>localStorage</code></strong> so users don't lose their purchase if they close the tab.</li>
+                    <li><strong>Totals are calculated</strong> from the cart instead of being stored separately, so they never go out of sync.</li>
+                    <li>Checkout validated with React Hook Form and notifications with React Hot Toast.</li>
+                </ul>
+                <figure class="cover"><img src="../../assets/img/donramon-ecommerce-800.webp" srcset="../../assets/img/donramon-ecommerce-800.webp 800w, ../../assets/img/donramon-ecommerce-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 680px" width="1600" height="826" alt="Product page of the DonRamón store" loading="lazy" decoding="async"><figcaption>Product page with a quantity selector.</figcaption></figure>
+                <div class="chip-links">
+                    <a href="https://proj-cafeteria-react-app.vercel.app" target="_blank" rel="noopener">View live</a>
+                    <a href="https://github.com/iTzTomitox/ProjCafeteria-ReactApp" target="_blank" rel="noopener">Code on GitHub</a>
+                </div>
+            </div>
+        </section>
+        <section class="container split" id="ecommerce-backend">
+            <header class="reveal"><h2>E-commerce backend</h2></header>
+            <div class="prose reveal">
+                <dl class="facts">
+                    <div><dt class="mono">Context</dt><dd>Backend Programming I — CoderHouse</dd></div>
+                    <div><dt class="mono">Outcome</dt><dd>Passed with a 10/10</dd></div>
+                    <div><dt class="mono">Stack</dt><dd>Node.js, Express 5, MongoDB, Socket.IO</dd></div>
+                </dl>
+                <p>An e-commerce API that manages products and carts, with dynamic Handlebars views and real-time updates over WebSockets.</p>
+                <h3>Decisions</h3>
+                <ul>
+                    <li><strong>Pagination is handled in the database</strong> with <code>mongoose-paginate-v2</code>, and the response already includes the links to the previous and next pages.</li>
+                    <li><strong>WebSockets only where they help:</strong> adding and removing products in real time uses Socket.IO; everything else goes over HTTP.</li>
+                    <li><strong>Credentials go in environment variables</strong> with <code>dotenv</code>, never in the code.</li>
+                </ul>
+                <p>The hardest part was the jump to the backend: understanding how model, route and view connect. What I enjoyed most was designing the HTTP verbs as a self-explanatory contract.</p>
+                <figure class="cover"><img src="../../assets/img/ecommerce-backend-api-800.webp" srcset="../../assets/img/ecommerce-backend-api-800.webp 800w, ../../assets/img/ecommerce-backend-api-1600.webp 1600w" sizes="(max-width: 800px) 100vw, 680px" width="1600" height="1000" alt="API endpoints: products and carts with their GET, POST, PUT and DELETE methods" loading="lazy" decoding="async"><figcaption>Product and cart endpoints.</figcaption></figure>
+                <div class="chip-links">
+                    <a href="https://github.com/iTzTomitox/Eccomerce-Backend-1" target="_blank" rel="noopener">Code on GitHub</a>
+                </div>
+            </div>
+        </section>
+        <section class="container split" id="portfolio">
+            <header class="reveal"><h2>This portfolio</h2></header>
+            <div class="prose reveal">
+                <p>One of my main projects has been this portfolio, where I combined my training with constant learning. It started in Figma with detailed wireframes, and then I built it with HTML, CSS and JavaScript so it works well on any device.</p>
+                <h3>Along the way</h3>
+                <ul>
+                    <li>I used CSS Grid to structure the content efficiently.</li>
+                    <li>I worked with Sass to organize and optimize the CSS.</li>
+                    <li>I solved the challenge of adapting the design to different screen sizes and strengthened my responsive design skills.</li>
+                </ul>
+                <p>This project didn't just improve my technical skills: it also gave me a more critical approach to problem-solving. I want to keep exploring new tools and technologies.</p>
+                <figure class="cover"><img src="../../assets/img/certificado-desarrollo-web-800.webp" width="800" height="915" alt="CoderHouse Web Development course certificate issued to Tomás Berón" loading="lazy" decoding="async"><figcaption>Web Development certificate — CoderHouse, December 2024.</figcaption></figure>
+            </div>
+        </section>
+        <section class="container section">
+            <div class="section-head reveal"><h2>Technologies</h2><p>The ones I use every day in this area.</p></div>
+            <div class="reveal">
+                <ul class="tools" aria-label="Tools">
+                    <li class="tool"><svg aria-hidden="true"><use href="../../assets/icons/sprite.svg#i-html"/></svg>HTML</li>
+                    <li class="tool"><svg aria-hidden="true"><use href="../../assets/icons/sprite.svg#i-css"/></svg>CSS</li>
+                    <li class="tool"><svg aria-hidden="true"><use href="../../assets/icons/sprite.svg#i-sass"/></svg>Sass</li>
+                    <li class="tool"><svg aria-hidden="true"><use href="../../assets/icons/sprite.svg#i-js"/></svg>JavaScript</li>
+                    <li class="tool"><svg aria-hidden="true"><use href="../../assets/icons/sprite.svg#i-react"/></svg>React</li>
+                    <li class="tool">Node.js</li>
+                    <li class="tool">Express</li>
+                    <li class="tool">MongoDB</li>
+                    <li class="tool">Firebase</li>
+                    <li class="tool"><svg aria-hidden="true"><use href="../../assets/icons/sprite.svg#i-figma"/></svg>Figma</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="container section">
+            <a class="next-area reveal" href="disenografico.html">
+                <span><span class="mono muted">Next area</span><strong>Graphic design</strong></span>
+                <span class="btn">View area <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+        </section>
+
+        <section class="container section" aria-labelledby="cta-title">
+            <div class="cta reveal">
+                <h2 id="cta-title">Let's make something <span class="serif">that stands out.</span></h2>
+                <p>Have a website, a product or a campaign in mind? Tell me what you need and let's think it through together. I work remotely, in English or Spanish.</p>
+                <div class="btn-row">
+                    <a class="btn btn--primary" href="../pages/contacto.html">Write to me <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                    <a class="btn" href="../pages/proyectos.html">See work</a>
+                </div>
+                <a class="cta__mail text-link" href="mailto:wikipediatomitob@gmail.com">wikipediatomitob@gmail.com</a>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/tomas-beron/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg aria-hidden="true"><use href="../../assets/icons/sprite.svg#i-linkedin"/></svg></a>
+                    <a href="https://www.instagram.com/tomix_visuals/" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="../../assets/icons/sprite.svg#i-instagram"/></svg></a>
+                    <a href="https://www.behance.net/tomasberon" target="_blank" rel="noopener" aria-label="Behance"><svg aria-hidden="true"><use href="../../assets/icons/sprite.svg#i-behance"/></svg></a>
+                    <a href="https://pin.it/3CI0PeYRZ" target="_blank" rel="noopener" aria-label="Pinterest"><svg aria-hidden="true"><use href="../../assets/icons/sprite.svg#i-pinterest"/></svg></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__grid">
+                <div>
+                    <div class="site-footer__brand">Tomix Visuals</div>
+                    <p>Tomás Berón — UX/UI designer in Buenos Aires Province, Argentina. Websites, design systems, graphic design and audiovisual work.</p>
+                </div>
+                <div>
+                    <h2>Explore</h2>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../pages/proyectos.html">Work</a></li>
+                        <li><a href="../pages/productdesigner.html">Product Design UX/UI</a></li>
+                        <li><a href="../pages/productoraudiovisual.html">Audiovisual production</a></li>
+                        <li><a href="../pages/desarrolloweb.html">Full Stack Development</a></li>
+                        <li><a href="../pages/disenografico.html">Graphic design</a></li>
+                        <li><a href="../pages/contacto.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Social</h2>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/tomas-beron/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/tomix_visuals/" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://www.behance.net/tomasberon" target="_blank" rel="noopener">Behance</a></li>
+                        <li><a href="https://pin.it/3CI0PeYRZ" target="_blank" rel="noopener">Pinterest</a></li>
+                        <li><a href="mailto:wikipediatomitob@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <span>© <span data-year>2026</span> Tomix Visuals · Tomás Berón</span>
+                <a href="#contenido">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../script/main.js" defer></script>
+</body>
+
+</html>
