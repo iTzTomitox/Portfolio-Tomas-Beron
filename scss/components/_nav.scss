@@ -88,12 +88,12 @@
   }
 }
 
-// Botón de idioma (EN / ES)
-.lang-btn {
-  font-family: var(--f-mono);
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+// Botón de idioma: bandera recortada en círculo
+.lang-btn svg {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--line-strong);
 }
 
 // El ícono cambia según el tema activo
