@@ -46,7 +46,7 @@
     el.addEventListener('click', () => {
       const iframe = document.createElement('iframe');
       iframe.src = 'https://www.youtube-nocookie.com/embed/' + el.dataset.youtube + '?autoplay=1';
-      iframe.title = el.getAttribute('aria-label') || 'Video de YouTube';
+      iframe.title = el.getAttribute('aria-label') || 'YouTube';
       iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
       iframe.allowFullscreen = true;
       el.replaceChildren(iframe);

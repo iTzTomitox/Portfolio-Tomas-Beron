@@ -4,6 +4,7 @@ const form = document.querySelector('#contact-form');
 if (form) {
   const status = form.querySelector('.form__status');
   const button = form.querySelector('button[type="submit"]');
+  const label = button.textContent;
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -14,7 +15,7 @@ if (form) {
     formData.append('user_id', 'QcosC0SXinEk-FNmm');
 
     button.disabled = true;
-    button.textContent = 'Enviando…';
+    button.textContent = form.dataset.sending;
     status.className = 'form__status';
     status.textContent = '';
 
@@ -26,13 +27,13 @@ if (form) {
       if (!res.ok) throw new Error(res.status);
       form.reset();
       status.classList.add('is-ok');
-      status.textContent = '¡Gracias! Tu mensaje se envió correctamente. Te respondo a la brevedad.';
+      status.textContent = form.dataset.ok;
     } catch (err) {
       status.classList.add('is-error');
-      status.textContent = 'No se pudo enviar el mensaje. Probá de nuevo o escribime a wikipediatomitob@gmail.com.';
+      status.textContent = form.dataset.error;
     } finally {
       button.disabled = false;
-      button.textContent = 'Enviar mensaje';
+      button.textContent = label;
     }
   });
 }

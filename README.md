@@ -33,6 +33,7 @@ Portfolio estático publicado en Vercel (https://portfolio-tomas-beron.vercel.ap
 
 ```
 index.html              Portada
+en/                     Versión en inglés de todas las páginas (botón EN / ES en la navegación)
 pages/                  Trabajos, áreas (UX/UI, audiovisual, web, gráfico) y contacto
 404.html                Página de error
 scss/                   Estilos fuente (tokens, base, componentes y páginas)
@@ -61,3 +62,7 @@ Exportala en WebP (ancho de 800 px y 1600 px, por ejemplo `mi-proyecto-800.webp`
 ### Al publicar una página nueva
 
 Agregala a `sitemap.xml` y dale su propio `<title>`, `meta description`, `canonical` y etiquetas Open Graph.
+
+### Versión en inglés
+
+Cada página tiene su par en `en/` con el mismo nombre (por ejemplo `pages/contacto.html` y `en/pages/contacto.html`). Ambas versiones se enlazan entre sí con `hreflang` y aparecen en `sitemap.xml`. Si cambiás un texto en español, actualizá también su página en inglés.
