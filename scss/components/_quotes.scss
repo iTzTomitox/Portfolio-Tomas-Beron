@@ -37,7 +37,7 @@
 
 .marquee__track {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
   width: max-content;
   animation: marquee var(--duration) linear infinite;
 
@@ -48,7 +48,7 @@
 
 .marquee__copy {
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 @keyframes marquee {
@@ -65,6 +65,8 @@
   gap: 20px;
   flex: none;
   width: clamp(290px, 30vw, 420px);
+  // Misma altura en las dos filas: main.js iguala --quote-h a la tarjeta más alta
+  min-height: var(--quote-h, auto);
   margin-right: 14px;
   padding: clamp(20px, 2.4vw, 26px);
   border-radius: var(--radius-lg);
@@ -91,6 +93,8 @@
     position: relative;
     display: grid;
     gap: 10px;
+    flex: 1;
+    align-content: start;
     padding-top: 30px;
     font-size: 0.95rem;
     line-height: 1.6;
