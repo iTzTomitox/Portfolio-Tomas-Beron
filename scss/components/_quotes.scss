@@ -1,27 +1,98 @@
-// Testimonios en columnas tipo mosaico
+// Testimonios: dos filas de tarjetas de vidrio que se desplazan solas
 
-.quotes {
-  columns: 3 320px;
-  column-gap: 14px;
+.marquee {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  gap: 14px;
+  overflow: hidden;
+  padding-block: 8px;
+  // Bordes que se desvanecen a los costados
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+
+  // Luces de color detrás del vidrio
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 10% 5%;
+    background:
+      radial-gradient(30% 60% at 20% 30%, var(--glow-1), transparent 70%),
+      radial-gradient(30% 60% at 75% 70%, var(--glow-2), transparent 70%),
+      radial-gradient(25% 50% at 50% 50%, color-mix(in srgb, var(--c-cyan) 18%, transparent), transparent 70%);
+    filter: blur(30px);
+  }
+}
+
+.marquee__row {
+  --duration: 70s;
+  overflow: hidden;
+
+  &:hover .marquee__track,
+  &:focus-within .marquee__track {
+    animation-play-state: paused;
+  }
+}
+
+.marquee__track {
+  display: flex;
+  align-items: flex-start;
+  width: max-content;
+  animation: marquee var(--duration) linear infinite;
+
+  .marquee__row--reverse & {
+    animation-direction: reverse;
+  }
+}
+
+.marquee__copy {
+  display: flex;
+  align-items: flex-start;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 .quote {
+  --glass-fill: linear-gradient(160deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.03) 60%, rgba(255, 255, 255, 0.06));
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 22px;
-  margin-bottom: 14px;
-  padding: clamp(20px, 2.4vw, 28px);
-  border: 1px solid var(--line);
+  gap: 20px;
+  flex: none;
+  width: clamp(290px, 30vw, 420px);
+  margin-right: 14px;
+  padding: clamp(20px, 2.4vw, 26px);
   border-radius: var(--radius-lg);
-  background: var(--surface);
-  break-inside: avoid;
+  background: var(--glass-fill);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  box-shadow: 0 24px 48px -28px rgba(0, 0, 0, 0.6);
+
+  // Borde iridiscente, el mismo de las carpetas de Trabajos
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.06) 30%, rgba(120, 200, 255, 0.3) 55%, rgba(255, 140, 220, 0.25) 70%, rgba(255, 255, 255, 0.05) 85%, rgba(255, 255, 255, 0.3));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
 
   blockquote {
     position: relative;
     display: grid;
-    gap: 12px;
+    gap: 10px;
     padding-top: 30px;
-    font-size: 0.98rem;
+    font-size: 0.95rem;
     line-height: 1.6;
     color: color-mix(in srgb, var(--text) 85%, var(--muted));
 
@@ -42,16 +113,13 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    padding-top: 18px;
+    padding-top: 16px;
     border-top: 1px solid var(--line);
   }
 
-  // Tarjeta destacada con el color de acento
+  // Tarjeta destacada: vidrio teñido con el naranja de acento
   &--accent {
-    border-color: transparent;
-    background:
-      radial-gradient(120% 90% at 0% 0%, #ff8a4c 0%, transparent 60%),
-      linear-gradient(140deg, #ff6a2b, #d9450f 70%);
+    --glass-fill: linear-gradient(150deg, rgba(255, 138, 76, 0.55), rgba(217, 69, 15, 0.4) 60%, rgba(255, 106, 43, 0.45));
     color: #fff;
 
     blockquote {
@@ -69,6 +137,19 @@
     .quote__who span {
       color: rgba(255, 255, 255, 0.8);
     }
+  }
+}
+
+[data-theme="light"] .quote {
+  --glass-fill: linear-gradient(160deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.55) 60%, rgba(255, 255, 255, 0.7));
+  box-shadow: 0 24px 48px -30px rgba(0, 0, 0, 0.25);
+
+  &::before {
+    background: linear-gradient(120deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.03) 40%, rgba(120, 160, 255, 0.25) 60%, rgba(0, 0, 0, 0.08));
+  }
+
+  &--accent {
+    --glass-fill: linear-gradient(150deg, rgba(255, 138, 76, 0.9), rgba(217, 69, 15, 0.85) 60%, rgba(255, 106, 43, 0.88));
   }
 }
 
@@ -108,5 +189,31 @@ span.quote__avatar {
   span {
     font-size: 0.85rem;
     color: var(--muted);
+  }
+}
+
+// Sin animación: las filas se recorren deslizando y la copia se oculta
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .marquee__row {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-inline: var(--gutter);
+  }
+
+  .marquee__track {
+    animation: none;
+  }
+
+  .marquee__copy {
+    display: none;
+  }
+
+  .quote {
+    scroll-snap-align: start;
   }
 }
