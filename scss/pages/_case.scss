@@ -305,3 +305,37 @@
     justify-content: center;
   }
 }
+
+// Grilla de videos de la página audiovisual
+.videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(14px, 2vw, 24px);
+
+  @media (max-width: 760px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.video-item {
+  display: grid;
+  gap: 12px;
+
+  figcaption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 16px;
+    padding: 0 4px;
+  }
+
+  strong {
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+}
