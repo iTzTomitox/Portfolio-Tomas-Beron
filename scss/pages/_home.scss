@@ -162,3 +162,39 @@
     animation: none;
   }
 }
+
+// Herramientas de IA, debajo de las etiquetas
+.ai-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 14px;
+  margin-top: 20px;
+  color: var(--muted);
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px 6px 10px;
+    border: 1px solid var(--line-strong);
+    border-radius: 999px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  svg {
+    width: 18px;
+    height: 18px;
+    flex: none;
+  }
+}

@@ -41,6 +41,20 @@
     items.forEach((el) => el.classList.add('is-in'));
   }
 
+  // Recomendaciones: todas las tarjetas con la altura de la más alta
+  const marquee = document.querySelector('.marquee');
+  if (marquee) {
+    const equalize = () => {
+      marquee.style.removeProperty('--quote-h');
+      const max = Math.max(...[...marquee.querySelectorAll('.quote')].map((q) => q.offsetHeight));
+      marquee.style.setProperty('--quote-h', max + 'px');
+    };
+    equalize();
+    window.addEventListener('load', equalize);
+    window.addEventListener('resize', equalize);
+    if (document.fonts) document.fonts.ready.then(equalize);
+  }
+
   // YouTube: carga el iframe recién cuando se hace clic
   document.querySelectorAll('.video[data-youtube]').forEach((el) => {
     el.addEventListener('click', () => {
