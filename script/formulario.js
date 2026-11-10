@@ -27,6 +27,7 @@ if (form) {
       form.reset();
       status.classList.add('is-ok');
       status.textContent = form.dataset.ok;
+      if (form.dataset.next) window.location.href = form.dataset.next;
     } catch (err) {
       // El motivo real (por ejemplo, "This form needs Activation") queda en la consola
       console.error('Formulario de contacto:', err.message);

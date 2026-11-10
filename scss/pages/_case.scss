@@ -339,3 +339,85 @@
     font-size: 0.9rem;
   }
 }
+
+// Página de gracias después de enviar el formulario
+.thanks {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  padding-block: clamp(48px, 8vw, 96px);
+}
+
+.thanks__card {
+  position: relative;
+  max-width: 640px;
+  padding: clamp(32px, 6vw, 56px);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(60% 80% at 50% 0%, var(--glow-1), transparent 70%),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03) 60%, rgba(255, 255, 255, 0.06));
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  text-align: center;
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.6);
+
+  // Borde iridiscente, como las carpetas y las recomendaciones
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.06) 30%, rgba(120, 200, 255, 0.3) 55%, rgba(255, 140, 220, 0.25) 70%, rgba(255, 255, 255, 0.3));
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  h1 {
+    font-size: clamp(2.6rem, 7vw, 4.4rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    line-height: 0.95;
+
+    .serif {
+      display: block;
+      font-size: 1.05em;
+    }
+  }
+
+  p {
+    max-width: 440px;
+    margin: 20px auto 28px;
+    color: var(--muted);
+  }
+
+  .btn-row {
+    justify-content: center;
+  }
+}
+
+.thanks__icon {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: var(--c-green);
+  color: var(--tag-ink);
+  box-shadow: 0 0 0 10px color-mix(in srgb, var(--c-green) 18%, transparent);
+
+  svg {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+[data-theme="light"] .thanks__card {
+  background:
+    radial-gradient(60% 80% at 50% 0%, var(--glow-1), transparent 70%),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6));
+  box-shadow: 0 30px 60px -34px rgba(0, 0, 0, 0.25);
+}
