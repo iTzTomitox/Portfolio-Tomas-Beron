@@ -28,6 +28,8 @@ if (form) {
       status.classList.add('is-ok');
       status.textContent = form.dataset.ok;
     } catch (err) {
+      // El motivo real (por ejemplo, "This form needs Activation") queda en la consola
+      console.error('Formulario de contacto:', err.message);
       status.classList.add('is-error');
       status.textContent = form.dataset.error;
     } finally {
