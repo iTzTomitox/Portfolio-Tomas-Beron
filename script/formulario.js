@@ -1,18 +1,15 @@
-// Envío del formulario de contacto con EmailJS.
+// Envío del formulario de contacto con FormSubmit (gratis, sin backend).
+// Sin JavaScript, el formulario se envía igual por su atributo action.
 const form = document.querySelector('#contact-form');
 
 if (form) {
   const status = form.querySelector('.form__status');
   const button = form.querySelector('button[type="submit"]');
   const label = button.textContent;
+  const endpoint = form.action.replace('formsubmit.co/', 'formsubmit.co/ajax/');
 
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-
-    const formData = new FormData(form);
-    formData.append('service_id', 'service_8xhkjyf');
-    formData.append('template_id', 'template_jg6mq2b');
-    formData.append('user_id', 'QcosC0SXinEk-FNmm');
 
     button.disabled = true;
     button.textContent = form.dataset.sending;
@@ -20,11 +17,13 @@ if (form) {
     status.textContent = '';
 
     try {
-      const res = await fetch('https://api.emailjs.com/api/v1.0/email/send-form', {
+      const res = await fetch(endpoint, {
         method: 'POST',
-        body: formData
+        headers: { Accept: 'application/json' },
+        body: new FormData(form)
       });
-      if (!res.ok) throw new Error(res.status);
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || String(data.success) === 'false') throw new Error(data.message || res.status);
       form.reset();
       status.classList.add('is-ok');
       status.textContent = form.dataset.ok;

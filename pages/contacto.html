@@ -88,18 +88,22 @@
                     <a href="https://www.instagram.com/tomix_visuals/" target="_blank" rel="noopener"><span><span class="mono">Instagram</span><strong>instagram.com/tomix_visuals</strong></span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                     <a href="https://www.behance.net/tomasberon" target="_blank" rel="noopener"><span><span class="mono">Behance</span><strong>behance.net/tomasberon</strong></span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                 </div>
-                <form class="form reveal" id="contact-form" data-sending="Enviando…" data-ok="¡Gracias! Tu mensaje se envió correctamente. Te respondo a la brevedad." data-error="No se pudo enviar el mensaje. Probá de nuevo o escribime a wikipediatomitob@gmail.com.">
+                <form class="form reveal" id="contact-form" action="https://formsubmit.co/wikipediatomitob@gmail.com" method="POST" data-sending="Enviando…" data-ok="¡Gracias! Tu mensaje se envió correctamente. Te respondo a la brevedad." data-error="No se pudo enviar el mensaje. Probá de nuevo o escribime a wikipediatomitob@gmail.com.">
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <div>
                         <label for="form-input-name">Nombre</label>
-                        <input type="text" id="form-input-name" name="sender_name" autocomplete="name" placeholder="Tu nombre" required>
+                        <input type="text" id="form-input-name" name="Nombre" autocomplete="name" placeholder="Tu nombre" required>
                     </div>
                     <div>
                         <label for="form-input-email">Email</label>
-                        <input type="email" id="form-input-email" name="sender_email" autocomplete="email" placeholder="tu@email.com" required>
+                        <input type="email" id="form-input-email" name="email" autocomplete="email" placeholder="tu@email.com" required>
                     </div>
                     <div>
                         <label for="form-input-mensaje">Mensaje</label>
-                        <textarea id="form-input-mensaje" name="sender_message" placeholder="Contame sobre tu proyecto" required></textarea>
+                        <textarea id="form-input-mensaje" name="Mensaje" placeholder="Contame sobre tu proyecto" required></textarea>
                     </div>
                     <button type="submit" class="btn btn--primary">Enviar mensaje</button>
                     <p class="form__status" role="status" aria-live="polite"></p>

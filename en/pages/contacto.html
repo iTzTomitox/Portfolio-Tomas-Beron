@@ -60,7 +60,7 @@
                 <li><a href="../pages/contacto.html" aria-current="page">Contact</a></li>
             </ul>
             <div class="nav__actions">
-                <a class="icon-btn lang-btn" href="../en/pages/contacto.html" hreflang="en" lang="en" aria-label="Read this page in English"><svg viewBox="0 0 38 20" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="38" height="20" fill="#b22234"/><path d="M0 2.3h38M0 5.4h38M0 8.5h38M0 11.5h38M0 14.6h38M0 17.7h38" stroke="#fff" stroke-width="1.54"/><rect width="16" height="10.8" fill="#3c3b6e"/><g fill="#fff"><circle cx="3" cy="2.5" r=".8"/><circle cx="8" cy="2.5" r=".8"/><circle cx="13" cy="2.5" r=".8"/><circle cx="5.5" cy="5.4" r=".8"/><circle cx="10.5" cy="5.4" r=".8"/><circle cx="3" cy="8.3" r=".8"/><circle cx="8" cy="8.3" r=".8"/><circle cx="13" cy="8.3" r=".8"/></g></svg></a>
+                <a class="icon-btn lang-btn" href="../../pages/contacto.html" hreflang="es" lang="es" aria-label="Ver esta página en español"><svg viewBox="0 0 30 20" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="30" height="20" fill="#aa151b"/><rect y="5" width="30" height="10" fill="#f1bf00"/></svg></a>
                 <button class="icon-btn theme-toggle" type="button" aria-label="Toggle light or dark theme"><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
                 <a class="btn btn--primary btn--sm" href="../pages/contacto.html">Let's talk</a>
                 <button class="icon-btn nav__menu-btn" type="button" aria-label="Open menu" aria-controls="menu" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
@@ -89,18 +89,22 @@
                     <a href="https://www.instagram.com/tomix_visuals/" target="_blank" rel="noopener"><span><span class="mono">Instagram</span><strong>instagram.com/tomix_visuals</strong></span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                     <a href="https://www.behance.net/tomasberon" target="_blank" rel="noopener"><span><span class="mono">Behance</span><strong>behance.net/tomasberon</strong></span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 11l6-6M6 5h5v5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
                 </div>
-                <form class="form reveal" id="contact-form" data-sending="Sending…" data-ok="Thanks! Your message was sent. I&#x27;ll get back to you shortly." data-error="The message couldn&#x27;t be sent. Please try again or email me at wikipediatomitob@gmail.com.">
+                <form class="form reveal" id="contact-form" action="https://formsubmit.co/wikipediatomitob@gmail.com" method="POST" data-sending="Sending…" data-ok="Thanks! Your message was sent. I&#x27;ll get back to you shortly." data-error="The message couldn&#x27;t be sent. Please try again or email me at wikipediatomitob@gmail.com.">
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" class="visually-hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <div>
                         <label for="form-input-name">Name</label>
-                        <input type="text" id="form-input-name" name="sender_name" autocomplete="name" placeholder="Your name" required>
+                        <input type="text" id="form-input-name" name="Name" autocomplete="name" placeholder="Your name" required>
                     </div>
                     <div>
                         <label for="form-input-email">Email</label>
-                        <input type="email" id="form-input-email" name="sender_email" autocomplete="email" placeholder="you@email.com" required>
+                        <input type="email" id="form-input-email" name="email" autocomplete="email" placeholder="you@email.com" required>
                     </div>
                     <div>
                         <label for="form-input-mensaje">Message</label>
-                        <textarea id="form-input-mensaje" name="sender_message" placeholder="Tell me about your project" required></textarea>
+                        <textarea id="form-input-mensaje" name="Message" placeholder="Tell me about your project" required></textarea>
                     </div>
                     <button type="submit" class="btn btn--primary">Send message</button>
                     <p class="form__status" role="status" aria-live="polite"></p>
